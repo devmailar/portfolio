@@ -192,14 +192,13 @@ header .container .buttons a:hover {
 }
 
 header .container .about {
-  background-color: yellow;
   margin: 25rem auto;
   width: 100%;
   max-width: 915px;
-  background-color: transparent;
   padding: 1rem 10rem 1rem 2rem;
   -webkit-animation: introLoad 0.9s forwards;
           animation: introLoad 0.9s forwards;
+  font-family: "Poppins", sans-serif;
 }
 
 header .container .about .margin {
@@ -207,18 +206,16 @@ header .container .about .margin {
 }
 
 header .container .about .margin h2 {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   padding: 0.5rem 1rem;
   font-size: 3rem;
-  border-bottom: solid 0.1rem;
   -webkit-transition: 1s;
   transition: 1s;
+  border-bottom: solid 0.1rem;
 }
 
 header .container .about .margin h2 div {
   color: #e6e1e1 !important;
-  z-index: 2;
   margin: -2rem auto;
 }
 
@@ -229,9 +226,8 @@ header .container .about .margin h2 span {
   background-color: #0f0f0f;
 }
 
-header .container .about .margin .text p {
-  font-family: "Poppins", sans-serif;
-  font-weight: normal;
+header .container .about .margin p {
+  color: #d4d4d4;
   padding: 1rem 2rem;
   font-size: 1rem;
   -webkit-transition: 1s;
@@ -364,10 +360,8 @@ footer .boot h1 {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  header .about .text {
+  header .about p {
     width: 80vw;
-  }
-  header .about .text p {
     padding: 1rem !important;
   }
 }

@@ -181,28 +181,25 @@ header {
     }
 
     .about {
-      background-color: yellow;
       margin: 25rem auto;
       width: 100%;
       max-width: 915px;
-      background-color: transparent;
       padding: 1rem 10rem 1rem 2rem;
       animation: introLoad 0.9s forwards;
+      font-family: "Poppins", sans-serif;
 
       .margin {
         margin: 5.5rem auto;
 
         h2 {
-          font-family: "Poppins", sans-serif;
           font-weight: normal;
           padding: 0.5rem 1rem;
           font-size: 3rem;
-          border-bottom: solid 0.1rem;
           transition: 1s;
+          border-bottom: solid 0.1rem;
 
           div {
             color: rgb(230, 225, 225) !important;
-            z-index: 2;
             margin: -2rem auto;
           }
 
@@ -213,14 +210,11 @@ header {
           }
         }
 
-        .text {
-          p {
-            font-family: "Poppins", sans-serif;
-            font-weight: normal;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            transition: 1s;
-          }
+        p {
+          color: rgb(212, 212, 212);
+          padding: 1rem 2rem;
+          font-size: 1rem;
+          transition: 1s;
         }
       }
     }
@@ -374,11 +368,10 @@ footer {
       margin: 15rem -3rem !important;
       transition: 0.5s;
 
-      .text {
+      p {
         width: 80vw;
-        p {
-          padding: 1rem !important;
-        }
+
+        padding: 1rem !important;
       }
     }
   }
