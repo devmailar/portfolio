@@ -168,6 +168,7 @@ header {
         text-decoration: none;
         margin: 0 0.2rem;
         padding: 0.5rem 5rem;
+        font-size: 20px;
         transition: 0.5s;
       }
 
@@ -181,41 +182,45 @@ header {
 
     .about {
       background-color: yellow;
-      margin: 30rem auto;
+      margin: 25rem auto;
       width: 100%;
       max-width: 915px;
       background-color: transparent;
       padding: 1rem 10rem 1rem 2rem;
       animation: introLoad 0.9s forwards;
 
-      h2 {
-        font-family: "Poppins", sans-serif;
-        font-weight: normal;
-        padding: 0.5rem 1rem;
-        font-size: 3rem;
-        border-bottom: solid 0.1rem;
-        transition: 1s;
+      .margin {
+        margin: 5.5rem auto;
 
-        div {
-          color: rgb(230, 225, 225) !important;
-          z-index: 2;
-          margin: -2rem auto;
-        }
-
-        span {
-          transition: 0.5s;
-          color: rgb(212, 212, 212);
-          background-color: rgb(15, 15, 15);
-        }
-      }
-
-      .text {
-        p {
+        h2 {
           font-family: "Poppins", sans-serif;
           font-weight: normal;
-          padding: 1rem 2rem;
-          font-size: 1rem;
+          padding: 0.5rem 1rem;
+          font-size: 3rem;
+          border-bottom: solid 0.1rem;
           transition: 1s;
+
+          div {
+            color: rgb(230, 225, 225) !important;
+            z-index: 2;
+            margin: -2rem auto;
+          }
+
+          span {
+            transition: 0.5s;
+            color: rgb(212, 212, 212);
+            background-color: rgb(15, 15, 15);
+          }
+        }
+
+        .text {
+          p {
+            font-family: "Poppins", sans-serif;
+            font-weight: normal;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            transition: 1s;
+          }
         }
       }
     }
@@ -250,6 +255,40 @@ footer {
       font-weight: normal;
       color: rgb(12, 12, 12);
       text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 2600px) {
+  nav {
+    .spacing {
+      max-width: 2100px !important;
+    }
+  }
+  .container {
+    margin: 10rem 15rem !important;
+    width: auto !important;
+
+    h1 {
+      font-size: var(--heading-font-size-600) !important;
+      width: 50rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1940px) {
+  nav {
+    .spacing {
+      max-width: 1600px !important;
+    }
+  }
+  .container {
+    margin: 10rem 15rem !important;
+    width: 90vw !important;
+
+    h1 {
+      font-size: var(--heading-font-size) !important;
+      width: 80rem !important;
     }
   }
 }

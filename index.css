@@ -177,6 +177,7 @@ header .container .buttons a {
   text-decoration: none;
   margin: 0 0.2rem;
   padding: 0.5rem 5rem;
+  font-size: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -192,7 +193,7 @@ header .container .buttons a:hover {
 
 header .container .about {
   background-color: yellow;
-  margin: 30rem auto;
+  margin: 25rem auto;
   width: 100%;
   max-width: 915px;
   background-color: transparent;
@@ -201,7 +202,11 @@ header .container .about {
           animation: introLoad 0.9s forwards;
 }
 
-header .container .about h2 {
+header .container .about .margin {
+  margin: 5.5rem auto;
+}
+
+header .container .about .margin h2 {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   padding: 0.5rem 1rem;
@@ -211,20 +216,20 @@ header .container .about h2 {
   transition: 1s;
 }
 
-header .container .about h2 div {
+header .container .about .margin h2 div {
   color: #e6e1e1 !important;
   z-index: 2;
   margin: -2rem auto;
 }
 
-header .container .about h2 span {
+header .container .about .margin h2 span {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #d4d4d4;
   background-color: #0f0f0f;
 }
 
-header .container .about .text p {
+header .container .about .margin .text p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   padding: 1rem 2rem;
@@ -263,6 +268,34 @@ footer .boot h1 {
   font-weight: normal;
   color: #0c0c0c;
   text-align: center;
+}
+
+@media screen and (max-width: 2600px) {
+  nav .spacing {
+    max-width: 2100px !important;
+  }
+  .container {
+    margin: 10rem 15rem !important;
+    width: auto !important;
+  }
+  .container h1 {
+    font-size: var(--heading-font-size-600) !important;
+    width: 50rem !important;
+  }
+}
+
+@media screen and (max-width: 1940px) {
+  nav .spacing {
+    max-width: 1600px !important;
+  }
+  .container {
+    margin: 10rem 15rem !important;
+    width: 90vw !important;
+  }
+  .container h1 {
+    font-size: var(--heading-font-size) !important;
+    width: 80rem !important;
+  }
 }
 
 @media screen and (max-width: 1800px) {
