@@ -182,7 +182,7 @@ header {
     }
 
     .about {
-      margin: 25rem auto;
+      margin: 20rem auto;
       width: 100%;
       max-width: 915px;
       padding: 1rem 10rem 1rem 2rem;
@@ -198,6 +198,11 @@ header {
           font-size: 3rem;
           transition: 1s;
           border-bottom: solid 0.1rem;
+
+          i {
+            float: right;
+            margin: 0 .5rem;
+          }
 
           div {
             color: rgb(230, 225, 225) !important;
@@ -216,6 +221,18 @@ header {
           padding: 1rem 2rem;
           font-size: 1rem;
           transition: 1s;
+        }
+
+        .overlay {
+          display: inline-flex;
+          background-color: #131313;
+          padding: 1rem;
+          margin: 0 .4rem;
+          height: 80px;
+          border: solid .1rem white;
+          img {
+            
+          }
         }
       }
     }

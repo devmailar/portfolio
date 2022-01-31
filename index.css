@@ -192,7 +192,7 @@ header .container .btn-container a:hover {
 }
 
 header .container .about {
-  margin: 25rem auto;
+  margin: 20rem auto;
   width: 100%;
   max-width: 915px;
   padding: 1rem 10rem 1rem 2rem;
@@ -214,6 +214,11 @@ header .container .about .margin h2 {
   border-bottom: solid 0.1rem;
 }
 
+header .container .about .margin h2 i {
+  float: right;
+  margin: 0 .5rem;
+}
+
 header .container .about .margin h2 div {
   color: #e6e1e1 !important;
   margin: -2rem auto;
@@ -232,6 +237,17 @@ header .container .about .margin p {
   font-size: 1rem;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+header .container .about .margin .overlay {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #131313;
+  padding: 1rem;
+  margin: 0 .4rem;
+  height: 80px;
+  border: solid .1rem white;
 }
 
 section {
