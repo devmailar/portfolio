@@ -129,7 +129,7 @@ header nav ul {
 }
 
 header nav ul li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin: -2.5rem 1rem;
   color: #0c0c0c;
 }
@@ -400,8 +400,10 @@ footer .boot h1 {
     width: auto !important;
   }
   header .container .buttons a {
+    font-size: 1.1rem;
+    letter-spacing: 0.4rem;
     margin: 1rem 0.3rem !important;
-    padding: 0.2rem 2rem !important;
+    padding: 0.3rem 0.3rem !important;
   }
   header .about h2 {
     font-size: 2rem !important;
