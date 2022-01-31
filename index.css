@@ -62,13 +62,13 @@ a {
   color: white !important;
 }
 
-.dark .buttons a {
+.dark .btn-container a {
   background-color: transparent !important;
   border: solid 0.1rem white !important;
   color: white !important;
 }
 
-.dark .buttons a:hover {
+.dark .btn-container a:hover {
   background-color: white !important;
   color: black !important;
 }
@@ -160,7 +160,7 @@ header .container h1 span {
   background-color: #0f0f0f;
 }
 
-header .container .buttons {
+header .container .btn-container {
   margin: 2rem auto;
   font-family: "Poppins", sans-serif;
   display: -webkit-box;
@@ -168,7 +168,7 @@ header .container .buttons {
   display: flex;
 }
 
-header .container .buttons a {
+header .container .btn-container a {
   background-color: transparent;
   border: solid 0.2rem black;
   color: black;
@@ -182,7 +182,7 @@ header .container .buttons a {
   letter-spacing: .7rem;
 }
 
-header .container .buttons a:hover {
+header .container .btn-container a:hover {
   -webkit-box-shadow: 0 0 0 0.2rem black;
           box-shadow: 0 0 0 0.2rem black;
   background-color: black;
@@ -399,7 +399,7 @@ footer .boot h1 {
     font-size: var(--heading-font-size-ios) !important;
     width: auto !important;
   }
-  header .container .buttons a {
+  header .container .btn-container a {
     font-size: 1.1rem;
     letter-spacing: 0.4rem;
     margin: 1rem 0.3rem !important;
