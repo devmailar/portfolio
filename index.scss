@@ -11,7 +11,6 @@ html {
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,24 +22,8 @@ a {
   --heading-font-size: 6rem;
   --heading-font-size-600: 4rem;
   --heading-font-size-ios: 2.5rem;
-
   --heading-font-size-tablet: 6rem;
   --heading-font-size-desktop: 6rem;
-}
-
-.transition {
-  transition: 0.5s;
-}
-
-.mobile {
-  float: right;
-  margin: 1.3rem 2rem;
-  max-width: 50px;
-
-  ion-icon {
-    color: transparent;
-    font-size: 4rem;
-  }
 }
 
 .dark {
@@ -72,8 +55,8 @@ a {
   .btn-container {
     a {
       background-color: transparent !important;
-      border: solid 0.1rem rgb(255, 255, 255) !important;
       color: white !important;
+      border: solid 0.1rem rgb(255, 255, 255) !important;
     }
     a:hover {
       background-color: rgb(255, 255, 255) !important;
@@ -100,35 +83,38 @@ a {
 }
 
 .container {
-  top: 0;
-  max-width: 1400px;
+  max-width: 1232px;
   width: 100%;
   margin: 0 auto;
-  height: 60rem;
 }
 
 header {
   nav {
     font-family: "Poppins", sans-serif;
     padding: 1.5rem 0;
-    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 5rem;
 
-    h1 {
-      font-family: "Poppins", "Consolas", sans-serif;
-      font-size: 2rem;
-      font-weight: normal;
-      color: rgb(12, 12, 12);
+    a {
+      float: left;
+
+      h1 {
+        font-family: "Poppins", "Consolas", sans-serif;
+        font-size: 2rem;
+        font-weight: normal;
+        color: rgb(12, 12, 12);
+      }
     }
 
-    #mode {
-      font-family: "Poppins", sans-serif;
-      background-color: transparent;
-      color: rgb(12, 12, 12);
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
+    .mobile {
+      float: right;
+
+      ion-icon {
+        color: transparent;
+        font-size: 4rem;
+        margin: -3rem 1rem;
+      }
     }
 
     ul {
@@ -138,7 +124,7 @@ header {
 
       li {
         font-size: 1.4rem;
-        margin: -2.5rem 1rem;
+        margin: auto 1rem;
         color: rgb(12, 12, 12);
 
         a {

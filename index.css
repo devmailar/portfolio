@@ -11,7 +11,6 @@ html {
 
 * {
   margin: 0;
-  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -26,22 +25,6 @@ a {
   --heading-font-size-ios: 2.5rem;
   --heading-font-size-tablet: 6rem;
   --heading-font-size-desktop: 6rem;
-}
-
-.transition {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.mobile {
-  float: right;
-  margin: 1.3rem 2rem;
-  max-width: 50px;
-}
-
-.mobile ion-icon {
-  color: transparent;
-  font-size: 4rem;
 }
 
 .dark {
@@ -75,8 +58,8 @@ a {
 
 .dark .btn-container a {
   background-color: transparent !important;
-  border: solid 0.1rem white !important;
   color: white !important;
+  border: solid 0.1rem white !important;
 }
 
 .dark .btn-container a:hover {
@@ -98,35 +81,38 @@ a {
 }
 
 .container {
-  top: 0;
-  max-width: 1400px;
+  max-width: 1232px;
   width: 100%;
   margin: 0 auto;
-  height: 60rem;
 }
 
 header nav {
   font-family: "Poppins", sans-serif;
   padding: 1.5rem 0;
-  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
-header nav h1 {
+header nav a {
+  float: left;
+}
+
+header nav a h1 {
   font-family: "Poppins", "Consolas", sans-serif;
   font-size: 2rem;
   font-weight: normal;
   color: #0c0c0c;
 }
 
-header nav #mode {
-  font-family: "Poppins", sans-serif;
-  background-color: transparent;
-  color: #0c0c0c;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
+header nav .mobile {
+  float: right;
+}
+
+header nav .mobile ion-icon {
+  color: transparent;
+  font-size: 4rem;
+  margin: -3rem 1rem;
 }
 
 header nav ul {
@@ -141,7 +127,7 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.4rem;
-  margin: -2.5rem 1rem;
+  margin: auto 1rem;
   color: #0c0c0c;
 }
 
