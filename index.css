@@ -3,6 +3,7 @@ body {
   background-color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -247,13 +248,42 @@ header .container .about .margin .overlay {
   border: solid 0.1rem white;
 }
 
-section {
-  background-color: white;
+section .container {
+  display: block;
 }
 
-section .container {
-  margin: 10rem 20rem;
-  width: 90vw;
+section .container .card {
+  width: 100%;
+}
+
+section .container .card .wrapper {
+  margin: 3rem 0;
+  max-width: 1500px;
+  background-color: #131313;
+  padding: 1rem;
+  float: left;
+}
+
+section .container .card .wrapper .content {
+  float: left;
+  width: 50%;
+}
+
+section .container .card .wrapper .content h1 {
+  padding: 0.1rem;
+  font-size: 3rem !important;
+  color: #eeeeee !important;
+}
+
+section .container .card .wrapper .content p {
+  padding: 0.1rem;
+  color: #cccccc;
+}
+
+section .container .card .wrapper img {
+  float: right;
+  padding: 0.1rem;
+  width: 50%;
 }
 
 footer {

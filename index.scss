@@ -3,6 +3,7 @@
 body {
   background-color: #ffffff;
   transition: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -236,11 +237,40 @@ header {
 }
 
 section {
-  background-color: white;
-
   .container {
-    margin: 10rem 20rem;
-    width: 90vw;
+    display: block;
+
+    .card {
+      width: 100%;
+
+      .wrapper {
+        margin: 3rem 0;
+        max-width: 1500px;
+        background-color: #131313;
+        padding: 1rem;
+        float: left;
+        .content {
+          float: left;
+          width: 50%;
+          h1 {
+            padding: 0.1rem;
+            font-size: 3rem !important;
+            color: rgb(238, 238, 238) !important;
+          }
+
+          p {
+            padding: 0.1rem;
+            color: rgb(204, 204, 204);
+          }
+        }
+
+        img {
+          float: right;
+          padding: 0.1rem;
+          width: 50%;
+        }
+      }
+    }
   }
 }
 
