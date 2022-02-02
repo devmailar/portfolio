@@ -257,7 +257,7 @@ section .container .card {
 }
 
 section .container .card .wrapper {
-  margin: 3rem 0;
+  margin: 4rem 0;
   max-width: 1500px;
   background-color: #131313;
   padding: 1rem;
@@ -267,6 +267,7 @@ section .container .card .wrapper {
 section .container .card .wrapper .content {
   float: left;
   width: 50%;
+  height: 300px;
 }
 
 section .container .card .wrapper .content h1 {
@@ -278,6 +279,31 @@ section .container .card .wrapper .content h1 {
 section .container .card .wrapper .content p {
   padding: 0.1rem;
   color: #cccccc;
+}
+
+section .container .card .wrapper .content .btn-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section .container .card .wrapper .content .btn-container a {
+  color: white;
+  border: solid 0.1rem white;
+  margin: 1.5rem 0.2rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .container .card .wrapper .content .btn-container a:hover {
+  background-color: white !important;
+  color: black !important;
+  -webkit-transition: opacity 0.3s, border 0.3s;
+  transition: opacity 0.3s, border 0.3s;
 }
 
 section .container .card .wrapper img {
