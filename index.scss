@@ -382,15 +382,16 @@ footer {
       margin: 15rem -3rem !important;
       transition: 0.5s;
 
+      i {
+        font-size: 1.5rem;
+      }
+
       h2 {
-        width: 90vw;
         border-bottom: solid 0.1rem;
-        font-size: 1.8rem !important;
       }
 
       p {
         width: 80vw;
-
         padding: 1rem !important;
       }
     }
@@ -415,7 +416,6 @@ footer {
 
     .about {
       h2 {
-        width: 90vw;
         border-bottom: solid 0.1rem;
         font-size: 1.8rem !important;
       }
@@ -460,6 +460,7 @@ footer {
 
     .about {
       h2 {
+        width: 90vw;
       }
 
       div {

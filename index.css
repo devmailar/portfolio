@@ -379,10 +379,11 @@ footer .boot h1 {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+  header .about i {
+    font-size: 1.5rem;
+  }
   header .about h2 {
-    width: 90vw;
     border-bottom: solid 0.1rem;
-    font-size: 1.8rem !important;
   }
   header .about p {
     width: 80vw;
@@ -402,7 +403,6 @@ footer .boot h1 {
     display: none;
   }
   header .about h2 {
-    width: 90vw;
     border-bottom: solid 0.1rem;
     font-size: 1.8rem !important;
   }
@@ -432,6 +432,9 @@ footer .boot h1 {
     letter-spacing: 0.4rem;
     margin: 1rem 0.3rem !important;
     padding: auto !important;
+  }
+  header .about h2 {
+    width: 90vw;
   }
   header .about div {
     margin: -1rem auto !important;
