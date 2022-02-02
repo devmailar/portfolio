@@ -259,7 +259,7 @@ section .container .card {
 section .container .card .wrapper {
   margin: 4rem 0;
   max-width: 1500px;
-  background-color: #131313;
+  border: solid .1rem white;
   padding: 1rem;
   float: left;
 }
