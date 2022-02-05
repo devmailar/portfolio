@@ -21,7 +21,6 @@ a {
 }
 
 :root {
-  --heading-font-size: 6rem;
   --heading-font-size-600: 4rem;
   --heading-font-size-ios: 2.5rem;
   --heading-font-size-tablet: 6rem;
@@ -81,42 +80,35 @@ a {
   color: white !important;
 }
 
-.container {
-  max-width: 1232px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header nav {
-  font-family: "Poppins", sans-serif;
+nav {
   padding: 1.5rem 0;
+  max-width: 84.1%;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
-header nav a {
+nav a {
   float: left;
 }
 
-header nav a h1 {
+nav a h1 {
   font-family: "Poppins", "Consolas", sans-serif;
   font-size: 2rem;
   font-weight: normal;
   color: #0c0c0c;
 }
 
-header nav .mobile {
+nav .mobile {
   float: right;
 }
 
-header nav .mobile ion-icon {
+nav .mobile ion-icon {
   color: transparent;
   font-size: 4rem;
-  margin: -3rem 1rem;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,47 +118,51 @@ header nav ul {
           justify-content: right;
 }
 
-header nav ul li {
+nav ul li {
   font-size: 1.4rem;
   margin: auto 1rem;
   color: #0c0c0c;
 }
 
-header nav ul li a {
+nav ul li a {
   color: #0c0c0c;
 }
 
-header .container {
-  margin: 10rem 20rem;
-  width: 90vw;
+.container {
+  margin: 0 auto;
+  max-width: 66.5%;
+  width: 100%;
+}
+
+.container header .wrapper {
   -webkit-animation: introLoad 0.9s forwards;
           animation: introLoad 0.9s forwards;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-header .container h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: var(--heading-font-size);
-  width: 80rem;
+.container header .wrapper h1 {
+  font-size: 5vw;
   -webkit-transition: 1s;
   transition: 1s;
+  width: 70vw;
 }
 
-header .container h1 span {
+.container header .wrapper h1 span {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #d4d4d4;
   background-color: #0f0f0f;
 }
 
-header .container .btn-container {
+.container header .wrapper .btn-container {
   margin: 2rem auto;
-  font-family: "Poppins", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header .container .btn-container a {
+.container header .wrapper .btn-container a {
   background-color: transparent;
   border: solid 0.2rem black;
   color: black;
@@ -180,7 +176,7 @@ header .container .btn-container a {
   letter-spacing: 0.7rem;
 }
 
-header .container .btn-container a:hover {
+.container header .wrapper .btn-container a:hover {
   -webkit-box-shadow: 0 0 0 0.2rem black;
           box-shadow: 0 0 0 0.2rem black;
   background-color: black;
@@ -189,21 +185,19 @@ header .container .btn-container a:hover {
   transition: opacity 0.3s, border 0.3s;
 }
 
-header .container .about {
-  margin: 20rem auto;
+.container header .wrapper .about {
+  margin: 26.5rem 15.2%;
   width: 100%;
-  max-width: 915px;
-  padding: 1rem 10rem 1rem 2rem;
+  max-width: 57%;
   -webkit-animation: introLoad 0.9s forwards;
           animation: introLoad 0.9s forwards;
-  font-family: "Poppins", sans-serif;
 }
 
-header .container .about .margin {
+.container header .wrapper .about .margin {
   margin: 5.5rem auto;
 }
 
-header .container .about .margin h2 {
+.container header .wrapper .about .margin h2 {
   font-weight: normal;
   padding: 0.5rem 1rem;
   font-size: 3rem;
@@ -212,24 +206,24 @@ header .container .about .margin h2 {
   border-bottom: solid 0.1rem;
 }
 
-header .container .about .margin h2 i {
+.container header .wrapper .about .margin h2 i {
   float: right;
   margin: 0 0.5rem;
 }
 
-header .container .about .margin h2 div {
+.container header .wrapper .about .margin h2 div {
   color: #e6e1e1 !important;
   margin: -2rem auto;
 }
 
-header .container .about .margin h2 span {
+.container header .wrapper .about .margin h2 span {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #d4d4d4;
   background-color: #0f0f0f;
 }
 
-header .container .about .margin p {
+.container header .wrapper .about .margin p {
   color: #d4d4d4;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -237,57 +231,49 @@ header .container .about .margin p {
   transition: 1s;
 }
 
-header .container .about .margin .overlay {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  background-color: #131313;
-  padding: 1rem;
-  margin: 0 0.4rem;
-  height: 80px;
-  border: solid 0.1rem white;
-}
-
-section .container {
+.container section .projects {
   display: block;
 }
 
-section .container .card {
+.container section .projects h1 {
+  font-size: 4rem;
+}
+
+.container section .projects .card {
   width: 100%;
 }
 
-section .container .card .wrapper {
-  margin: 4rem 0;
-  max-width: 1500px;
-  border: solid .1rem white;
+.container section .projects .card .wrapper {
+  margin: 4rem auto;
+  border: solid 0.1rem white;
   padding: 1rem;
   float: left;
 }
 
-section .container .card .wrapper .content {
+.container section .projects .card .wrapper .content {
   float: left;
   width: 50%;
   height: 300px;
 }
 
-section .container .card .wrapper .content h1 {
+.container section .projects .card .wrapper .content h1 {
   padding: 0.1rem;
-  font-size: 3rem !important;
+  font-size: 3rem;
   color: #eeeeee !important;
 }
 
-section .container .card .wrapper .content p {
+.container section .projects .card .wrapper .content p {
   padding: 0.1rem;
   color: #cccccc;
 }
 
-section .container .card .wrapper .content .btn-container {
+.container section .projects .card .wrapper .content .btn-container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-section .container .card .wrapper .content .btn-container a {
+.container section .projects .card .wrapper .content .btn-container a {
   color: white;
   border: solid 0.1rem white;
   margin: 1.5rem 0.2rem;
@@ -299,187 +285,72 @@ section .container .card .wrapper .content .btn-container a {
   transition: 0.5s;
 }
 
-section .container .card .wrapper .content .btn-container a:hover {
-  background-color: white !important;
-  color: black !important;
+.container section .projects .card .wrapper .content .btn-container a:hover {
+  background-color: white;
+  color: black;
   -webkit-transition: opacity 0.3s, border 0.3s;
   transition: opacity 0.3s, border 0.3s;
 }
 
-section .container .card .wrapper img {
-  float: right;
+.container section .projects .card .wrapper img {
   padding: 0.1rem;
   width: 50%;
 }
 
-footer {
-  position: fixed;
-  margin: 0 auto;
-  bottom: 0;
-  background-color: transparent;
-  width: 100%;
-}
-
-footer .boot {
-  font-size: 2rem;
-  color: snow;
-  margin-left: 5rem;
-  margin: 1rem 5rem;
-}
-
-footer .boot h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: #0c0c0c;
-  text-align: center;
-}
-
-@media screen and (max-width: 2600px) {
-  nav {
-    max-width: 2100px !important;
-  }
-  .container {
-    margin: 10rem 15rem !important;
-    width: auto !important;
-  }
-  .container h1 {
-    font-size: var(--heading-font-size-600) !important;
-    width: 50rem !important;
-  }
-}
-
-@media screen and (max-width: 1940px) {
-  nav {
-    max-width: 1600px !important;
-  }
-  .container {
-    margin: 10rem 20rem !important;
-    width: 90vw !important;
-  }
-  .container h1 {
-    font-size: var(--heading-font-size) !important;
-    width: 80rem !important;
-  }
-}
-
 @media screen and (max-width: 1800px) {
-  nav {
-    max-width: 1500px !important;
-  }
-  .container {
-    margin: 10rem 15rem !important;
-    width: auto !important;
-  }
-  .container h1 {
-    font-size: var(--heading-font-size-600) !important;
-    width: 50rem !important;
+  body {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
 }
 
-@media screen and (max-width: 1500px) {
-  nav {
-    max-width: 1200px !important;
-  }
-  header .container {
-    margin: 5rem 8rem !important;
-    width: auto !important;
-  }
-  header .container h1 {
-    font-size: 3.8rem !important;
+@media screen and (max-width: 1400px) {
+  body {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 
-@media screen and (max-width: 1200px) {
-  header nav {
-    padding: 0.8rem 0 5rem 0;
-    max-width: 750px !important;
+@media screen and (max-width: 1000px) {
+  body {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
-  .container {
-    margin: 3rem 2rem !important;
+  .mobile {
+    margin: -0.3rem -2rem;
   }
-  .container h1 {
-    font-size: var(--heading-font-size-600) !important;
-    width: auto !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  header nav {
-    padding: 0.8rem 0 5rem 0;
-    max-width: 950px !important;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  header nav {
-    padding: 0.8rem 0 5rem 0;
-    max-width: 850px !important;
-  }
-  header .about {
-    margin: 15rem -3rem !important;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  header .about i {
-    font-size: 1.5rem;
-  }
-  header .about h2 {
-    border-bottom: solid 0.1rem;
-  }
-  header .about p {
-    width: 80vw;
-    padding: 1rem !important;
-  }
-}
-
-@media screen and (max-width: 820px) {
   .mobile ion-icon {
     color: white !important;
   }
-  header nav {
-    padding: 0.8rem 0 5rem 0;
-    max-width: 750px !important;
+  nav {
+    margin-bottom: 5rem;
   }
-  header nav ul {
+  nav ul {
     display: none;
   }
-  header .about h2 {
-    border-bottom: solid 0.1rem;
-    font-size: 1.8rem !important;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  header nav {
-    padding: 0.8rem 0 5rem 0;
-    max-width: 700px !important;
+  .btn-container a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 2.5vw !important;
+    padding: 1vw 2vw !important;
   }
 }
 
 @media screen and (max-width: 600px) {
-  header nav h1 {
-    font-size: 2rem;
-    margin: 0.7rem 2rem;
+  body {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
-  header .container {
-    margin: 0 2rem !important;
+  .wrapper h1 {
+    font-size: 10vw !important;
   }
-  header .container h1 {
-    font-size: var(--heading-font-size-ios) !important;
-    width: auto !important;
-  }
-  header .container .btn-container a {
-    font-size: 1.1rem;
-    letter-spacing: 0.4rem;
-    margin: 1rem 0.3rem !important;
-    padding: auto !important;
-  }
-  header .about h2 {
-    width: 90vw;
-  }
-  header .about div {
-    margin: -1rem auto !important;
+}
+
+@media screen and (max-width: 200px) {
+  body {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 
