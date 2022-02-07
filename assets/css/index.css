@@ -24,28 +24,28 @@ a {
   background-color: #0c0c0c !important;
 }
 
+.dark nav {
+  background-color: rgba(12, 12, 12, 0.971);
+}
+
+.dark nav ul li {
+  color: white !important;
+}
+
+.dark nav ul li a {
+  color: white !important;
+}
+
 .dark h1 {
-  -webkit-transition: 1s;
-  transition: 1s;
   color: white !important;
 }
 
 .dark h1 span {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   color: #0f0f0f !important;
   background-color: white !important;
 }
 
 .dark button {
-  color: white !important;
-}
-
-.dark li {
-  color: white !important;
-}
-
-.dark li a {
   color: white !important;
 }
 
@@ -56,6 +56,8 @@ a {
 }
 
 .dark .btn-container a:hover {
+  -webkit-box-shadow: 0 0 0 0.2rem white !important;
+          box-shadow: 0 0 0 0.2rem white !important;
   background-color: white !important;
   color: black !important;
 }
@@ -80,14 +82,14 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(12, 12, 12, 0.971);
+  background-color: rgba(255, 255, 255, 0.971);
   padding: 1rem 0;
   width: 100%;
   margin: 0 auto;
 }
 
 nav .container {
-  max-width: 90%;
+  max-width: 95%;
   padding: 1rem 2.3rem;
 }
 
@@ -126,7 +128,8 @@ nav ul li a {
 nav img {
   display: none;
   float: right;
-  padding: 0.2rem;
+  padding: 0.1rem;
+  margin: -0.7rem;
 }
 
 .container {
@@ -161,22 +164,20 @@ nav img {
 }
 
 .container header .wrapper .btn-container {
-  margin: 2rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 2rem auto;
 }
 
 .container header .wrapper .btn-container a {
-  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border: solid 0.2rem black;
   color: black;
-  text-decoration: none;
   margin: 0 0.2rem;
   padding: 0.5rem 1.2rem;
   font-size: 20px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
 }
@@ -186,8 +187,8 @@ nav img {
           box-shadow: 0 0 0 0.2rem black;
   background-color: black;
   color: #e0dfdf;
-  -webkit-transition: opacity 0.3s, border 0.3s;
-  transition: opacity 0.3s, border 0.3s;
+  -webkit-transition: opacity 0.5s, border 0.3s;
+  transition: opacity 0.5s, border 0.3s;
 }
 
 .container header .wrapper .about {
@@ -324,11 +325,25 @@ nav img {
   nav {
     margin-bottom: 5rem;
   }
+  nav .container {
+    max-width: 100%;
+  }
   nav ul {
     display: none;
   }
   nav img {
     display: block;
+  }
+  .container {
+    padding: 1rem;
+    max-width: 95%;
+  }
+  .container header {
+    margin: 9rem 0 !important;
+  }
+  .container header h1 {
+    width: 100% !important;
+    font-size: 12vw !important;
   }
   .btn-container a {
     display: -webkit-box;

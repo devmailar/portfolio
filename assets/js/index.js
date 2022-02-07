@@ -1,10 +1,6 @@
-let bod = document.querySelector("body")
+let bod = document.querySelector("body");
 
-window.addEventListener('load', (event) => {
-  // for (let i = 1; i < 50; i++) {
-  //   setTimeout(function timer() {
-     bod.classList.toggle("dark")
-     bod.classList.toggle("transition")
-  //   }, i * 4000);
-  // }
-})
+window.addEventListener("load", (event) => {
+  bod.classList.toggle("dark");
+  bod.classList.toggle("transition");
+});

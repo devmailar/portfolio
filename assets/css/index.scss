@@ -22,12 +22,24 @@ a {
 .dark {
   background-color: rgb(12, 12, 12) !important;
 
+  nav {
+    background-color: rgba(12, 12, 12, 0.971);
+
+    ul {
+      li {
+        color: white !important;
+
+        a {
+          color: white !important;
+        }
+      }
+    }
+  }
+
   h1 {
-    transition: 1s;
     color: white !important;
 
     span {
-      transition: 0.5s;
       color: rgb(15, 15, 15) !important;
       background-color: white !important;
     }
@@ -37,14 +49,6 @@ a {
     color: white !important;
   }
 
-  li {
-    color: white !important;
-
-    a {
-      color: white !important;
-    }
-  }
-
   .btn-container {
     a {
       background-color: transparent !important;
@@ -52,6 +56,7 @@ a {
       border: solid 0.1rem rgb(255, 255, 255) !important;
     }
     a:hover {
+      box-shadow: 0 0 0 0.2rem white !important;
       background-color: rgb(255, 255, 255) !important;
       color: rgb(0, 0, 0) !important;
     }
@@ -80,13 +85,13 @@ nav {
   z-index: 1;
   position: fixed;
   display: flex;
-  background-color: rgba(12, 12, 12, 0.971);
+  background-color: rgba(255, 255, 255, 0.971);
   padding: 1rem 0;
   width: 100%;
   margin: 0 auto;
 
   .container {
-    max-width: 90%;
+    max-width: 95%;
     padding: 1rem 2.3rem;
   }
 
@@ -121,7 +126,8 @@ nav {
   img {
     display: none;
     float: right;
-    padding: 0.2rem;
+    padding: 0.1rem;
+    margin: -0.7rem;
   }
 }
 
@@ -142,6 +148,10 @@ nav {
         transition: 1s;
         width: 70vw;
 
+        // font-size: 4vw;
+        // transition: 1s;
+        // width: 55vw;
+
         span {
           transition: 0.5s;
           color: rgb(212, 212, 212);
@@ -150,18 +160,16 @@ nav {
       }
 
       .btn-container {
-        margin: 2rem auto;
         display: flex;
+        margin: 2rem auto;
 
         a {
-          background-color: transparent;
+          transition: 0.5s;
           border: solid 0.2rem black;
           color: rgb(0, 0, 0);
-          text-decoration: none;
           margin: 0 0.2rem;
           padding: 0.5rem 1.2rem;
           font-size: 20px;
-          transition: 0.5s;
           text-transform: uppercase;
           letter-spacing: 0.7rem;
         }
@@ -170,7 +178,7 @@ nav {
           box-shadow: 0 0 0 0.2rem black;
           background-color: rgb(0, 0, 0);
           color: rgb(224, 223, 223);
-          transition: opacity 0.3s, border 0.3s;
+          transition: opacity 0.5s, border 0.3s;
         }
       }
 
@@ -301,12 +309,30 @@ nav {
   nav {
     margin-bottom: 5rem;
 
+    .container {
+      max-width: 100%;
+    }
+
     ul {
       display: none;
     }
 
     img {
       display: block;
+    }
+  }
+
+  .container {
+    padding: 1rem;
+    max-width: 95%;
+
+    header {
+      margin: 9rem 0 !important;
+
+      h1 {
+        width: 100% !important;
+        font-size: 12vw !important;
+      }
     }
   }
 
