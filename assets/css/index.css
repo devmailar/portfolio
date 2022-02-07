@@ -20,13 +20,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --heading-font-size-600: 4rem;
-  --heading-font-size-ios: 2.5rem;
-  --heading-font-size-tablet: 6rem;
-  --heading-font-size-desktop: 6rem;
-}
-
 .dark {
   background-color: #0c0c0c !important;
 }
@@ -87,7 +80,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0c0c0c;
+  background-color: rgba(12, 12, 12, 0.971);
   padding: 1rem 0;
   width: 100%;
   margin: 0 auto;
@@ -95,7 +88,6 @@ nav {
 
 nav .container {
   max-width: 90%;
-  background-color: #0c0c0c;
   padding: 1rem 2.3rem;
 }
 
@@ -306,7 +298,8 @@ nav img {
 }
 
 .container section .projects .card .wrapper img {
-  padding: 0.1rem;
+  width: 50%;
+  padding: 0.5rem;
 }
 
 @media screen and (max-width: 1800px) {
