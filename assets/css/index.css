@@ -81,11 +81,22 @@ a {
 }
 
 nav {
-  padding: 1.5rem 0;
-  max-width: 84.1%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0c0c0c;
+  padding: 1rem 0;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10rem;
+}
+
+nav .container {
+  max-width: 90%;
+  background-color: #0c0c0c;
+  padding: 1rem 2.3rem;
 }
 
 nav a {
@@ -94,18 +105,10 @@ nav a {
 
 nav a h1 {
   font-family: "Poppins", "Consolas", sans-serif;
+  margin: -0.5rem;
   font-size: 2rem;
   font-weight: normal;
   color: #0c0c0c;
-}
-
-nav .mobile {
-  float: right;
-}
-
-nav .mobile ion-icon {
-  color: transparent;
-  font-size: 4rem;
 }
 
 nav ul {
@@ -128,10 +131,20 @@ nav ul li a {
   color: #0c0c0c;
 }
 
+nav img {
+  display: none;
+  float: right;
+  padding: 0.2rem;
+}
+
 .container {
   margin: 0 auto;
   max-width: 66.5%;
   width: 100%;
+}
+
+.container header {
+  margin: 18rem 0;
 }
 
 .container header .wrapper {
@@ -294,7 +307,6 @@ nav ul li a {
 
 .container section .projects .card .wrapper img {
   padding: 0.1rem;
-  width: 50%;
 }
 
 @media screen and (max-width: 1800px) {
@@ -316,17 +328,14 @@ nav ul li a {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
-  .mobile {
-    margin: -0.3rem -2rem;
-  }
-  .mobile ion-icon {
-    color: white !important;
-  }
   nav {
     margin-bottom: 5rem;
   }
   nav ul {
     display: none;
+  }
+  nav img {
+    display: block;
   }
   .btn-container a {
     display: -webkit-box;

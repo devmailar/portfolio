@@ -83,29 +83,30 @@ a {
 }
 
 nav {
-  padding: 1.5rem 0;
-  max-width: 84.1%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  background-color: rgb(12, 12, 12);
+  padding: 1rem 0;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10rem;
+
+  .container {
+    max-width: 90%;
+    background-color: rgb(12, 12, 12);
+    padding: 1rem 2.3rem;
+  }
 
   a {
     float: left;
 
     h1 {
       font-family: "Poppins", "Consolas", sans-serif;
+      margin: -0.5rem;
       font-size: 2rem;
       font-weight: normal;
       color: rgb(12, 12, 12);
-    }
-  }
-
-  .mobile {
-    float: right;
-
-    ion-icon {
-      color: transparent;
-      font-size: 4rem;
     }
   }
 
@@ -124,6 +125,12 @@ nav {
       }
     }
   }
+
+  img {
+    display: none;
+    float: right;
+    padding: 0.2rem;
+  }
 }
 
 .container {
@@ -132,6 +139,7 @@ nav {
   width: 100%;
 
   header {
+    margin: 18rem 0;
     .wrapper {
       // margin: 10rem 20rem;
       animation: introLoad 0.9s forwards;
@@ -273,7 +281,6 @@ nav {
 
           img {
             padding: 0.1rem;
-            width: 50%;
           }
         }
       }
@@ -298,18 +305,15 @@ nav {
     transition: all 0.4s;
   }
 
-  .mobile {
-    margin: -0.3rem -2rem;
-    ion-icon {
-      color: white !important;
-    }
-  }
-
   nav {
     margin-bottom: 5rem;
 
     ul {
       display: none;
+    }
+
+    img {
+      display: block;
     }
   }
 
