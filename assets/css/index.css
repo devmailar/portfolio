@@ -250,43 +250,60 @@ nav img {
 }
 
 .container section .projects .card .wrapper {
-  margin: 4rem auto;
   border: solid 0.1rem white;
-  padding: 1rem;
+  margin: 3rem auto;
+  padding: 1.3rem;
   float: left;
 }
 
 .container section .projects .card .wrapper .content {
   float: left;
+  padding: 0.5rem;
   width: 50%;
-  height: 300px;
 }
 
 .container section .projects .card .wrapper .content h1 {
-  padding: 0.1rem;
+  padding: 0.5rem;
   font-size: 3rem;
   color: #eeeeee !important;
 }
 
 .container section .projects .card .wrapper .content p {
-  padding: 0.1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
   color: #cccccc;
 }
 
+.container section .projects .card .wrapper .content .technologies-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+}
+
+.container section .projects .card .wrapper .content .technologies-container i {
+  color: white;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+}
+
 .container section .projects .card .wrapper .content .btn-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .container section .projects .card .wrapper .content .btn-container a {
   color: white;
   border: solid 0.1rem white;
-  margin: 1.5rem 0.2rem;
-  padding: 0.3rem 0.7rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1.5rem;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
