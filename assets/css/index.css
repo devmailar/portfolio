@@ -192,15 +192,16 @@ nav img {
 }
 
 .container header .wrapper .about {
-  margin: 26.5rem 15.2%;
+  margin: 20rem auto;
   width: 100%;
-  max-width: 57%;
+  max-width: 60%;
   -webkit-animation: introLoad 0.9s forwards;
           animation: introLoad 0.9s forwards;
+  padding: .1rem;
 }
 
 .container header .wrapper .about .margin {
-  margin: 5.5rem auto;
+  margin: 16rem auto;
 }
 
 .container header .wrapper .about .margin h2 {
@@ -214,6 +215,7 @@ nav img {
 
 .container header .wrapper .about .margin h2 i {
   float: right;
+  font-size: 4.4rem;
   margin: 0 0.5rem;
 }
 
@@ -232,7 +234,7 @@ nav img {
 .container header .wrapper .about .margin p {
   color: #d4d4d4;
   padding: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -317,7 +319,7 @@ nav img {
 
 .container section .projects .card .wrapper img {
   width: 50%;
-  padding: 0.5rem;
+  padding: 0.1rem;
 }
 
 @media screen and (max-width: 1800px) {

@@ -183,13 +183,15 @@ nav {
       }
 
       .about {
-        margin: 26.5rem 15.2%;
+        // margin: 28rem 15.2%;
+        margin: 20rem auto;
         width: 100%;
-        max-width: 57%;
+        max-width: 60%;
         animation: introLoad 0.9s forwards;
+        padding: .1rem;
 
         .margin {
-          margin: 5.5rem auto;
+          margin: 16rem auto;
 
           h2 {
             font-weight: normal;
@@ -200,6 +202,7 @@ nav {
 
             i {
               float: right;
+              font-size: 4.4rem;
               margin: 0 0.5rem;
             }
 
@@ -218,7 +221,7 @@ nav {
           p {
             color: rgb(212, 212, 212);
             padding: 1rem 2rem;
-            font-size: 1rem;
+            font-size: 1.8rem;
             transition: 1s;
           }
         }
@@ -294,7 +297,7 @@ nav {
 
           img {
             width: 50%;
-            padding: 0.5rem;
+            padding: 0.1rem;
           }
         }
       }
