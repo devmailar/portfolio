@@ -31,7 +31,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.971);
-  font-family: "Consolas", "Poppins", sans-serif;
+  font-family: "Poppins", "Consolas", sans-serif;
   padding: 1.4rem 11vw;
   width: 100%;
   margin: 0 auto;
@@ -39,6 +39,7 @@ a {
 
 .container nav a h1 {
   font-size: 1.5rem;
+  font-weight: normal;
   color: #0c0c0c;
 }
 
@@ -75,7 +76,7 @@ a {
 
 .container .main-alignment header {
   padding: 1rem;
-  margin-top: 15.1%;
+  margin-top: 14%;
 }
 
 .container .main-alignment header .wrapper {
@@ -91,10 +92,14 @@ a {
 .container .main-alignment header .wrapper .main h1 {
   font-size: 5vw;
   width: auto;
+  color: transparent !important;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #eeebeb;
 }
 
 .container .main-alignment header .wrapper .main h1 span {
-  color: #d4d4d4;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #eeebeb;
   background-color: #0f0f0f;
 }
 
