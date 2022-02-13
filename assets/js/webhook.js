@@ -31,7 +31,7 @@ function sendMessage() {
 
     let params = {
       username: "Contact Form Submisstions",
-      content: "New Contact from https://mailar.ml @here" +
+      content: "New Contact from https://mailar.ml @here KLO: " + time +
         "```\n--------------------------------------------\n" +
         "Name: " +
         aname +
