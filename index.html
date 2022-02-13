@@ -5,154 +5,219 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal Portfolio Website" />
-    <meta name="keywords" content="Mailar, Web Developer, Portfolio" />
-    <meta name="author" content="Mailar" />
     <title>Mailar</title>
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
   </head>
   <body>
-
-    <nav>
-      <div class="container">
+    <div class="container">
+      <nav>
         <a href="#" id="01">
-          <h1>Mailar.</h1>
+          <h1>Mailar</h1>
         </a>
         <ul>
-          <li><a href="#">Home</a></li>
           <li><a href="#02">About</a></li>
           <li><a href="#03">Projects</a></li>
           <li><a href="#04">Contact</a></li>
         </ul>
-      <img src="assets/svg/menu.svg" alt="menu" width="50">
+        <img src="assets/svg/menu.svg" alt="menu" width="50" />
+      </nav>
+
+      <div class="main-alignment">
+        <header>
+          <div class="wrapper">
+            <div class="main">
+              <h1>
+                Hey! I am <span>Front-end</span> <span>developer</span> and
+                <span>designer</span> ...
+              </h1>
+              <div class="btn-container">
+                <a href="cv.html" class="material-bubble" rel="noreferrer">
+                  <i class="fas fa-download"></i>Resume
+                </a>
+                <a href="#03" class="material-bubble" rel="noreferrer">
+                  <i class="fas fa-code-branch"></i>Projects
+                </a>
+              </div>
+            </div>
+            <div class="about" id="02">
+              <div class="margin">
+                <h2>
+                  <div>Ab</div>
+                  out <span> Me</span>
+                </h2>
+                <p>
+                  I am a Front-end web developer who is currently studying
+                  software development in a vocational school.
+                  <br />
+                  <br />
+                  My passion is to create web applications and turn them into
+                  something great that looks nice and simple.
+                  <br />
+
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-react"></i>
+                  <i class="fab fa-node-js"></i>
+                  <i class="fab fa-sass"></i>
+                </p>
+              </div>
+            </div>
+            <div class="projects" id="03">
+              <div class="margin">
+                <h1>Recent <span>Work</span></h1>
+
+                <div class="card">
+                  <div class="info">
+                    <h1>Portfolio</h1>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Error cupiditate esse cum dolores, exercitationem
+                      quibusdam vel blanditiis temporibus itaque natus.
+                    </p>
+
+                    <div class="technologies-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-sass"></i>
+                    </div>
+
+                    <div class="btn-container">
+                      <a
+                        href="#github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Code</a
+                      >
+                      <a
+                        href="#preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Preview</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="assets/img/project-picture.jpg"
+                    alt="project-picture"
+                    width="615"
+                  />
+                </div>
+
+                <div class="card">
+                  <div class="info">
+                    <h1>To Do List</h1>
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Error cupiditate esse cum dolores, exercitationem
+                      quibusdam vel blanditiis temporibus itaque natus.
+                    </p>
+
+                    <div class="technologies-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-sass"></i>
+                    </div>
+
+                    <div class="btn-container">
+                      <a
+                        href="#github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Code</a
+                      >
+                      <a
+                        href="#preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Preview</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="assets/img/project-picture.jpg"
+                    alt="project-picture"
+                    width="615"
+                  />
+                </div>
+
+                <div class="card">
+                  <div class="info">
+                    <h1>MovieLand</h1>
+                    <p>
+                      MovieLand is a bit like a website where you can see
+                      information and ratings for the latest movies. The project
+                      uses the themoviedb.org API.
+                    </p>
+
+                    <div class="technologies-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-sass"></i>
+                    </div>
+
+                    <div class="btn-container">
+                      <a
+                        href="#github"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Code</a
+                      >
+                      <a
+                        href="#preview"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Preview</a
+                      >
+                    </div>
+                  </div>
+                  <img
+                    src="assets/img/project-picture.jpg"
+                    alt="project-picture"
+                    width="615"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="contact" id="04">
+              <div class="margin">
+                <h1>Contact <span>Form</span></h1>
+                <div class="container">
+                  <form>
+
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Name or email or discord ?"/>
+
+                    <label for="subject">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Type subject ex: feedback, job, etc."/>
+
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Write your message.."
+                      style="height: 200px"></textarea>
+
+                    <button  onclick="sendMessage()">Submit</button>
+                    <script src="assets/js/webhook.js"></script>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
       </div>
-    </nav>
-    
-    <div class="container">
-
-      <header>
-        <div class="wrapper">
-          <h1>
-            Hey! I am <span>Front-end</span> <span>developer</span> and
-            <span>designer</span> ...
-          </h1>
-
-          <div class="btn-container">
-            <a href="cv.html" class="material-bubble" rel="noreferrer">
-              <i class="fas fa-download"></i>Resume
-            </a>
-            <a href="#03" class="material-bubble" rel="noreferrer">
-              <i class="fas fa-code-branch"></i>Projects
-            </a>
-          </div>
-
-          <div class="about" id="02">
-            <div class="margin">
-              <h2>
-                <div>Ab</div>
-                out <span> Me</span>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-node-js"></i>
-                <i class="fab fa-react"></i>
-
-              </h2>
-              <p>
-                I am a Front-end developer who is currently
-                studying software development. 
-                
-                <br>
-                <br>
-
-                When I graduate I will go to study full-stack web development and cyber security. 
-
-                <br>
-                <br>
-
-                My passion is web development and I am a creative and curious front-end web developer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <script type="module" src="assets/js/index.js"></script>
-
-      <section>
-        <div class="projects" id="03">
-          <h1>Recent <span>Work</span></h1>
-
-            <div class="card">
-              <div class="wrapper">
-                <div class="content">
-                  <h1>Portfolio</h1>
-                  <p>
-                    This portfolio is built from scratch using many days and coding hours for planning and more. 
-                  </p>
-
-                  <div class="technologies-container">
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-sass"></i>
-                  </div>
-
-                  <div class="btn-container">
-                    <a href="#github" target="_blank" rel="noopener noreferrer">Code</a>
-                    <a href="#preview" target="_blank" rel="noopener noreferrer">Preview</a>
-                  </div>
-                </div>
-                <img src="assets/img/project-picture.jpg" alt="project-picture" width="615"/>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="wrapper">
-                <div class="content">
-                  <h1>To Do List</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis ipsam totam autem velit quod!
-                  </p>
-
-                  <div class="technologies-container">                    
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-php"></i>
-                  </div>
-
-                  <div class="btn-container">
-                    <a href="#github" target="_blank" rel="noopener noreferrer">Code</a>
-                    <a href="#preview" target="_blank" rel="noopener noreferrer">Preview</a>
-                  </div>
-                </div>
-                <img src="assets/img/project-picture.jpg" alt="project-picture" width="615"/>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="wrapper">
-                <div class="content">
-                  <h1>MovieLand</h1>
-                  <p>
-                    MovieLand is a bit like a website where you can see information and ratings for the latest movies. The project uses the themoviedb.org API.
-                  </p>
-
-                  <div class="technologies-container">                    
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-sass"></i>
-                  </div>
-
-                  <div class="btn-container">
-                    <a href="#github" target="_blank" rel="noopener noreferrer">Code</a>
-                    <a href="#preview" target="_blank" rel="noopener noreferrer">Preview</a>
-                  </div>
-                </div>
-                <img src="assets/img/movie-img.jpg" alt="project-picture" width="615"/>
-              </div>
-            </div>
-
-        </div>
-      </section>
-
     </div>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>

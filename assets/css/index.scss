@@ -19,18 +19,300 @@ a {
   text-decoration: none;
 }
 
+.container {
+  nav {
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.971);
+    font-family: "Consolas", "Poppins", sans-serif;
+
+    padding: 1.4rem 11vw;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+      h1 {
+        font-size: 1.5rem;
+        color: rgb(12, 12, 12);
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style-type: decimal-leading-zero;
+
+      li {
+        font-size: 1.3rem;
+        margin: auto 2.5rem;
+        color: rgb(12, 12, 12);
+
+        a {
+          color: rgb(12, 12, 12);
+        }
+      }
+    }
+
+    img {
+      display: none;
+      float: right;
+      padding: 0.1rem;
+      margin: -0.7rem;
+    }
+  }
+
+  .main-alignment {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 80%;
+    width: 100%;
+
+    header {
+      padding: 1rem;
+      margin-top: 15.1%;
+      .wrapper {
+        padding: 1rem;
+        animation: introLoad 1s forwards;
+
+        .main {
+          padding: 1rem;
+
+          h1 {
+            font-size: 5vw;
+            width: auto;
+
+            span {
+              color: rgb(212, 212, 212);
+              background-color: rgb(15, 15, 15);
+            }
+          }
+
+          .btn-container {
+            display: flex;
+            margin: 2rem auto;
+
+            a {
+              transition: 0.5s;
+              border: solid 0.2rem black;
+              color: rgb(0, 0, 0);
+              margin: 0 0.2rem;
+              padding: 0.5rem 1.2rem;
+              font-size: 20px;
+              text-transform: uppercase;
+              letter-spacing: 0.7rem;
+            }
+
+            a:hover {
+              box-shadow: 0 0 0 0.2rem black;
+              background-color: rgb(0, 0, 0);
+              color: rgb(224, 223, 223);
+              transition: opacity 0.5s, border 0.3s;
+            }
+          }
+        }
+
+        .about {
+          margin: 10rem 4rem;
+          padding: 2rem;
+          max-width: 60rem;
+          animation: introLoad 0.9s forwards;
+
+          .margin {
+            margin-top: 13rem;
+            h2 {
+              font-weight: normal;
+              font-size: 3rem;
+              padding: 1rem;
+              transition: 1s;
+              border-bottom: solid 0.1rem;
+
+              div {
+                color: rgb(230, 225, 225) !important;
+                margin: -1.8rem auto;
+              }
+
+              span {
+                transition: 0.5s;
+                color: rgb(26, 26, 26);
+                background-color: rgb(15, 15, 15);
+              }
+            }
+
+            p {
+              margin-top: 1.5rem;
+              color: rgb(243, 243, 243);
+              padding: 1rem 2rem;
+              font-size: 1.5rem;
+              transition: 1s;
+              i {
+                color: rgb(243, 243, 243);
+                font-size: 4rem;
+                margin: 2rem 0.3rem;
+              }
+            }
+          }
+        }
+
+        .projects {
+          padding: 2rem;
+          max-width: 100%;
+          animation: introLoad 0.9s forwards;
+
+          .margin {
+            margin-top: 13rem;
+
+            h1 {
+              font-weight: normal;
+              font-size: 3rem;
+              padding: 1rem;
+              transition: 1s;
+            }
+
+            .card {
+              // background-color: rgb(17, 17, 17);
+              border: solid 0.1rem white;
+              margin: 1rem auto;
+              padding: 1.3rem;
+
+              .info {
+                float: left;
+                padding: 0.2rem;
+                width: 50%;
+
+                h1 {
+                  padding: 0.4rem;
+                  font-size: 2.5rem;
+                  color: rgb(238, 238, 238) !important;
+                }
+
+                p {
+                  padding: 0.5rem;
+                  font-size: 1.2rem;
+                  color: rgb(204, 204, 204);
+                }
+
+                .technologies-container {
+                  display: flex;
+                  padding: 0.5rem;
+                  i {
+                    color: white;
+                    font-size: 3rem;
+                    margin: 0 0.5rem;
+                  }
+                }
+
+                .btn-container {
+                  display: flex;
+                  justify-content: flex-start;
+                  a {
+                    color: white;
+                    border: solid 0.1rem rgb(255, 255, 255);
+                    margin: 1rem 0.5rem;
+                    padding: 0.5rem 1.5rem;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    transition: 0.5s;
+                  }
+
+                  a:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(0, 0, 0);
+                    transition: opacity 0.3s, border 0.3s;
+                  }
+                }
+              }
+              img {
+                width: 50%;
+                padding: 0.1rem;
+              }
+            }
+          }
+        }
+
+        .contact {
+          padding: 2rem;
+          max-width: 50%;
+          animation: introLoad 0.9s forwards;
+
+          .margin {
+            margin-top: 15rem;
+
+            h1 {
+              font-weight: normal;
+              font-size: 3rem;
+              padding: 1rem;
+              transition: 1s;
+            }
+
+            .container {
+              background-color: transparent !important;
+              padding: 20px;
+
+              label {
+                color: rgb(233, 233, 233);
+              }
+
+              input[type="text"],
+              select,
+              textarea {
+                font-family: "Consolas", "Poppins", sans-serif;
+                background-color: transparent !important;
+                color: white;
+                width: 100%; /* Full width */
+                padding: 1rem 1rem; /* Some padding */
+                font-size: 1.2rem;
+                border: 1px solid #ccc; /* Gray border */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+              }
+
+              /* Style the submit button with a specific background color etc */
+              button {
+                font-family: "Poppins", "Consolas", sans-serif;
+                transition: 0.5s;
+                border: solid 0.2rem black;
+                color: rgb(0, 0, 0) !important;
+                margin: 0 0.2rem;
+                padding: 0.5rem 1.2rem;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 0.7rem;
+                cursor: pointer;
+              }
+
+              /* When moving the mouse over the submit button, add a darker green color */
+              button:hover {
+                box-shadow: 0 0 0 0.2rem black;
+                background-color: rgb(0, 0, 0);
+                color: rgb(224, 223, 223) !important;
+                transition: opacity 0.5s, border 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .dark {
   background-color: rgb(12, 12, 12) !important;
 
-  nav {
-    background-color: rgba(12, 12, 12, 0.971);
+  .container {
+    nav {
+      background-color: rgba(12, 12, 12, 0.971);
 
-    ul {
-      li {
-        color: white !important;
-
-        a {
+      ul {
+        li {
           color: white !important;
+
+          a {
+            color: white !important;
+          }
         }
       }
     }
@@ -40,8 +322,8 @@ a {
     color: white !important;
 
     span {
-      color: rgb(15, 15, 15) !important;
-      background-color: white !important;
+      // color: rgb(15, 15, 15) !important;
+      // background-color: white !important;
     }
   }
 
@@ -80,318 +362,94 @@ a {
   }
 }
 
-nav {
-  top: 0;
-  z-index: 1;
-  position: fixed;
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.971);
-  padding: 1rem 0;
-  width: 100%;
-  margin: 0 auto;
-
-  .container {
-    max-width: 95%;
-    padding: 1rem 2.3rem;
-  }
-
-  a {
-    float: left;
-
-    h1 {
-      font-family: "Poppins", "Consolas", sans-serif;
-      margin: -0.5rem;
-      font-size: 2rem;
-      font-weight: normal;
-      color: rgb(12, 12, 12);
-    }
-  }
-
-  ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: right;
-
-    li {
-      font-size: 1.4rem;
-      margin: auto 1rem;
-      color: rgb(12, 12, 12);
-
-      a {
-        color: rgb(12, 12, 12);
-      }
-    }
-  }
-
-  img {
-    display: none;
-    float: right;
-    padding: 0.1rem;
-    margin: -0.7rem;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 66.5%;
-  width: 100%;
-
-  header {
-    margin: 18rem 0;
-    .wrapper {
-      // margin: 10rem 20rem;
-      animation: introLoad 0.9s forwards;
-      transition: 0.5s;
-
-      h1 {
-        font-size: 5vw;
-        transition: 1s;
-        width: 70vw;
-
-        // font-size: 4vw;
-        // transition: 1s;
-        // width: 55vw;
-
-        span {
-          transition: 0.5s;
-          color: rgb(212, 212, 212);
-          background-color: rgb(15, 15, 15);
-        }
-      }
-
-      .btn-container {
-        display: flex;
-        margin: 2rem auto;
-
-        a {
-          transition: 0.5s;
-          border: solid 0.2rem black;
-          color: rgb(0, 0, 0);
-          margin: 0 0.2rem;
-          padding: 0.5rem 1.2rem;
-          font-size: 20px;
-          text-transform: uppercase;
-          letter-spacing: 0.7rem;
-        }
-
-        a:hover {
-          box-shadow: 0 0 0 0.2rem black;
-          background-color: rgb(0, 0, 0);
-          color: rgb(224, 223, 223);
-          transition: opacity 0.5s, border 0.3s;
-        }
-      }
-
-      .about {
-        // margin: 28rem 15.2%;
-        margin: 20rem auto;
-        width: 100%;
-        max-width: 60%;
-        animation: introLoad 0.9s forwards;
-        padding: .1rem;
-
-        .margin {
-          margin: 16rem auto;
-
-          h2 {
-            font-weight: normal;
-            padding: 0.5rem 1rem;
-            font-size: 3rem;
-            transition: 1s;
-            border-bottom: solid 0.1rem;
-
-            i {
-              float: right;
-              font-size: 4.4rem;
-              margin: 0 0.5rem;
-            }
-
-            div {
-              color: rgb(230, 225, 225) !important;
-              margin: -2rem auto;
-            }
-
-            span {
-              transition: 0.5s;
-              color: rgb(212, 212, 212);
-              background-color: rgb(15, 15, 15);
-            }
-          }
-
-          p {
-            color: rgb(212, 212, 212);
-            padding: 1rem 2rem;
-            font-size: 1.8rem;
-            transition: 1s;
-          }
-        }
-      }
-    }
-  }
-
-  section {
-    .projects {
-      display: block;
-
-      h1 {
-        font-size: 4rem;
-      }
-
-      .card {
-        width: 100%;
-
-        .wrapper {
-          // background-color: rgb(17, 17, 17);
-          border: solid 0.1rem white;
-          margin: 3rem auto;
-          padding: 1.3rem;
-          float: left;
-
-          .content {
-            float: left;
-            padding: 0.5rem;
-            width: 50%;
-            h1 {
-              padding: 0.5rem;
-              font-size: 3rem;
-              color: rgb(238, 238, 238) !important;
-            }
-
-            p {
-              padding: 0.5rem;
-              font-size: 1.2rem;
-              color: rgb(204, 204, 204);
-            }
-
-            .technologies-container {
-              display: flex;
-              padding: 0.5rem;
-              i {
-                color: white;
-                font-size: 3rem;
-                margin: 0 0.5rem;
-              }
-            }
-
-            .btn-container {
-              display: flex;
-              justify-content: flex-start;
-              a {
-                color: white;
-                border: solid 0.1rem rgb(255, 255, 255);
-                margin: 1rem 0.5rem;
-                padding: 0.5rem 1.5rem;
-                font-size: 20px;
-                text-transform: uppercase;
-                letter-spacing: 0.2rem;
-                transition: 0.5s;
-              }
-
-              a:hover {
-                background-color: rgb(255, 255, 255);
-                color: rgb(0, 0, 0);
-                transition: opacity 0.3s, border 0.3s;
-              }
-            }
-          }
-
-          img {
-            width: 50%;
-            padding: 0.1rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1800px) {
-  body {
-    transition: all 0.2s;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  body {
-    transition: all 0.3s;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body {
-    transition: all 0.4s;
-  }
-
-  nav {
-    margin-bottom: 5rem;
-
-    .container {
-      max-width: 100%;
-    }
-
-    ul {
-      display: none;
-    }
-
-    img {
-      display: block;
-    }
-  }
-
-  .container {
-    padding: 1rem;
-    max-width: 95%;
-
-    header {
-      margin: 9rem 0 !important;
-
-      h1 {
-        width: 100% !important;
-        font-size: 12vw !important;
-      }
-    }
-  }
-
-  .btn-container {
-    a {
-      display: flex;
-      font-size: 2.5vw !important;
-      padding: 1vw 2vw !important;
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    transition: all 0.4s;
-  }
-
-  .wrapper {
-    h1 {
-      font-size: 10vw !important;
-    }
-  }
-}
-
-@media screen and (max-width: 200px) {
-  body {
-    transition: all 0.3s;
-  }
-}
-
-button {
-  border: none;
-  background-color: transparent;
-}
-
-@keyframes introLoad {
-  from {
-    transform: translateY(180px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
+// @media screen and (max-width: 1800px) {
+//   body {
+//     transition: all 0.2s;
+//   }
+// }
+//
+// @media screen and (max-width: 1400px) {
+//   body {
+//     transition: all 0.3s;
+//   }
+// }
+//
+// @media screen and (max-width: 1000px) {
+//   body {
+//     transition: all 0.4s;
+//   }
+//
+//   nav {
+//     margin-bottom: 5rem;
+//     background-color: yellowgreen !important;
+//
+//     .container {
+//       max-width: 100%;
+//     }
+//
+//     ul {
+//       display: none;
+//     }
+//
+//     img {
+//       display: block;
+//     }
+//   }
+//
+//   .container {
+//     padding: 1rem;
+//     max-width: 95%;
+//
+//     header {
+//       margin: 9rem 0 !important;
+//
+//       h1 {
+//         width: 100% !important;
+//         font-size: 12vw !important;
+//       }
+//     }
+//   }
+//
+//   .btn-container {
+//     a {
+//       display: flex;
+//       font-size: 2.5vw !important;
+//       padding: 1vw 2vw !important;
+//     }
+//   }
+// }
+//
+// @media screen and (max-width: 600px) {
+//   body {
+//     transition: all 0.4s;
+//   }
+//
+//   .wrapper {
+//     h1 {
+//       font-size: 10vw !important;
+//     }
+//   }
+// }
+//
+// @media screen and (max-width: 200px) {
+//   body {
+//     transition: all 0.3s;
+//   }
+// }
+//
+// button {
+//   border: none;
+//   background-color: transparent;
+// }
+//
+// @keyframes introLoad {
+//   from {
+//     transform: translateY(180px);
+//   }
+//   to {
+//     transform: translateY(0);
+//   }
+// }
 
 // @media screen and (max-width: 2600px) {
 //   nav {
