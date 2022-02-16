@@ -20,7 +20,13 @@ a {
   text-decoration: none;
 }
 
-.container nav {
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 85%;
+}
+
+.container header nav {
   top: 0;
   z-index: 1;
   position: fixed;
@@ -32,39 +38,139 @@ a {
           justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.971);
   font-family: "Poppins", "Consolas", sans-serif;
-  padding: 1.4rem 11vw;
-  width: 100%;
-  margin: 0 auto;
+  width: 85%;
+  padding: 1.5rem 1rem;
 }
 
-.container nav a h1 {
+.container header nav a h1 {
   font-size: 1.5rem;
   font-weight: normal;
   color: #0c0c0c;
 }
 
-.container nav ul {
+.container header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: decimal-leading-zero;
 }
 
-.container nav ul li {
+.container header nav ul li {
+  text-transform: lowercase;
   font-size: 1.3rem;
-  margin: auto 2.5rem;
+  margin: auto 2rem;
   color: #0c0c0c;
 }
 
-.container nav ul li a {
+.container header nav ul li a {
   color: #0c0c0c;
 }
 
-.container nav img {
+.container header nav img {
   display: none;
   float: right;
   padding: 0.1rem;
   margin: -0.7rem;
+}
+
+.container header .text {
+  margin: 15rem 5rem;
+  -webkit-animation: introLoad 0.5s forwards;
+          animation: introLoad 0.5s forwards;
+  padding: 2rem;
+}
+
+.container header .text h1 {
+  font-size: 6rem;
+  width: auto;
+  color: transparent !important;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: #464646;
+}
+
+.container header .text h1 span {
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: white;
+}
+
+.container header .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem auto;
+}
+
+.container header .btn-container a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: solid 0.2rem black;
+  color: black;
+  margin: 0 0.2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.container header .btn-container a:hover {
+  -webkit-box-shadow: 0 0 0 0.2rem black;
+          box-shadow: 0 0 0 0.2rem black;
+  background-color: black;
+  color: #e0dfdf;
+  -webkit-transition: opacity 0.5s, border 0.3s;
+  transition: opacity 0.5s, border 0.3s;
+}
+
+.container article {
+  margin: 30rem 8rem;
+}
+
+.container article .text {
+  max-width: 60rem;
+  -webkit-animation: introLoad 0.9s forwards;
+          animation: introLoad 0.9s forwards;
+}
+
+.container article .text h2 {
+  font-weight: normal;
+  font-size: 5rem;
+  padding: 1rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-bottom: solid 0.1rem;
+  color: #fdfdfd;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #0d1110;
+}
+
+.container article .text h2 div {
+  color: black !important;
+  margin: -3rem auto;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #9b9b9b;
+}
+
+.container article .text h2 span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: #9b9b9b;
+}
+
+.container article .text p {
+  margin-top: 1.5rem;
+  color: #f3f3f3;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container article .text p i {
+  color: #f3f3f3;
+  font-size: 4rem;
+  margin: 2rem 0.3rem;
 }
 
 .container .main-alignment {

@@ -20,47 +20,142 @@ a {
 }
 
 .container {
-  nav {
-    top: 0;
-    z-index: 1;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.971);
-    font-family: "Poppins", "Consolas", sans-serif;
+  //background-color: rgb(129, 129, 241);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 85%;
 
-    padding: 1.4rem 11vw;
-    width: 100%;
-    margin: 0 auto;
+  header {
 
-    a {
-      h1 {
-        font-size: 1.5rem;
-        font-weight: normal;
-        color: rgb(12, 12, 12);
+    nav {
+      top: 0;
+      z-index: 1;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.971);
+      font-family: "Poppins", "Consolas", sans-serif;
+      width: 85%;
+      padding: 1.5rem 1rem;
+
+      a {
+        h1 {
+          font-size: 1.5rem;
+          font-weight: normal;
+          color: rgb(12, 12, 12);
+        }
+      }
+
+      ul {
+        display: flex;
+        list-style-type: decimal-leading-zero;
+
+        li {
+          text-transform: lowercase;
+          font-size: 1.3rem;
+          margin: auto 2rem;
+          color: rgb(12, 12, 12);
+
+          a {
+            color: rgb(12, 12, 12);
+          }
+        }
+      }
+
+      img {
+        display: none;
+        float: right;
+        padding: 0.1rem;
+        margin: -0.7rem;
       }
     }
 
-    ul {
-      display: flex;
-      list-style-type: decimal-leading-zero;
+    .text {
+      margin: 15rem 5rem;
+      animation: introLoad 0.5s forwards;
+      padding: 2rem;
 
-      li {
-        font-size: 1.3rem;
-        margin: auto 2.5rem;
-        color: rgb(12, 12, 12);
+      h1 {
+        font-size: 6rem;
+        width: auto;
+        color: transparent !important;
+        -webkit-text-stroke-width: 0.2rem;
+        -webkit-text-stroke-color: rgb(70, 70, 70);
 
-        a {
-          color: rgb(12, 12, 12);
+        span {
+          -webkit-text-stroke-width: 0.1rem;
+          -webkit-text-stroke-color: rgb(255, 255, 255);
         }
       }
     }
 
-    img {
-      display: none;
-      float: right;
-      padding: 0.1rem;
-      margin: -0.7rem;
+    .btn-container {
+      display: flex;
+      margin: 2rem auto;
+
+      a {
+        transition: 0.5s;
+        border: solid 0.2rem black;
+        color: rgb(0, 0, 0);
+        margin: 0 0.2rem;
+        padding: 0.5rem 1.2rem;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.7rem;
+      }
+
+      a:hover {
+        box-shadow: 0 0 0 0.2rem black;
+        background-color: rgb(0, 0, 0);
+        color: rgb(224, 223, 223);
+        transition: opacity 0.5s, border 0.3s;
+      }
+    }
+  }
+
+  article {
+    margin: 30rem 8rem;
+
+    .text {
+      max-width: 60rem;
+      animation: introLoad 0.9s forwards;
+
+      h2 {
+        font-weight: normal;
+        font-size: 5rem;
+        padding: 1rem;
+        transition: 1s;
+        border-bottom: solid 0.1rem;
+        color: rgb(253, 253, 253);
+        -webkit-text-stroke-width: 0.1rem;
+        -webkit-text-stroke-color: rgb(13, 17, 16);
+        div {
+          color: rgb(0, 0, 0) !important;
+          margin: -3rem auto;
+          -webkit-text-stroke-width: 0.1rem;
+          -webkit-text-stroke-color: rgb(155, 155, 155);
+        }
+
+        span {
+          transition: 0.5s;
+          color: rgb(0, 0, 0);
+          -webkit-text-stroke-width: 0.1rem;
+          -webkit-text-stroke-color: rgb(155, 155, 155);
+        }
+      }
+
+      p {
+        margin-top: 1.5rem;
+        color: rgb(243, 243, 243);
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        transition: 1s;
+        i {
+          color: rgb(243, 243, 243);
+          font-size: 4rem;
+          margin: 2rem 0.3rem;
+        }
+      }
     }
   }
 
@@ -88,8 +183,8 @@ a {
             -webkit-text-stroke-color: rgb(238, 235, 235);
 
             span {
-                          -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: rgb(238, 235, 235);
+              -webkit-text-stroke-width: 1.5px;
+              -webkit-text-stroke-color: rgb(238, 235, 235);
               background-color: rgb(15, 15, 15);
             }
           }
