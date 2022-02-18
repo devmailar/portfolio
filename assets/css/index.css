@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
-  background-color: #ffffff;
+  background-color: #0c0c0c;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Poppins", sans-serif;
@@ -25,9 +25,7 @@ canvas {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-a {
+  text-rendering: optimizeLegibility;
   text-decoration: none;
 }
 
@@ -130,13 +128,13 @@ a {
 }
 
 .container header nav {
-  -webkit-animation: swipeFromLeft 0.8s ease-out;
-          animation: swipeFromLeft 0.8s ease-out;
+  -webkit-animation: swipeFromLeft 1s ease-out;
+          animation: swipeFromLeft 1s ease-out;
   -webkit-transition: 2s;
   transition: 2s;
   background-color: rgba(12, 12, 12, 0.971);
   top: 0;
-  z-index: 1;
+  z-index: 999;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +148,7 @@ a {
 }
 
 .container header nav a h1 {
+  color: white;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -178,31 +177,26 @@ a {
 }
 
 .container header .text {
-  z-index: -1;
-  margin: 12vw 4vw;
+  z-index: 1;
+  margin: 12vw 6vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 0.5rem;
-  -webkit-animation: swipeFromRight 1.2s ease-out;
-          animation: swipeFromRight 1.2s ease-out;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
 }
 
 .container header .text h1 {
-  text-align: left;
-  font-size: 6rem;
-  width: auto;
-  color: rgba(58, 59, 58, 0.267) !important;
-  -webkit-text-stroke: 0.1rem #8ccec3;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: 5px 4px 0px #8ccec3;
-  text-rendering: optimizeLegibility;
-  -webkit-animation: fadeIn 1.2s ease-in;
-          animation: fadeIn 1.2s ease-in;
+  font-size: 5.85rem;
+  -webkit-animation: fadeIn 0.6s ease-in;
+          animation: fadeIn 0.6s ease-in;
+  color: rgba(255, 255, 255, 0.925);
 }
 
 .container header .text h1 span {
-  background-color: rgba(0, 0, 0, 0.057);
-  text-shadow: -5px 4px 0px #9b9b9b;
+  color: #131212;
+  text-shadow: none;
+  background-color: rgba(255, 255, 255, 0.904);
 }
 
 .container header .btn-container {
@@ -216,17 +210,15 @@ a {
 
 .container header .btn-container a {
   z-index: 2;
-  -webkit-animation: swipeFromRight 0.7s ease-in;
-          animation: swipeFromRight 0.7s ease-in;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border: solid 0.1rem #8ccec3 !important;
-  color: #ccdfdb !important;
-  -webkit-box-shadow: -5px 4px 0px #9b9b9b;
-          box-shadow: -5px 4px 0px #9b9b9b;
-  margin: 0 0.5rem;
+  -webkit-animation: swipeFromLeft 0.5s ease-in;
+          animation: swipeFromLeft 0.5s ease-in;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: solid 0.12rem white;
+  color: white;
+  margin: 0 0.2rem;
   padding: 0.5rem 1.2rem;
-  font-size: 20px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.7rem;
 }
@@ -234,8 +226,8 @@ a {
 .container header .btn-container a:hover {
   -webkit-box-shadow: 0 0 0 0.2rem black;
           box-shadow: 0 0 0 0.2rem black;
-  background-color: black;
-  color: #e0dfdf;
+  background-color: white;
+  color: #0c0c0c;
   -webkit-transition: opacity 0.5s, border 0.3s;
   transition: opacity 0.5s, border 0.3s;
 }
@@ -246,30 +238,30 @@ a {
 
 .container article .text {
   max-width: 60rem;
-  -webkit-animation: introLoad 0.9s forwards;
-          animation: introLoad 0.9s forwards;
+  -webkit-animation: fadeIn 0.9s forwards;
+          animation: fadeIn 0.9s forwards;
 }
 
 .container article .text h2 {
-  font-size: 5rem;
+  font-weight: normal;
+  font-size: 3rem;
   padding: 1rem;
   -webkit-transition: 1s;
   transition: 1s;
   border-bottom: solid 0.1rem;
-  color: #fdfdfd;
+  color: #e7e7e7;
 }
 
 .container article .text h2 div {
-  color: #8ccec3;
-  text-shadow: -2px 5px 0 black;
-  margin: -3rem auto;
+  color: #e6e1e1 !important;
+  margin: -1.8rem auto;
 }
 
 .container article .text h2 span {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #b1b1b1;
-  margin: 0 -0.5rem;
+  color: #1a1a1a;
+  background-color: #f0f0f0;
 }
 
 .container article .text p {
@@ -332,6 +324,14 @@ a {
 
 .container .main-alignment header .wrapper .main .btn-container a {
   -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: solid 0.2rem black;
+  color: black;
+  margin: 0 0.2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
   transition: 0.5s;
   border: solid 0.2rem black;
   color: black;
@@ -585,10 +585,7 @@ a {
   }
   .container header .text h1 {
     text-align: center;
-    font-size: 12vw;
-    -webkit-text-stroke: 0.1rem #8ccec3;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 2px 3px 0px #8ccec3;
+    font-size: 10vw;
     -webkit-animation: fadeIn 1.2s ease-in;
             animation: fadeIn 1.2s ease-in;
   }
@@ -620,27 +617,6 @@ a {
 
 .dark {
   background-color: #0c0c0c !important;
-}
-
-.dark h1 {
-  color: white !important;
-}
-
-.dark button {
-  color: white !important;
-}
-
-.dark .btn-container a {
-  background-color: transparent !important;
-  color: white !important;
-  border: solid 0.1rem white !important;
-}
-
-.dark .btn-container a:hover {
-  -webkit-box-shadow: 0 0 0 0.2rem white !important;
-          box-shadow: 0 0 0 0.2rem white !important;
-  background-color: white !important;
-  color: black !important;
 }
 
 .dark .about h2 {

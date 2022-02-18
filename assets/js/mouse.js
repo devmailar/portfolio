@@ -38,14 +38,14 @@
     this.y = Math.random() * (y - (y - ANCHOR_LENGTH)) + (y - ANCHOR_LENGTH);
     this.vx = Math.random() * 2 - 1;
     this.vy = Math.random() * 2 - 1;
-    this.energy = Math.random() * 100;
+    this.energy = Math.random() * 1500;
     this.radius = Math.random();
     this.siblings = [];
     this.brightness = 0;
   }
 
   Node.prototype.drawNode = function () {
-    var color = "rgba(181, 181, 181, " + this.brightness + ")";
+    var color = "rgba(0, 0, 0, " + this.brightness + ")";
     ctx.beginPath();
     ctx.arc(this.x, this.y, 2 * this.radius + 2 * this.siblings.length / SIBLINGS_LIMIT, 0, circ);
     ctx.fillStyle = color;
@@ -54,7 +54,7 @@
 
   Node.prototype.drawConnections = function () {
     for (var i = 0; i < this.siblings.length; i++) {
-      var color = "rgba(140, 206, 195, " + this.brightness + ")";
+      var color = "rgba(255, 255, 255, " + this.brightness + ")";
       ctx.beginPath();
       ctx.moveTo(this.x, this.y);
       ctx.lineTo(this.siblings[i].x, this.siblings[i].y);
