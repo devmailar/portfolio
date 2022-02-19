@@ -588,6 +588,33 @@ button:focus {
   .container section article .card img {
     width: 100%;
   }
+  .container section footer {
+    padding: 1.5rem;
+    margin: 15vw 0;
+  }
+  .container section footer .text {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .container section footer .text h2 {
+    font-size: 10vw;
+    text-align: left;
+    font-weight: normal;
+  }
+  .container section footer .text span {
+    color: #908282;
+  }
+  .container section footer .text form .form-container h3 {
+    font-size: 5vw;
+  }
+  .container section footer .text form .form-container input {
+    width: 80vw;
+    font-size: 4vw;
+  }
+  .container section footer .text form .form-container textarea {
+    width: 80vw;
+    font-size: 4vw;
+  }
 }
 
 .dark .about h2 {

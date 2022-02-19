@@ -527,6 +527,43 @@ button:focus {
       }
 
       footer {
+        //background-color: red;
+        padding: 1.5rem;
+        margin: 15vw 0;
+
+        .text {
+          max-width: 100%;
+          // background-color: blue;
+          padding: 1rem;
+
+          h2 {
+            font-size: 10vw;
+            text-align: left;
+            font-weight: normal;
+          }
+
+          span {
+            color: #908282;
+          }
+
+          form {
+            .form-container {
+              h3 {
+                font-size: 5vw;
+              }
+
+              input {
+                width: 80vw;
+                font-size: 4vw;
+              }
+
+              textarea {
+                width: 80vw;
+                font-size: 4vw;
+              }
+            }
+          }
+        }
       }
     }
   }
