@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
-  background-color: rgb(12, 12, 12);
+  background-color: #0e0e0e;
   transition: 0.5s;
   font-family: "Poppins", sans-serif;
 }
@@ -70,15 +70,10 @@ canvas {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 80%;
-
-  // .code {
-  //     position: fixed;
-  //     font-size: 14rem;
-  //     color: rgba(29, 29, 29, 0.02) !important;
-  // }
 
   header {
+    background-color: rgb(136, 70, 70);
+
     nav {
       animation: swipeFromLeft 1s ease-out;
       transition: 2s;
@@ -89,123 +84,229 @@ canvas {
       display: flex;
       justify-content: space-between;
       font-family: "Poppins", "Consolas", sans-serif;
-      width: 85%;
-      padding: 1.5rem 1rem;
+      width: 100%;
+      padding: 1.5rem 10vw;
 
       a {
         h1 {
+          margin: 0 1rem;
           color: white;
-          font-size: 1.5rem;
+          font-size: 2rem;
           font-weight: normal;
         }
       }
 
       ul {
         display: flex;
-        list-style-type: decimal-leading-zero;
+        list-style: none;
 
         li {
-          text-transform: lowercase;
+          text-transform: uppercase;
           font-size: 1.3rem;
-          margin: auto 2rem;
-          color: white;
+          margin: auto 1rem;
+          transition: 0.5s ease-in-out;
 
           a {
-            color: white;
+            transition: 0.5s ease-out;
+            color: rgba(255, 255, 255, 0.493);
+          }
+
+          a:hover {
+            transition: 0.5s ease-in;
+            color: #908282;
           }
         }
       }
 
       img {
-        display: none;
+        display: block;
         float: right;
       }
     }
 
-    .text {
-      z-index: 1;
-      margin: 12vw 6vw;
-      transition: 0.5s;
-      padding: 0.5rem;
-      animation: swipeFromRight 1s ease-out;
+    main {
+      padding: 1rem;
+      background-color: blue;
+      margin: 15vw;
+      .text {
+        transition: 0.5s;
+        padding: 1rem;
+        animation: swipeFromRight 1s ease-out;
 
-      h1 {
-        font-size: 5.85rem;
-        animation: fadeIn 0.6s ease-in;
-        color: rgba(255, 255, 255, 0.925);
+        h1 {
+          font-size: 5.85rem;
+          animation: fadeIn 0.6s ease-in;
+          color: rgb(255, 255, 255);
+          line-height: 1.4;
 
-        span {
-          color: #131212;
-          text-shadow: none;
-          background-color: rgba(255, 255, 255, 0.904);
+          span {
+            color: #908282;
+          }
         }
       }
-    }
 
-    .btn-container {
-      display: flex;
-      margin: 2rem auto;
-      animation: fadeIn 2s ease-in;
+      .btn-container {
+        display: flex;
+        margin: 3rem auto;
+        animation: fadeIn 1s ease-in;
 
-      a {
-        z-index: 2;
-        animation: swipeFromLeft 0.5s ease-in;
-        transition: 0.3s;
-        border: solid 0.12rem rgb(255, 255, 255);
-        color: rgb(255, 255, 255);
-        margin: 0 0.2rem;
-        padding: 0.5rem 1.2rem;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.7rem;
-      }
+        a {
+          z-index: 2;
+          animation: swipeFromLeft 0.5s ease-in;
+          transition: 0.3s;
+          color: rgb(207, 207, 207);
+          margin: 0 0.5rem;
+          border: solid 0.01rem #908282;
+          padding: 0.5rem 1.2rem;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5rem;
+        }
 
-      a:hover {
-        box-shadow: 0 0 0 0.2rem black;
-        background-color: rgb(255, 255, 255);
-        color: rgb(12, 12, 12);
-        transition: opacity 0.5s, border 0.3s;
+        a:hover {
+          transition: 0.5s;
+          color: rgb(255, 255, 255);
+          background-color: black;
+          transition: opacity 0.2s, border 0.3s;
+        }
       }
     }
   }
 
-  article {
-    margin: 30rem 8rem;
+  section {
+    background-color: rgb(136, 70, 70);
 
-    .text {
-      max-width: 60rem;
-      animation: fadeIn 0.9s forwards;
+    aside {
+      padding: 1rem;
+      background-color: blue;
+      margin: 15vw;
 
-      h2 {
-        font-weight: normal;
-        font-size: 3rem;
-        padding: 1rem;
-        transition: 1s;
-        border-bottom: solid 0.1rem;
-        color: rgb(231, 231, 231);
+      .text {
+        max-width: 50%;
+        transition: 0.5s;
+        padding: 10rem 0;
+        animation: swipeFromRight 1s ease-out;
 
-        div {
-          color: rgb(230, 225, 225) !important;
-          margin: -1.8rem auto;
+        h2 {
+          font-size: 3rem;
+          animation: fadeIn 0.6s ease-in;
+          font-weight: normal;
+          border-bottom: solid 0.1rem #908282;
+          color: rgb(231, 231, 231);
+          line-height: 1.1;
+
+          div {
+            color: rgb(230, 225, 225) !important;
+          }
+
+          span {
+            transition: 0.5s;
+            color: rgb(15, 15, 15);
+            background-color: rgb(240, 240, 240);
+          }
         }
 
-        span {
+        p {
+          margin-top: 1rem;
+          color: rgb(243, 243, 243);
+          padding: 1rem 0rem;
+          font-size: 1.5rem;
           transition: 0.5s;
-          color: rgb(26, 26, 26);
-          background-color: rgb(240, 240, 240);
+          i {
+            color: rgb(243, 243, 243);
+            font-size: 3.5rem;
+            margin: 2rem 0.3rem;
+          }
         }
       }
+    }
 
-      p {
-        margin-top: 1.5rem;
-        color: rgb(243, 243, 243);
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
-        transition: 1s;
-        i {
+    article {
+      padding: 1rem;
+      background-color: blue;
+      margin: 15vw;
+
+      .text {
+        max-width: 50%;
+        transition: 0.5s;
+        padding: 10rem 0;
+        animation: swipeFromRight 1s ease-out;
+
+        h2 {
+          font-size: 3rem;
+          animation: fadeIn 0.6s ease-in;
+          font-weight: normal;
+          border-bottom: solid 0.1rem #908282;
+          color: rgb(231, 231, 231);
+          line-height: 1.1;
+
+          div {
+            color: rgb(230, 225, 225) !important;
+          }
+
+          span {
+            transition: 0.5s;
+            color: rgb(15, 15, 15);
+            background-color: rgb(240, 240, 240);
+          }
+        }
+
+        p {
+          margin-top: 1rem;
           color: rgb(243, 243, 243);
-          font-size: 4rem;
-          margin: 2rem 0.3rem;
+          padding: 1rem 0rem;
+          font-size: 1.5rem;
+          transition: 0.5s;
+          i {
+            color: rgb(243, 243, 243);
+            font-size: 3.5rem;
+            margin: 2rem 0.3rem;
+          }
+        }
+      }
+    }
+
+    footer {
+      padding: 1rem;
+      background-color: blue;
+      margin: 15vw;
+
+      .text {
+        max-width: 50%;
+        transition: 0.5s;
+        padding: 10rem 0;
+        animation: swipeFromRight 1s ease-out;
+
+        h2 {
+          font-size: 3rem;
+          animation: fadeIn 0.6s ease-in;
+          font-weight: normal;
+          border-bottom: solid 0.1rem #908282;
+          color: rgb(231, 231, 231);
+          line-height: 1.1;
+
+          div {
+            color: rgb(230, 225, 225) !important;
+          }
+
+          span {
+            transition: 0.5s;
+            color: rgb(15, 15, 15);
+            background-color: rgb(240, 240, 240);
+          }
+        }
+
+        p {
+          margin-top: 1rem;
+          color: rgb(243, 243, 243);
+          padding: 1rem 0rem;
+          font-size: 1.5rem;
+          transition: 0.5s;
+          i {
+            color: rgb(243, 243, 243);
+            font-size: 3.5rem;
+            margin: 2rem 0.3rem;
+          }
         }
       }
     }
@@ -524,8 +625,6 @@ canvas {
 }
 
 .dark {
-  background-color: rgb(12, 12, 12) !important;
-
   .about {
     h2 {
       color: white !important;

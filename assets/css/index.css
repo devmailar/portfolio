@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
-  background-color: #0c0c0c;
+  background-color: #0e0e0e;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-family: "Poppins", sans-serif;
@@ -124,7 +124,10 @@ canvas {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 80%;
+}
+
+.container header {
+  background-color: #884646;
 }
 
 .container header nav {
@@ -143,13 +146,14 @@ canvas {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Poppins", "Consolas", sans-serif;
-  width: 85%;
-  padding: 1.5rem 1rem;
+  width: 100%;
+  padding: 1.5rem 10vw;
 }
 
 .container header nav a h1 {
+  margin: 0 1rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -157,125 +161,247 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: decimal-leading-zero;
+  list-style: none;
 }
 
 .container header nav ul li {
-  text-transform: lowercase;
+  text-transform: uppercase;
   font-size: 1.3rem;
-  margin: auto 2rem;
-  color: white;
+  margin: auto 1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .container header nav ul li a {
-  color: white;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.container header nav ul li a:hover {
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+  color: #908282;
 }
 
 .container header nav img {
-  display: none;
+  display: block;
   float: right;
 }
 
-.container header .text {
-  z-index: 1;
-  margin: 12vw 6vw;
+.container header main {
+  padding: 1rem;
+  background-color: blue;
+  margin: 15vw;
+}
+
+.container header main .text {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 0.5rem;
+  padding: 1rem;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
 }
 
-.container header .text h1 {
+.container header main .text h1 {
   font-size: 5.85rem;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
-  color: rgba(255, 255, 255, 0.925);
+  color: white;
+  line-height: 1.4;
 }
 
-.container header .text h1 span {
-  color: #131212;
-  text-shadow: none;
-  background-color: rgba(255, 255, 255, 0.904);
+.container header main .text h1 span {
+  color: #908282;
 }
 
-.container header .btn-container {
+.container header main .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto;
-  -webkit-animation: fadeIn 2s ease-in;
-          animation: fadeIn 2s ease-in;
+  margin: 3rem auto;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
 }
 
-.container header .btn-container a {
+.container header main .btn-container a {
   z-index: 2;
   -webkit-animation: swipeFromLeft 0.5s ease-in;
           animation: swipeFromLeft 0.5s ease-in;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  border: solid 0.12rem white;
-  color: white;
-  margin: 0 0.2rem;
+  color: #cfcfcf;
+  margin: 0 0.5rem;
+  border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.5rem;
 }
 
-.container header .btn-container a:hover {
-  -webkit-box-shadow: 0 0 0 0.2rem black;
-          box-shadow: 0 0 0 0.2rem black;
-  background-color: white;
-  color: #0c0c0c;
-  -webkit-transition: opacity 0.5s, border 0.3s;
-  transition: opacity 0.5s, border 0.3s;
-}
-
-.container article {
-  margin: 30rem 8rem;
-}
-
-.container article .text {
-  max-width: 60rem;
-  -webkit-animation: fadeIn 0.9s forwards;
-          animation: fadeIn 0.9s forwards;
-}
-
-.container article .text h2 {
-  font-weight: normal;
-  font-size: 3rem;
-  padding: 1rem;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-bottom: solid 0.1rem;
-  color: #e7e7e7;
-}
-
-.container article .text h2 div {
-  color: #e6e1e1 !important;
-  margin: -1.8rem auto;
-}
-
-.container article .text h2 span {
+.container header main .btn-container a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #1a1a1a;
+  color: white;
+  background-color: black;
+  -webkit-transition: opacity 0.2s, border 0.3s;
+  transition: opacity 0.2s, border 0.3s;
+}
+
+.container section {
+  background-color: #884646;
+}
+
+.container section aside {
+  padding: 1rem;
+  background-color: blue;
+  margin: 15vw;
+}
+
+.container section aside .text {
+  max-width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10rem 0;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section aside .text h2 {
+  font-size: 3rem;
+  -webkit-animation: fadeIn 0.6s ease-in;
+          animation: fadeIn 0.6s ease-in;
+  font-weight: normal;
+  border-bottom: solid 0.1rem #908282;
+  color: #e7e7e7;
+  line-height: 1.1;
+}
+
+.container section aside .text h2 div {
+  color: #e6e1e1 !important;
+}
+
+.container section aside .text h2 span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #0f0f0f;
   background-color: #f0f0f0;
 }
 
-.container article .text p {
-  margin-top: 1.5rem;
+.container section aside .text p {
+  margin-top: 1rem;
   color: #f3f3f3;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   font-size: 1.5rem;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.container article .text p i {
+.container section aside .text p i {
   color: #f3f3f3;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin: 2rem 0.3rem;
+}
+
+.container section article {
+  padding: 1rem;
+  background-color: blue;
+  margin: 15vw;
+}
+
+.container section article .text {
+  max-width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10rem 0;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section article .text h2 {
+  font-size: 3rem;
+  -webkit-animation: fadeIn 0.6s ease-in;
+          animation: fadeIn 0.6s ease-in;
+  font-weight: normal;
+  border-bottom: solid 0.1rem #908282;
+  color: #e7e7e7;
+  line-height: 1.1;
+}
+
+.container section article .text h2 div {
+  color: #e6e1e1 !important;
+}
+
+.container section article .text h2 span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #0f0f0f;
+  background-color: #f0f0f0;
+}
+
+.container section article .text p {
+  margin-top: 1rem;
+  color: #f3f3f3;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section article .text p i {
+  color: #f3f3f3;
+  font-size: 3.5rem;
+  margin: 2rem 0.3rem;
+}
+
+.container section footer {
+  padding: 1rem;
+  background-color: blue;
+  margin: 15vw;
+}
+
+.container section footer .text {
+  max-width: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 10rem 0;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section footer .text h2 {
+  font-size: 3rem;
+  -webkit-animation: fadeIn 0.6s ease-in;
+          animation: fadeIn 0.6s ease-in;
+  font-weight: normal;
+  border-bottom: solid 0.1rem #908282;
+  color: #e7e7e7;
+  line-height: 1.1;
+}
+
+.container section footer .text h2 div {
+  color: #e6e1e1 !important;
+}
+
+.container section footer .text h2 span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #0f0f0f;
+  background-color: #f0f0f0;
+}
+
+.container section footer .text p {
+  margin-top: 1rem;
+  color: #f3f3f3;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section footer .text p i {
+  color: #f3f3f3;
+  font-size: 3.5rem;
   margin: 2rem 0.3rem;
 }
 
@@ -613,10 +739,6 @@ canvas {
   .container article .text span {
     margin: 0 0.1rem !important;
   }
-}
-
-.dark {
-  background-color: #0c0c0c !important;
 }
 
 .dark .about h2 {
