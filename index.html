@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" />
   </head>
   <body>
-    
     <div class="container">
       <header>
         <nav>
@@ -97,7 +96,8 @@
             <div class="info">
               <h1>Todo List</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis debitis ullam, officiis iure aperiam dicta dolorem facere vitae mollitia assumenda?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis debitis ullam, officiis iure aperiam dicta dolorem facere vitae
+                mollitia assumenda?
               </p>
 
               <div class="technologies-container">
@@ -139,11 +139,21 @@
 
         <footer class="contact">
           <div class="text" id="04">
-            <h2>Contact Form</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti natus dolorem blanditiis repellat quam voluptate? Nulla harum debitis
-              necessitatibus, quidem reprehenderit itaque nesciunt quasi, sapiente aliquam nam dolores unde earum.
-            </p>
+            <h2>Contact <span>Form</span></h2>
+            <form action="">
+              <div class="form-container">
+                <h3>Name:</h3>
+                <input type="text" class="name" name="firstname" placeholder="Mailar <" required />
+                <h3>Email:</h3>
+                <input type="text" class="email" name="email" placeholder="firstname@example.com" required />
+                <h3>Subject:</h3>
+                <input type="text" class="subject" name="subject" placeholder="feedback, job offer, etc." required />
+                <h3>Message:</h3>
+                <textarea type="text" class="message" name="message" placeholder="Hello world!" required></textarea><br>
+                <input type="button" name="submit" value="submit" onclick="sendMessage()">
+                <script src="assets/js/webhook.js"></script>
+              </div>
+            </form>
           </div>
         </footer>
       </section>

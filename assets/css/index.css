@@ -379,15 +379,14 @@ html {
 }
 
 .container section footer {
-  padding: 3rem;
+  padding: 1rem;
   margin: 15vw;
 }
 
 .container section footer .text {
-  max-width: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 10rem 0;
+  padding: 1rem;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
 }
@@ -397,35 +396,65 @@ html {
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   font-weight: normal;
-  border-bottom: solid 0.1rem #908282;
   color: #e7e7e7;
-  line-height: 1.1;
 }
 
-.container section footer .text h2 div {
-  color: #e6e1e1 !important;
+.container section footer .text span {
+  color: #908282;
 }
 
-.container section footer .text h2 span {
+.container section footer .text form {
+  margin: 2rem 0;
+}
+
+.container section footer .text form .form-container h3 {
+  color: white;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+.container section footer .text form .form-container input {
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  background-color: transparent;
+  font-size: 1.2rem;
+  width: 30rem;
+}
+
+.container section footer .text form .form-container textarea {
+  font-family: "Consolas", sans-serif;
+  height: 10rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  background-color: transparent;
+  font-size: 1.2rem;
+  width: 30rem;
+  padding: 0.5rem;
+}
+
+.container section footer .text form .form-container input[name="submit"] {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #0f0f0f;
-  background-color: #f0f0f0;
 }
 
-.container section footer .text p {
-  margin-top: 1rem;
-  color: #f3f3f3;
-  padding: 1rem 0rem;
-  font-size: 1.5rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.container section footer .text form .form-container input[name="submit"]:hover {
+  background-color: white;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
-.container section footer .text p i {
-  color: #f3f3f3;
-  font-size: 3.5rem;
-  margin: 2rem 0.3rem;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
 }
 
 @media screen and (max-width: 1000px) {
