@@ -420,13 +420,14 @@ html {
   margin: 2rem 0.3rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   body {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .container {
     padding: 0;
+    margin: 0;
   }
   .container header nav ul {
     display: none;
@@ -436,40 +437,83 @@ html {
     display: -ms-flexbox;
     display: flex;
   }
-  .container header .text {
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  .container header nav {
+    padding: 3.5vw 1vw;
+  }
+  .container header nav a h1 {
+    font-size: 5vw;
+  }
+  .container header main {
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 1.5rem;
     margin: 15vw 0;
-    -webkit-animation: swipeFromRight 1.2s ease-out;
-            animation: swipeFromRight 1.2s ease-out;
   }
-  .container header .text h1 {
-    text-align: center;
+  .container header main .text {
+    max-width: 100%;
+    background-color: blue;
+  }
+  .container header main .text h1 {
+    font-weight: normal;
+    text-align: left;
     font-size: 10vw;
-    -webkit-animation: fadeIn 1.2s ease-in;
-            animation: fadeIn 1.2s ease-in;
   }
-  .container header .btn-container {
-    -webkit-animation: fadeIn 2s ease-in;
-            animation: fadeIn 2s ease-in;
+  .container header main .btn-container {
+    margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .container header .btn-container a {
-    padding: 0.2rem 0.8rem;
-    font-size: 15px;
-    letter-spacing: 0.4rem;
+  .container header main .btn-container a {
+    font-size: 3vw;
+    margin: 0 0.3rem;
+    padding: 1.5vw 4vw;
   }
-  .container article {
-    margin: 10rem 0;
+  .container section aside {
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5rem;
+    margin: 15vw 0;
   }
-  .container article .text {
-    text-align: center;
+  .container section aside .text {
+    background-color: blue;
+    max-width: inherit;
+    padding: 1rem;
   }
-  .container article .text h2 {
-    font-size: 11vw;
+  .container section aside .text h2 {
+    font-size: 10vw;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.25;
   }
-  .container article .text div {
-    margin: -1rem auto !important;
-  }
-  .container article .text span {
-    margin: 0 0.1rem !important;
+  .container section aside .text p {
+    font-size: 5vw;
+    text-align: left;
+    font-weight: normal;
   }
 }
 
