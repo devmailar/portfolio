@@ -155,7 +155,7 @@ html {
         a:hover {
           transition: 0.5s;
           color: rgb(255, 255, 255);
-          background-color: black;
+          background-color: #908282;
           transition: opacity 0.2s, border 0.3s;
         }
       }
@@ -284,7 +284,7 @@ html {
             a:hover {
               transition: 0.5s;
               color: rgb(255, 255, 255);
-              background-color: black;
+              background-color: #908282;
               transition: opacity 0.2s, border 0.3s;
             }
           }
@@ -356,7 +356,7 @@ html {
             }
 
             input[name="submit"]:hover {
-              background-color: white;
+              background-color: #908282;
               color: black;
               transition: 0.8s;
             }

@@ -227,7 +227,7 @@ html {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
-  background-color: black;
+  background-color: #908282;
   -webkit-transition: opacity 0.2s, border 0.3s;
   transition: opacity 0.2s, border 0.3s;
 }
@@ -369,7 +369,7 @@ html {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
-  background-color: black;
+  background-color: #908282;
   -webkit-transition: opacity 0.2s, border 0.3s;
   transition: opacity 0.2s, border 0.3s;
 }
@@ -444,7 +444,7 @@ html {
 }
 
 .container section footer .text form .form-container input[name="submit"]:hover {
-  background-color: white;
+  background-color: #908282;
   color: black;
   -webkit-transition: 0.8s;
   transition: 0.8s;
