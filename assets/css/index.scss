@@ -564,6 +564,10 @@ button:focus {
                 width: 80vw;
                 font-size: 4vw;
               }
+
+              input[name="submit"] {
+                width: 80vw;
+              }
             }
           }
         }

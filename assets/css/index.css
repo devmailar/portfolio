@@ -618,5 +618,8 @@ button:focus {
     width: 80vw;
     font-size: 4vw;
   }
+  .container section footer .text form .form-container input[name="submit"] {
+    width: 80vw;
+  }
 }
 /*# sourceMappingURL=index.css.map */
