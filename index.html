@@ -46,9 +46,7 @@
       <section>
         <aside class="about">
           <div class="text" id="01">
-            <h2>
-              About <span>Me</span>
-            </h2>
+            <h2>About <span>Me</span></h2>
             <p>
               I am a Front-end web developer who is currently studying software development in a vocational school.
               <br />
@@ -90,7 +88,6 @@
             <img src="assets/img/portfolio-img.png" alt="project-picture" width="" />
           </div>
 
-          
           <div class="card">
             <div class="info">
               <h1>Weather Tracker</h1>
@@ -116,7 +113,8 @@
             <div class="info">
               <h1>Todo List</h1>
               <p>
-                Todo List is a simple list of tasks that you can add to your project structure. Then you can remove, edit or mark them completed when you get them done.
+                Todo List is a simple list of tasks that you can add to your project structure. Then you can remove, edit or mark them completed when
+                you get them done.
               </p>
 
               <div class="technologies-container">
@@ -157,21 +155,22 @@
         </article>
 
         <footer class="contact">
+          <form action="">
+            <div class="form-container">
+              <h3>Name:</h3>
+              <input type="text" class="name" name="firstname" placeholder="Please enter your name" required />
+              <h3>Email:</h3>
+              <input type="text" class="email" name="email" placeholder="firstname@example.com" required />
+              <h3>Subject:</h3>
+              <input type="text" class="subject" name="subject" placeholder="feedback, job offer, any." required />
+              <h3>Message:</h3>
+              <textarea type="text" class="message" name="message" placeholder="Hello world!" required></textarea><br />
+              <input type="button" name="submit" value="submit" onclick="sendMessage()" />
+            </div>
+          </form>
+
           <div class="text" id="04">
-            <h2>Contact <span>Form</span></h2>
-            <form action="">
-              <div class="form-container">
-                <h3>Name:</h3>
-                <input type="text" class="name" name="firstname" placeholder="Please enter your name" required />
-                <h3>Email:</h3>
-                <input type="text" class="email" name="email" placeholder="firstname@example.com" required />
-                <h3>Subject:</h3>
-                <input type="text" class="subject" name="subject" placeholder="feedback, job offer, any." required />
-                <h3>Message:</h3>
-                <textarea type="text" class="message" name="message" placeholder="Hello world!" required></textarea><br>
-                <input type="button" name="submit" value="submit" onclick="sendMessage()">
-              </div>
-            </form>
+            <h2>If you have something in your mind that you want to talk about. Feel free to Contact Me.</h2>
           </div>
         </footer>
       </section>

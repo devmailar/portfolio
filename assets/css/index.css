@@ -175,11 +175,22 @@ html {
 }
 
 .container header main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1rem;
   margin: 15vw;
+  max-width: 70%;
 }
 
 .container header main .text {
+  width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 1rem;
@@ -203,7 +214,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3rem auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 3rem 0;
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
 }
@@ -218,7 +235,7 @@ html {
   margin: 0 0.5rem;
   border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
@@ -233,12 +250,22 @@ html {
 }
 
 .container section aside {
-  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
   margin: 15vw;
+  max-width: 50%;
 }
 
 .container section aside .text {
-  max-width: 50%;
+  width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 10rem 0;
@@ -247,20 +274,20 @@ html {
 }
 
 .container section aside .text h2 {
-  font-size: 3rem;
+  font-size: 3.85rem;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   font-weight: normal;
-  color: #908282;
+  color: white;
   line-height: 0.9;
 }
 
 .container section aside .text h2 span {
-  color: #faf1f1 !important;
+  color: #908282;
 }
 
 .container section aside .text p {
-  margin-top: 1rem;
+  margin: 1rem 0;
   color: #f3f3f3;
   padding: 1rem 0rem;
   font-size: 1.5rem;
@@ -273,16 +300,17 @@ html {
 .container section aside .text p i {
   color: #f3f3f3;
   font-size: 3.5rem;
-  margin: 2rem 0.3rem;
+  margin: 2.4rem 0.4rem;
 }
 
 .container section article {
+  display: block;
   padding: 1rem;
   margin: 15vw;
+  max-width: 100%;
 }
 
 .container section article .text {
-  max-width: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 1rem 0;
@@ -304,16 +332,26 @@ html {
 }
 
 .container section article .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 1rem;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
   background-color: rgba(0, 0, 0, 0.267);
   border: solid 0.1rem white;
   margin: 3rem auto;
-  padding: 1rem;
 }
 
 .container section article .card .info {
-  float: left;
-  padding: 0.2rem;
-  width: 50%;
+  padding: 1rem;
+  max-width: 50%;
 }
 
 .container section article .card .info h1 {
@@ -332,6 +370,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0.5rem;
 }
 
@@ -342,27 +383,26 @@ html {
 }
 
 .container section article .card .info .btn-container {
-  margin: 1rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
 }
 
 .container section article .card .info .btn-container a {
-  z-index: 2;
   -webkit-animation: swipeFromLeft 0.5s ease-in;
           animation: swipeFromLeft 0.5s ease-in;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   color: #cfcfcf;
   margin: 0 0.5rem;
   border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
 }
 
 .container section article .card .info .btn-container a:hover {
@@ -375,15 +415,23 @@ html {
 }
 
 .container section article .card img {
-  width: 50%;
+  max-width: 50%;
 }
 
 .container section footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 1rem;
   margin: 15vw;
+  max-width: 100%;
 }
 
 .container section footer .text {
+  max-width: 30%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 1rem;
@@ -392,7 +440,8 @@ html {
 }
 
 .container section footer .text h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  max-width: 70%;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   font-weight: normal;
@@ -403,26 +452,31 @@ html {
   color: #908282;
 }
 
-.container section footer .text form {
-  margin: 2rem 0;
+.container section footer form {
+  max-width: 80%;
+  padding: 0 2rem;
 }
 
-.container section footer .text form .form-container h3 {
+.container section footer form .form-container {
+  display: block;
+}
+
+.container section footer form .form-container h3 {
   color: white;
   font-weight: normal;
   font-size: 1.7rem;
 }
 
-.container section footer .text form .form-container input {
+.container section footer form .form-container input {
+  background-color: transparent;
   padding: 1rem 1rem;
   border: solid 0.01rem #908282;
   color: white;
-  background-color: transparent;
   font-size: 1.2rem;
   width: 30rem;
 }
 
-.container section footer .text form .form-container textarea {
+.container section footer form .form-container textarea {
   font-family: "Consolas", sans-serif;
   height: 10rem;
   border: solid 0.01rem #908282;
@@ -433,8 +487,7 @@ html {
   padding: 0.5rem;
 }
 
-.container section footer .text form .form-container input[name="submit"] {
-  margin: 2rem 0;
+.container section footer form .form-container input[name="submit"] {
   font-family: "Poppins", sans-serif;
   width: 30rem;
   padding: 0.5rem 1rem;
@@ -446,7 +499,7 @@ html {
   color: #cfcfcf;
 }
 
-.container section footer .text form .form-container input[name="submit"]:hover {
+.container section footer form .form-container input[name="submit"]:hover {
   background-color: #908282;
   -webkit-transition: 0.5s;
   transition: 0.5s;
