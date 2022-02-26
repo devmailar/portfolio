@@ -126,7 +126,7 @@ html {
         animation: swipeFromRight 1s ease-out;
 
         h1 {
-          font-size: 5.05vw;
+          font-size: 4.5vw;
           animation: fadeIn 0.6s ease-in;
           color: rgb(255, 255, 255);
           line-height: 1.4;
@@ -183,7 +183,7 @@ html {
         animation: swipeFromRight 1s ease-out;
 
         h2 {
-          font-size: 3.41vw;
+          font-size: 3vw;
           animation: fadeIn 0.6s ease-in;
           font-weight: normal;
           color: rgb(255, 255, 255);
@@ -198,15 +198,15 @@ html {
           margin: 1rem 0;
           color: rgb(243, 243, 243);
           padding: 1rem 0rem;
-          font-size: 1.5vw;
+          font-size: 1.3vw;
           transition: 0.5s;
           border-top: solid 0.2rem #908282;
           border-bottom: solid 0.2rem #908282;
 
           i {
             color: rgb(243, 243, 243);
-            font-size: 3.5rem;
-            margin: 2.4rem 0.4rem;
+            font-size: 4rem;
+            margin: 2.4rem 0.3rem;
           }
         }
       }
@@ -314,22 +314,18 @@ html {
     }
 
     footer {
-      display: flex;
-      justify-content: flex-start;
-
+      display: block;
       padding: 1rem;
       margin: 15vw;
       max-width: 100%;
 
       .text {
-        max-width: 30%;
         transition: 0.5s;
         padding: 1rem;
         animation: swipeFromRight 1s ease-out;
 
         h2 {
-          font-size: 2rem;
-          max-width: 70%;
+          font-size: 2.7vw;
           animation: fadeIn 0.6s ease-in;
           font-weight: normal;
           color: rgb(231, 231, 231);
@@ -341,8 +337,9 @@ html {
       }
 
       form {
-        max-width: 80%;
-        padding: 0 2rem;
+        max-width: 40%;
+        padding: 0 1rem;
+
         .form-container {
           display: block;
           h3 {
@@ -352,6 +349,7 @@ html {
           }
 
           input {
+            margin: 1rem 0;
             background-color: transparent;
             padding: 1rem 1rem;
             border: solid 0.01rem #908282;
@@ -401,6 +399,10 @@ button:focus {
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    transition: all 0.2s;
+  }
+
   .container {
     header {
       main {
@@ -430,7 +432,6 @@ button:focus {
         }
       }
       article {
-
         .text {
         }
 
@@ -461,7 +462,6 @@ button:focus {
           }
         }
       }
-
       footer {
         display: block;
       }
@@ -498,9 +498,6 @@ button:focus {
   }
 
   .container {
-    padding: 0;
-    margin: 0;
-
     header {
       nav {
         padding: 3.5vw 1vw;
@@ -512,28 +509,25 @@ button:focus {
       }
 
       main {
-        //background-color: red;
-        display: flex;
-        justify-content: flex-start;
-        padding: 1.5rem;
-        margin: 15vw 0;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 15vw 1rem;
+
         .text {
-          max-width: 100%;
-          //background-color: blue;
+          padding: 0;
           h1 {
             font-weight: normal;
             text-align: left;
-            font-size: 10vw;
+            font-size: 8vw;
           }
         }
 
         .btn-container {
           margin: 1rem 0;
-          display: flex;
-          justify-content: flex-start;
+          justify-content: flexstart;
 
           a {
-            font-size: 3vw;
+            font-size: 3.5vw;
             margin: 0 0.3rem;
             padding: 1.5vw 4vw;
           }
@@ -543,20 +537,16 @@ button:focus {
 
     section {
       aside {
-        //background-color: red;
-        display: flex;
         justify-content: center;
-        padding: 1.5rem;
-        margin: 15vw 0;
+        padding: 1rem 0;
+        max-width: inherit;
+        margin: 15vw 1rem;
 
         .text {
-          //background-color: blue;
-          max-width: inherit;
-          padding: 1rem;
+          padding: 0;
 
           h2 {
-            font-size: 10vw;
-            text-align: left;
+            font-size: 8vw;
             font-weight: normal;
             line-height: 1.25;
           }
@@ -565,35 +555,36 @@ button:focus {
             font-size: 5vw;
             text-align: left;
             font-weight: normal;
+
+            i {
+              font-size: 3rem;
+            }
           }
         }
       }
 
       article {
-        //background-color: red;
-        padding: 1.5rem;
-        margin: 15vw 0;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 15vw 1rem;
 
         .text {
-          max-width: 100%;
-          //background-color: blue;
-          padding: 1rem;
+          padding: 0;
 
           h2 {
-            font-size: 10vw;
-            text-align: left;
+            font-size: 8vw;
             font-weight: normal;
             line-height: 1.25;
           }
         }
 
         .card {
-          padding: 1rem;
+          padding: 0;
 
           .info {
-            width: 100%;
-
+            padding: 1rem;
             h1 {
+              padding: 0;
               font-size: 9vw;
               text-align: left;
               font-weight: normal;
@@ -620,46 +611,37 @@ button:focus {
           }
         }
       }
-
       footer {
-        //background-color: red;
-        padding: 1.5rem;
-        margin: 15vw 0;
+        padding: 1rem 0;
+        margin: 15vw 1rem;
 
         .text {
-          max-width: 100%;
-          // background-color: blue;
-          padding: 1rem;
+          padding: 0;
 
           h2 {
-            font-size: 10vw;
-            text-align: left;
-            font-weight: normal;
+            font-size: 8vw;
           }
+        }
 
-          span {
-            color: #908282;
-          }
+        form {
+          max-width: 100%;
+          padding: 0;
 
-          form {
-            .form-container {
-              h3 {
-                font-size: 5vw;
-              }
+          .form-container {
+            h3 {
+              font-size: 6vw;
+            }
 
-              input {
-                width: 80vw;
-                font-size: 4vw;
-              }
+            input {
+              width: 100%;
+            }
 
-              textarea {
-                width: 80vw;
-                font-size: 4vw;
-              }
+            textarea {
+              width: 100%;
+            }
 
-              input[name="submit"] {
-                width: 80vw;
-              }
+            input[name="submit"] {
+              width: 100%;
             }
           }
         }

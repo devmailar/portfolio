@@ -199,7 +199,7 @@ html {
 }
 
 .container header main .text h1 {
-  font-size: 5.05vw;
+  font-size: 4.5vw;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   color: white;
@@ -274,7 +274,7 @@ html {
 }
 
 .container section aside .text h2 {
-  font-size: 3.41vw;
+  font-size: 3vw;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   font-weight: normal;
@@ -290,7 +290,7 @@ html {
   margin: 1rem 0;
   color: #f3f3f3;
   padding: 1rem 0rem;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-top: solid 0.2rem #908282;
@@ -299,8 +299,8 @@ html {
 
 .container section aside .text p i {
   color: #f3f3f3;
-  font-size: 3.5rem;
-  margin: 2.4rem 0.4rem;
+  font-size: 4rem;
+  margin: 2.4rem 0.3rem;
 }
 
 .container section article {
@@ -427,19 +427,13 @@ html {
 }
 
 .container section footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: block;
   padding: 1rem;
   margin: 15vw;
   max-width: 100%;
 }
 
 .container section footer .text {
-  max-width: 30%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 1rem;
@@ -448,8 +442,7 @@ html {
 }
 
 .container section footer .text h2 {
-  font-size: 2rem;
-  max-width: 70%;
+  font-size: 2.7vw;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   font-weight: normal;
@@ -461,8 +454,8 @@ html {
 }
 
 .container section footer form {
-  max-width: 80%;
-  padding: 0 2rem;
+  max-width: 40%;
+  padding: 0 1rem;
 }
 
 .container section footer form .form-container {
@@ -476,6 +469,7 @@ html {
 }
 
 .container section footer form .form-container input {
+  margin: 1rem 0;
   background-color: transparent;
   padding: 1rem 1rem;
   border: solid 0.01rem #908282;
@@ -522,6 +516,10 @@ button:focus {
 }
 
 @media screen and (max-width: 1200px) {
+  body {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
   .container header main .text h1 {
     font-size: 5.5vw;
   }
@@ -588,10 +586,6 @@ button:focus {
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .container {
-    padding: 0;
-    margin: 0;
-  }
   .container header nav {
     padding: 3.5vw 1vw;
   }
@@ -599,54 +593,44 @@ button:focus {
     font-size: 5vw;
   }
   .container header main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding: 1.5rem;
-    margin: 15vw 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 0;
+    margin: 15vw 1rem;
   }
   .container header main .text {
-    max-width: 100%;
+    padding: 0;
   }
   .container header main .text h1 {
     font-weight: normal;
     text-align: left;
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .container header main .btn-container {
     margin: 1rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: flexstart;
+        -ms-flex-pack: flexstart;
+            justify-content: flexstart;
   }
   .container header main .btn-container a {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: 0 0.3rem;
     padding: 1.5vw 4vw;
   }
   .container section aside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 1.5rem;
-    margin: 15vw 0;
+    padding: 1rem 0;
+    max-width: inherit;
+    margin: 15vw 1rem;
   }
   .container section aside .text {
-    max-width: inherit;
-    padding: 1rem;
+    padding: 0;
   }
   .container section aside .text h2 {
-    font-size: 10vw;
-    text-align: left;
+    font-size: 8vw;
     font-weight: normal;
     line-height: 1.25;
   }
@@ -655,27 +639,32 @@ button:focus {
     text-align: left;
     font-weight: normal;
   }
+  .container section aside .text p i {
+    font-size: 3rem;
+  }
   .container section article {
-    padding: 1.5rem;
-    margin: 15vw 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 0;
+    margin: 15vw 1rem;
   }
   .container section article .text {
-    max-width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
   .container section article .text h2 {
-    font-size: 10vw;
-    text-align: left;
+    font-size: 8vw;
     font-weight: normal;
     line-height: 1.25;
   }
   .container section article .card {
-    padding: 1rem;
+    padding: 0;
   }
   .container section article .card .info {
-    width: 100%;
+    padding: 1rem;
   }
   .container section article .card .info h1 {
+    padding: 0;
     font-size: 9vw;
     text-align: left;
     font-weight: normal;
@@ -696,34 +685,30 @@ button:focus {
     width: 100%;
   }
   .container section footer {
-    padding: 1.5rem;
-    margin: 15vw 0;
+    padding: 1rem 0;
+    margin: 15vw 1rem;
   }
   .container section footer .text {
-    max-width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
   .container section footer .text h2 {
-    font-size: 10vw;
-    text-align: left;
-    font-weight: normal;
+    font-size: 8vw;
   }
-  .container section footer .text span {
-    color: #908282;
+  .container section footer form {
+    max-width: 100%;
+    padding: 0;
   }
-  .container section footer .text form .form-container h3 {
-    font-size: 5vw;
+  .container section footer form .form-container h3 {
+    font-size: 6vw;
   }
-  .container section footer .text form .form-container input {
-    width: 80vw;
-    font-size: 4vw;
+  .container section footer form .form-container input {
+    width: 100%;
   }
-  .container section footer .text form .form-container textarea {
-    width: 80vw;
-    font-size: 4vw;
+  .container section footer form .form-container textarea {
+    width: 100%;
   }
-  .container section footer .text form .form-container input[name="submit"] {
-    width: 80vw;
+  .container section footer form .form-container input[name="submit"] {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
