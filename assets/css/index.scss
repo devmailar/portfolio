@@ -377,6 +377,104 @@ button:focus {
   outline: none;
 }
 
+@media screen and (max-width: 1500px) {
+  body {
+    transition: all 0.3s;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+
+    main {
+      display: flex;
+      justify-content: flex-start;
+      padding: 1.5rem;
+      margin: 15vw 0;
+
+      .text {
+        max-width: 100%;
+
+        h1 {
+          font-weight: normal;
+          text-align: left;
+          font-size: 5.6vw !important;
+        }
+      }
+    }
+
+    section {
+      aside {
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem;
+        margin: 15vw 0;
+
+        .text {
+          padding: 1rem;
+
+          h2 {
+            text-align: left;
+            font-weight: normal;
+            font-size: 4.6vw !important;
+          }
+        }
+      }
+
+      article {
+        padding: 1.5rem;
+        margin: 15vw 0;
+
+        .text {
+          max-width: 100%;
+          padding: 1rem;
+
+          h2 {
+            font-size: 4.6vw !important;
+            text-align: left;
+            font-weight: normal;
+            line-height: 1.25;
+          }
+        }
+
+        .card {
+          padding: 1rem;
+
+          .info {
+            
+            width: 50%;
+
+            h1 {
+              font-size: 3rem;
+              text-align: left;
+              font-weight: normal;
+            }
+
+            p {
+              font-size: 1.2rem;
+            }
+
+            .btn-container {
+              margin: 2rem auto;
+
+              a {
+                margin: 0 0.5vw;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                letter-spacing: 0.3;
+              }
+            }
+          }
+
+          img {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   body {
     transition: all 0.3s;

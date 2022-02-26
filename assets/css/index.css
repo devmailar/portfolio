@@ -460,6 +460,93 @@ button:focus {
   outline: none;
 }
 
+@media screen and (max-width: 1500px) {
+  body {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  .container main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 1.5rem;
+    margin: 15vw 0;
+  }
+  .container main .text {
+    max-width: 100%;
+  }
+  .container main .text h1 {
+    font-weight: normal;
+    text-align: left;
+    font-size: 5.6vw !important;
+  }
+  .container section aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.5rem;
+    margin: 15vw 0;
+  }
+  .container section aside .text {
+    padding: 1rem;
+  }
+  .container section aside .text h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 4.6vw !important;
+  }
+  .container section article {
+    padding: 1.5rem;
+    margin: 15vw 0;
+  }
+  .container section article .text {
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .container section article .text h2 {
+    font-size: 4.6vw !important;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.25;
+  }
+  .container section article .card {
+    padding: 1rem;
+  }
+  .container section article .card .info {
+    width: 50%;
+  }
+  .container section article .card .info h1 {
+    font-size: 3rem;
+    text-align: left;
+    font-weight: normal;
+  }
+  .container section article .card .info p {
+    font-size: 1.2rem;
+  }
+  .container section article .card .info .btn-container {
+    margin: 2rem auto;
+  }
+  .container section article .card .info .btn-container a {
+    margin: 0 0.5vw;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.3;
+  }
+  .container section article .card img {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   body {
     -webkit-transition: all 0.3s;
