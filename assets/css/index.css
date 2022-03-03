@@ -110,6 +110,10 @@ html {
   }
 }
 
+.active {
+  color: white;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -199,7 +203,7 @@ html {
 }
 
 .container header main .text h1 {
-  font-size: 4.5vw;
+  font-size: 3.4vw;
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   color: white;
@@ -225,6 +229,11 @@ html {
           animation: fadeIn 1s ease-in;
 }
 
+.container header main .btn-container .important {
+  color: black;
+  background-color: white;
+}
+
 .container header main .btn-container a {
   z-index: 2;
   -webkit-animation: swipeFromLeft 0.5s ease-in;
@@ -235,7 +244,7 @@ html {
   margin: 0 0.5rem;
   border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
-  font-size: 1.2vw;
+  font-size: 1vw;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
@@ -293,8 +302,6 @@ html {
   font-size: 1.3vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-top: solid 0.2rem #908282;
-  border-bottom: solid 0.2rem #908282;
 }
 
 .container section aside .text p i {
@@ -400,7 +407,7 @@ html {
   margin: 0 0.5rem;
   border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1vw;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
 }
@@ -498,7 +505,8 @@ html {
   letter-spacing: 0.4rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #cfcfcf;
+  color: black;
+  background-color: white;
 }
 
 .container section footer form .form-container input[name="submit"]:hover {

@@ -56,6 +56,10 @@ html {
   }
 }
 
+.active {
+  color: white;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -126,7 +130,7 @@ html {
         animation: swipeFromRight 1s ease-out;
 
         h1 {
-          font-size: 4.5vw;
+          font-size: 3.4vw;
           animation: fadeIn 0.6s ease-in;
           color: rgb(255, 255, 255);
           line-height: 1.4;
@@ -144,6 +148,11 @@ html {
         margin: 3rem 0;
         animation: fadeIn 1s ease-in;
 
+        .important {
+          color: black;
+          background-color: rgb(255, 255, 255);
+        }
+
         a {
           z-index: 2;
           animation: swipeFromLeft 0.5s ease-in;
@@ -152,7 +161,7 @@ html {
           margin: 0 0.5rem;
           border: solid 0.01rem #908282;
           padding: 0.5rem 1.2rem;
-          font-size: 1.2vw;
+          font-size: 1vw;
           text-transform: uppercase;
           letter-spacing: 0.5rem;
         }
@@ -200,8 +209,6 @@ html {
           padding: 1rem 0rem;
           font-size: 1.3vw;
           transition: 0.5s;
-          border-top: solid 0.2rem #908282;
-          border-bottom: solid 0.2rem #908282;
 
           i {
             color: rgb(243, 243, 243);
@@ -285,7 +292,7 @@ html {
               margin: 0 0.5rem;
               border: solid 0.01rem #908282;
               padding: 0.5rem 1.2rem;
-              font-size: 1.2rem;
+              font-size: 1vw;
               text-transform: uppercase;
               letter-spacing: 0.4rem;
             }
@@ -377,7 +384,8 @@ html {
             text-transform: uppercase;
             letter-spacing: 0.4rem;
             transition: 0.5s;
-            color: #cfcfcf;
+            color: black;
+            background-color: rgb(255, 255, 255);
           }
 
           input[name="submit"]:hover {
