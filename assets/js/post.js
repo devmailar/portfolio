@@ -29,7 +29,6 @@ function sendMessage() {
     else {
       request.open("POST", "https://discord.com/api/webhooks/942399439362990090/nL_f2NZr1td3y_AMzww-D467TbaEB2WPuD72GjUAo5ilIClR588QEvyuGIiI_V35O9oQ");
       request.setRequestHeader("Content-Type", "application/json")
-      request.header("Access-Control-Allow-Origin: *");
 
       let myEmbed = {
         author: {
