@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   background-color: #0e0e0e;
-  background-image: url("/Simple Shiny(1).svg");
+  background-image: url("/assets/svg/background.svg");
   background-repeat: no-repeat;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -117,7 +117,9 @@ html {
 }
 
 .container {
+  position: absolute;
   margin: 0 auto;
+  top: 0;
   width: 100%;
 }
 
