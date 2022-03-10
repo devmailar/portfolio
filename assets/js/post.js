@@ -10,9 +10,9 @@ function sendMessage() {
 
   const request = new XMLHttpRequest();
   request.open("POST", "https://discord.com/api/webhooks/951506034957123614/gO6PRpMBDnSAhZOzm-04cKr7iA7mMHBcpPsG_iqF8QOjLLPS8PdOxTJn04BW5vv34082");
-  request.setRequestHeader("Content-type", "application/json");
+  request.setRequestHeader('Content-type', 'application/json');
 
-  let myEmbed = {
+/*   let myEmbed = {
     author: {
       name: "New Contact Form Submission",
     },
@@ -20,12 +20,12 @@ function sendMessage() {
     title: "Subject: " + subject,
     description:
       "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message, color: hexToDecimal(color),
-  };
+  }; */
 
   const params = {
     username: webhookName,
     avatar_url: "",
-    embeds: [myEmbed],
+    content: "hello"
   };
 
   request.send(JSON.stringify(params));
