@@ -3,7 +3,6 @@ function refreshPage() {
 }
 
 function sendMessage() {
-  const request = new XMLHttpRequest();
   let name = document.querySelector(".name").value;
   let email = document.querySelector(".email").value;
   let subject = document.querySelector(".subject").value;
@@ -19,11 +18,14 @@ function sendMessage() {
     alert(` 
       Error on sending message!
       message is too long!
-      characters: ${message.length}`);
+      characters: ${message.length}
+    `);
+    
   } else {
 
-    request.open("POST", "https://discord.com/api/webhooks/942399439362990090/nL_f2NZr1td3y_AMzww-D467TbaEB2WPuD72GjUAo5ilIClR588QEvyuGIiI_V35O9oQ");
-    request.setRequestHeader("Content-Type", "application/json");
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/951506034957123614/gO6PRpMBDnSAhZOzm-04cKr7iA7mMHBcpPsG_iqF8QOjLLPS8PdOxTJn04BW5vv34082");
+    request.setRequestHeader('Content-Type', 'application/json');
 
     let myEmbed = {
       author: {
