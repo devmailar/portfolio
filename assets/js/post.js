@@ -3,8 +3,8 @@ function sendMessage() {
   let email = document.querySelector(".email").value;
   let subject = document.querySelector(".subject").value;
   let message = document.querySelector(".message").value;
-  let currentDate = new Date();
-  let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+  // let currentDate = new Date();
+  // let time = currentDate.getHours() + ":" + currentDate.getMinutes();
   let webhookName = "Mailar";
   let color = "#ff0000";
 
@@ -19,8 +19,7 @@ function sendMessage() {
 
     title: "Subject: " + subject,
     description:
-      "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message + "\n\nSended at **" + time + "** \n" + currentDate,
-    color: hexToDecimal(color),
+      "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message, color: hexToDecimal(color),
   };
 
   const params = {
