@@ -187,7 +187,25 @@
               <h3>Message:</h3>
               <textarea type="text" class="message" name="message" required></textarea><br />
               <input type="button" name="submit" value="submit" onclick="sendMessage()" />
-              <script src="assets/js/post.js"></script>
+              <script>
+                function sendMessage() {
+                  console.log("sending");
+                  const request = new XMLHttpRequest();
+                  request.open(
+                    "POST",
+                    "https://discord.com/api/webhooks/951506034957123614/gO6PRpMBDnSAhZOzm-04cKr7iA7mMHBcpPsG_iqF8QOjLLPS8PdOxTJn04BW5vv34082"
+                  );
+                  request.setRequestHeader("Content-type", "application/json");
+
+                  const params = {
+                    username: "Webhook test",
+                    avatar_url: "",
+                    content: "hey sir!",
+                  };
+
+                  request.send(JSON.stringify(params));
+                }
+              </script>
             </div>
 
             <div class="links">
