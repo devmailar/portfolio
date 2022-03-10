@@ -32,7 +32,12 @@ function sendMessage() {
 
       title: "Subject: " + subject,
       description:
-        "Name: " + name + "\nEmail: " + email + "\nSubject: " + subject + "\nMessage: " + message + "\n\nSended at **" + time + "** \n" + currentDate,
+        "Name: " + name +
+        "\nEmail: " + email +
+        "\nSubject: " + subject +
+        "\nMessage: " + message +
+        "\n\nSended at **" + time +
+        "** \n" + currentDate,
       color: hexToDecimal(color),
     };
 
