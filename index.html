@@ -179,21 +179,21 @@
           <form action="POST" data-netlify="true">
             <div class="form-container">
               <div class="field">
-                <label for="field-1" class="floating-label">Name</label>
-                <input type="text" required />
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="field">
-                <label for="field-2" class="floating-label">Email</label>
-                <input type="text" required />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
               </div>
               <div class="field">
-                <label for="field-3" class="floating-label">Message</label>
-                <textarea type="text" required></textarea>
+                <label for="message">Message</label>
+                <textarea type="text" name="message" id="message" required></textarea>
               </div>
               <div class="field" id="netlify">
                 <div data-netlify-recaptcha="true"></div>
               </div>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="submit" />
             </div>
 
             <div class="links">
