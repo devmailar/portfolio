@@ -475,23 +475,24 @@ html {
   display: block;
 }
 
-.container section footer form .form-container h3 {
-  color: white;
-  font-weight: normal;
-  font-size: 1.7rem;
-}
-
-.container section footer form .form-container input {
+.container section footer form .form-container .field input {
   margin: 1rem 0;
   background-color: transparent;
   padding: 1rem 1rem;
   border: solid 0.01rem #908282;
   color: white;
   font-size: 1.2rem;
+  outline: none;
   width: 30rem;
 }
 
-.container section footer form .form-container textarea {
+.container section footer form .form-container .field label {
+  color: white;
+  font-weight: normal;
+  font-size: 1.7rem;
+}
+
+.container section footer form .form-container .field textarea {
   font-family: "Consolas", sans-serif;
   height: 10rem;
   border: solid 0.01rem #908282;
@@ -513,6 +514,7 @@ html {
   transition: 0.5s;
   color: black;
   background-color: white;
+  margin: 1.2rem 0;
 }
 
 .container section footer form .form-container input[name="submit"]:hover {
@@ -728,13 +730,13 @@ button:focus {
     max-width: 100%;
     padding: 0;
   }
-  .container section footer form .form-container h3 {
+  .container section footer form .form-container .field label {
     font-size: 6vw;
   }
-  .container section footer form .form-container input {
+  .container section footer form .form-container .field input {
     width: 100%;
   }
-  .container section footer form .form-container textarea {
+  .container section footer form .form-container .field textarea {
     width: 100%;
   }
   .container section footer form .form-container input[name="submit"] {

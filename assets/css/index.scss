@@ -356,31 +356,35 @@ html {
 
         .form-container {
           display: block;
-          h3 {
-            color: white;
-            font-weight: normal;
-            font-size: 1.7rem;
-          }
 
-          input {
-            margin: 1rem 0;
-            background-color: transparent;
-            padding: 1rem 1rem;
-            border: solid 0.01rem #908282;
-            color: white;
-            font-size: 1.2rem;
-            width: 30rem;
-          }
+          .field {
+            input {
+              margin: 1rem 0;
+              background-color: transparent;
+              padding: 1rem 1rem;
+              border: solid 0.01rem #908282;
+              color: white;
+              font-size: 1.2rem;
+              outline: none;
+              width: 30rem;
+            }
 
-          textarea {
-            font-family: "Consolas", sans-serif;
-            height: 10rem;
-            border: solid 0.01rem #908282;
-            color: white;
-            background-color: transparent;
-            font-size: 1.2rem;
-            width: 30rem;
-            padding: 0.5rem;
+            label {
+              color: white;
+              font-weight: normal;
+              font-size: 1.7rem;
+            }
+
+            textarea {
+              font-family: "Consolas", sans-serif;
+              height: 10rem;
+              border: solid 0.01rem #908282;
+              color: white;
+              background-color: transparent;
+              font-size: 1.2rem;
+              width: 30rem;
+              padding: 0.5rem;
+            }
           }
 
           input[name="submit"] {
@@ -393,6 +397,7 @@ html {
             transition: 0.5s;
             color: black;
             background-color: rgb(255, 255, 255);
+            margin: 1.2rem 0;
           }
 
           input[name="submit"]:hover {
@@ -655,16 +660,18 @@ button:focus {
           padding: 0;
 
           .form-container {
-            h3 {
-              font-size: 6vw;
-            }
+            .field {
+              label {
+                font-size: 6vw;
+              }
 
-            input {
-              width: 100%;
-            }
+              input {
+                width: 100%;
+              }
 
-            textarea {
-              width: 100%;
+              textarea {
+                width: 100%;
+              }
             }
 
             input[name="submit"] {
