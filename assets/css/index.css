@@ -486,10 +486,6 @@ html {
   width: 30rem;
 }
 
-.container section footer form .form-container .field #netlify {
-  margin: 1rem 0;
-}
-
 .container section footer form .form-container .field label {
   color: white;
   font-weight: normal;
@@ -507,7 +503,11 @@ html {
   padding: 0.5rem;
 }
 
-.container section footer form .form-container input[name="submit"] {
+.container section footer form .form-container #netlify {
+  margin: 2rem 0;
+}
+
+.container section footer form .form-container input[type="submit"] {
   font-family: "Poppins", sans-serif;
   width: 30rem;
   padding: 0.5rem 1rem;
@@ -518,10 +518,9 @@ html {
   transition: 0.5s;
   color: black;
   background-color: white;
-  margin: 1.2rem 0;
 }
 
-.container section footer form .form-container input[name="submit"]:hover {
+.container section footer form .form-container input[type="submit"]:hover {
   background-color: #908282;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -743,7 +742,7 @@ button:focus {
   .container section footer form .form-container .field textarea {
     width: 100%;
   }
-  .container section footer form .form-container input[name="submit"] {
+  .container section footer form .form-container input[type="submit"] {
     width: 100%;
   }
 }

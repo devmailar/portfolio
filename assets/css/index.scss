@@ -369,10 +369,6 @@ html {
               width: 30rem;
             }
 
-            #netlify {
-              margin: 1rem 0;
-            }
-
             label {
               color: white;
               font-weight: normal;
@@ -391,7 +387,11 @@ html {
             }
           }
 
-          input[name="submit"] {
+          #netlify {
+            margin: 2rem 0;
+          }
+
+          input[type="submit"] {
             font-family: "Poppins", sans-serif;
             width: 30rem;
             padding: 0.5rem 1rem;
@@ -401,10 +401,9 @@ html {
             transition: 0.5s;
             color: black;
             background-color: rgb(255, 255, 255);
-            margin: 1.2rem 0;
           }
 
-          input[name="submit"]:hover {
+          input[type="submit"]:hover {
             background-color: #908282;
             transition: 0.5s;
             color: #ffffff;
@@ -678,7 +677,7 @@ button:focus {
               }
             }
 
-            input[name="submit"] {
+            input[type="submit"] {
               width: 100%;
             }
           }
