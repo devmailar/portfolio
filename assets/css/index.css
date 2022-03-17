@@ -486,6 +486,10 @@ html {
   width: 30rem;
 }
 
+.container section footer form .form-container .field #netlify {
+  margin: 1rem 0;
+}
+
 .container section footer form .form-container .field label {
   color: white;
   font-weight: normal;
