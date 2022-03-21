@@ -508,6 +508,7 @@ html {
 
 .container section .work .align_objects .card-container .card .img img {
   width: 100%;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
