@@ -123,10 +123,6 @@ html {
   width: 100%;
 }
 
-.container header {
-  background-color: rgba(255, 23, 23, 0.774);
-}
-
 .container header nav {
   -webkit-animation: swipeFromLeft 1s ease-out;
           animation: swipeFromLeft 1s ease-out;
@@ -189,7 +185,6 @@ html {
 }
 
 .container header main {
-  background-color: rgba(23, 189, 255, 0.774);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
