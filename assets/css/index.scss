@@ -464,10 +464,16 @@ html {
         justify-content: center;
         padding: 0 1rem;
 
-        i {
-          margin: 1rem 0.8rem;
-          color: white;
-          font-size: 2.5rem;
+        a {
+          i {
+            margin: 1rem 0.8rem;
+            color: white;
+            font-size: 2.5rem;
+          }
+
+          color: rgb(230, 230, 230);
+          text-transform: uppercase;
+          margin-right: 1.5rem;
         }
       }
     }
