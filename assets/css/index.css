@@ -198,7 +198,7 @@ html {
   color: white;
 }
 
-.container header main {
+.container main {
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
   margin: 18rem auto;
@@ -206,7 +206,7 @@ html {
   padding: 1.25rem 0;
 }
 
-.container header main .align_objects {
+.container main .align_objects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,11 +221,11 @@ html {
   max-width: 70%;
 }
 
-.container header main .align_objects .text-container {
+.container main .align_objects .text-container {
   max-width: 80%;
 }
 
-.container header main .align_objects .text-container h1 {
+.container main .align_objects .text-container h1 {
   font-size: clamp(1.5rem, 10vw, 4rem);
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
@@ -233,11 +233,11 @@ html {
   line-height: 1.4;
 }
 
-.container header main .align_objects .text-container h1 span {
+.container main .align_objects .text-container h1 span {
   color: #908282;
 }
 
-.container header main .align_objects .btn-container {
+.container main .align_objects .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,12 +250,12 @@ html {
           animation: fadeIn 1s ease-in;
 }
 
-.container header main .align_objects .btn-container .important {
+.container main .align_objects .btn-container .important {
   color: black;
   background-color: white;
 }
 
-.container header main .align_objects .btn-container a {
+.container main .align_objects .btn-container a {
   z-index: 2;
   -webkit-animation: swipeFromLeft 0.5s ease-in;
           animation: swipeFromLeft 0.5s ease-in;
@@ -270,7 +270,7 @@ html {
   margin-right: 0.5rem;
 }
 
-.container header main .align_objects .btn-container a:hover {
+.container main .align_objects .btn-container a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
@@ -582,7 +582,7 @@ html {
 .container section .contact .align_objects .form-container .field input {
   margin: 1rem 0;
   background-color: transparent;
-  padding: 1rem .5rem;
+  padding: 1rem 0.5rem;
   border: solid 0.01rem #908282;
   color: white;
   font-size: 1.2rem;
@@ -594,8 +594,8 @@ html {
   border: solid 0.01rem #908282;
   color: white;
   background-color: transparent;
-  font-size: 1.2rem .5rem;
-  padding: 1rem .5rem;
+  font-size: 1.2rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .container section .contact .align_objects .form-container #netlify {
@@ -661,18 +661,18 @@ button:focus {
   header .navbar .align_objects .nav_logo .nav_link h1 {
     font-size: 1.5rem !important;
   }
-  header main {
+  main {
     padding: 0rem !important;
     margin: 8.5rem 0 !important;
   }
-  header main .align_objects .text-container {
+  main .align_objects .text-container {
     max-width: 100% !important;
   }
-  header main .align_objects .text-container h1 {
+  main .align_objects .text-container h1 {
     font-weight: bold;
     font-size: 2.5rem !important;
   }
-  header main .align_objects .btn-container {
+  main .align_objects .btn-container {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -685,7 +685,7 @@ button:focus {
             flex-direction: row !important;
     max-width: 100% !important;
   }
-  header main .align_objects .btn-container a {
+  main .align_objects .btn-container a {
     margin-top: 0.5rem;
   }
   section .about {
@@ -753,19 +753,19 @@ button:focus {
   header .navbar .align_objects .nav_links {
     display: none !important;
   }
-  header main {
+  main {
     padding: 0rem !important;
     margin: 8.5rem 0 !important;
   }
-  header main .align_objects .text-container {
+  main .align_objects .text-container {
     max-width: 100% !important;
   }
-  header main .align_objects .text-container h1 {
+  main .align_objects .text-container h1 {
     font-weight: bold;
     text-align: left;
     font-size: 2rem !important;
   }
-  header main .align_objects .btn-container {
+  main .align_objects .btn-container {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -775,7 +775,7 @@ button:focus {
             flex-direction: column !important;
     max-width: 100% !important;
   }
-  header main .align_objects .btn-container a {
+  main .align_objects .btn-container a {
     margin-top: 0.5rem;
   }
   section .about {
@@ -823,259 +823,4 @@ button:focus {
             flex-direction: column !important;
   }
 }
-
-/* @media screen and (max-width: 1200px) {
-  body {
-    transition: all 0.2s;
-  }
-
-  .container {
-    header {
-      main {
-        .text {
-          h1 {
-            font-size: 5.5vw;
-          }
-        }
-
-        .btn-container {
-          a {
-            font-size: 2vw;
-          }
-        }
-      }
-    }
-    section {
-      aside {
-        .text {
-          h3 {
-            font-size: 5vw;
-          }
-
-          p {
-            font-size: 2.5vw;
-          }
-        }
-      }
-      article {
-        .text {
-        }
-
-        .card {
-          display: block;
-          padding: 0;
-          width: 100%;
-
-          .info {
-            max-width: 100%;
-
-            p {
-              font-size: 1.4rem;
-            }
-
-            .technologies-container {
-              justify-content: flex-start;
-            }
-
-            .btn-container {
-              margin: 1rem 0;
-              justify-content: flex-start;
-            }
-          }
-
-          .img {
-            max-width: 100%;
-          }
-        }
-      }
-      footer {
-        display: block;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body {
-    transition: all 0.3s;
-  }
-
-  .container {
-    padding: 0;
-    margin: 0;
-
-    header {
-      nav {
-        ul {
-          display: none;
-        }
-
-        img {
-          display: flex;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-    transition: all 0.2s;
-  }
-
-  .container {
-    header {
-      nav {
-        padding: 3.5vw 1vw;
-        a {
-          h1 {
-            font-size: 5vw;
-          }
-        }
-      }
-
-      main {
-        justify-content: center;
-        padding: 1rem 0;
-        margin: 15vw 1rem;
-
-        .text {
-          padding: 0;
-          h1 {
-            font-weight: normal;
-            text-align: left;
-            font-size: 8vw;
-          }
-        }
-
-        .btn-container {
-          margin: 1rem 0;
-          justify-content: flexstart;
-
-          a {
-            font-size: 3.5vw;
-            margin: 0 0.3rem;
-            padding: 1.5vw 4vw;
-          }
-        }
-      }
-    }
-
-    section {
-      aside {
-        justify-content: center;
-        padding: 1rem 0;
-        max-width: inherit;
-        margin: 15vw 1rem;
-
-        .text {
-          padding: 0;
-
-          h3 {
-            font-size: 8vw;
-            font-weight: normal;
-            line-height: 1.25;
-          }
-
-          p {
-            font-size: 5vw;
-            text-align: left;
-            font-weight: normal;
-
-            i {
-              font-size: 3rem;
-            }
-          }
-        }
-      }
-
-      article {
-        justify-content: center;
-        padding: 1rem 0;
-        margin: 15vw 1rem;
-
-        .text {
-          padding: 0;
-
-          h2 {
-            font-size: 8vw;
-            font-weight: normal;
-            line-height: 1.25;
-          }
-        }
-
-        .card {
-          padding: 0;
-
-          .info {
-            padding: 1rem;
-            h1 {
-              padding: 0;
-              font-size: 9vw;
-              text-align: left;
-              font-weight: normal;
-            }
-
-            p {
-              font-size: 4vw;
-            }
-
-            .btn-container {
-              margin: 2rem auto;
-
-              a {
-                margin: 0 0.5vw;
-                padding: 2vw 5vw;
-                font-size: 4vw;
-                letter-spacing: 0.3;
-              }
-            }
-          }
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-      footer {
-        padding: 1rem 0;
-        margin: 15vw 1rem;
-
-        .text {
-          padding: 0;
-
-          h2 {
-            font-size: 8vw;
-          }
-        }
-
-        form {
-          max-width: 100%;
-          padding: 0;
-
-          .form-container {
-            .field {
-              label {
-                font-size: 6vw;
-              }
-
-              input {
-                width: 100%;
-              }
-
-              textarea {
-                width: 100%;
-              }
-            }
-
-            input[type="submit"] {
-              width: 100%;
-            }
-          }
-        }
-      }
-    }
-  }
-}
- */
 /*# sourceMappingURL=index.css.map */
