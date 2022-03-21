@@ -123,136 +123,154 @@ html {
   width: 100%;
 }
 
-.container header nav {
+.container header .navbar {
   -webkit-animation: swipeFromLeft 1s ease-out;
           animation: swipeFromLeft 1s ease-out;
-  -webkit-transition: 2s;
-  transition: 2s;
+  z-index: 999;
   background-color: rgba(12, 12, 12, 0.971);
   top: 0;
-  z-index: 999;
   position: fixed;
+  font-family: "Poppins", "Consolas", sans-serif;
+  width: 100%;
+  padding: 1.25rem 0;
+}
+
+.container header .navbar .align_objects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Poppins", "Consolas", sans-serif;
-  width: 100%;
-  padding: 1.5rem 10vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  max-width: 70%;
 }
 
-.container header nav a h1 {
-  margin: 0 1rem;
+.container header .navbar .align_objects .nav_logo {
+  padding: 0.5rem 0;
+}
+
+.container header .navbar .align_objects .nav_logo .nav_link h1 {
   color: white;
   font-size: 2rem;
   font-weight: normal;
 }
 
-.container header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.container header .navbar .align_objects .nav_links {
+  padding: 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container header .navbar .align_objects .nav_links .unordered_list {
   list-style: none;
 }
 
-.container header nav ul li {
+.container header .navbar .align_objects .nav_links .unordered_list .nav_item {
   text-transform: uppercase;
   font-size: 1.3rem;
-  margin: auto 0.1rem;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.container header nav ul li .btn {
-  margin: 0rem 0.834rem;
+.container header .navbar .align_objects .nav_links .unordered_list .nav_item .link {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0rem 0.85rem;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
   color: rgba(255, 255, 255, 0.493);
 }
 
-.container header nav ul li .active,
-.container header nav ul li .btn:hover {
+.container header .navbar .align_objects .nav_links .unordered_list .nav_item .active,
+.container header .navbar .align_objects .nav_links .unordered_list .nav_item .link:hover {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   color: white;
 }
 
-.container header nav img {
-  display: block;
-  float: right;
+.container header main {
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+  margin: 18rem auto;
+  width: 100%;
+  padding: 1.25rem 0;
 }
 
-.container header main {
+.container header main .align_objects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 15vw;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
   max-width: 70%;
 }
 
-.container header main .text {
-  max-width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 1rem;
-  -webkit-animation: swipeFromRight 1s ease-out;
-          animation: swipeFromRight 1s ease-out;
+.container header main .align_objects .text-container {
+  max-width: 80%;
 }
 
-.container header main .text h1 {
-  font-size: 3.4vw;
+.container header main .align_objects .text-container h1 {
+  font-size: clamp(1.5rem, 10vw, 4rem);
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
   color: white;
   line-height: 1.4;
 }
 
-.container header main .text h1 span {
+.container header main .align_objects .text-container h1 span {
   color: #908282;
 }
 
-.container header main .btn-container {
+.container header main .align_objects .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 3rem 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0;
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
 }
 
-.container header main .btn-container .important {
+.container header main .align_objects .btn-container .important {
   color: black;
   background-color: white;
 }
 
-.container header main .btn-container a {
+.container header main .align_objects .btn-container a {
   z-index: 2;
   -webkit-animation: swipeFromLeft 0.5s ease-in;
           animation: swipeFromLeft 0.5s ease-in;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #cfcfcf;
-  margin: 0 0.5rem;
   border: solid 0.01rem #908282;
   padding: 0.5rem 1.2rem;
-  font-size: 1vw;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-.container header main .btn-container a:hover {
+.container header main .align_objects .btn-container a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
@@ -261,190 +279,220 @@ html {
   transition: opacity 0.2s, border 0.3s;
 }
 
-.container section aside {
+.container section .about {
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+  margin: 18rem auto;
+  width: 100%;
+  padding: 1.25rem 0;
+}
+
+.container section .about .align_objects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 15vw;
-  max-width: 60%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 70%;
 }
 
-.container section aside .text {
-  max-width: 70%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.container section .about .align_objects .text-container {
+  max-width: 60%;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
-  padding: 8rem 1.25rem;
 }
 
-.container section aside .text h3 {
-  font-size: 3vw;
+.container section .about .align_objects .text-container h2 {
+  font-size: clamp(1.5rem, 10vw, 3.3rem);
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
-  font-weight: normal;
+  font-weight: bolder;
   color: white;
   line-height: 2;
 }
 
-.container section aside .text h3 span {
+.container section .about .align_objects .text-container h2 span {
   color: #908282;
   border: solid 2px rgba(255, 255, 255, 0.301);
 }
 
-.container section aside .text p {
+.container section .about .align_objects .text-container p {
   color: #ffffff;
-  font-size: 1.15vw;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
-.container section aside .text .icon-container {
-  margin: 1rem 0;
+.container section .about .align_objects .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
+.container section .about .align_objects .icon-container i {
+  color: #cecece;
+  font-size: 3.5rem;
+  margin-right: 0.5rem;
+}
+
+.container section .about .align_objects .icon-container .fa-html5 {
+  color: #e46329;
+}
+
+.container section .about .align_objects .icon-container .fa-css3-alt {
+  color: #28a7df;
+}
+
+.container section .about .align_objects .icon-container .fa-sass {
+  color: #c76599;
+}
+
+.container section .about .align_objects .icon-container .fa-react {
+  color: #00d9ff;
+}
+
+.container section .about .align_objects .icon-container .fa-node-js {
+  color: #83cd29;
+}
+
+.container section .work {
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+  margin: 18rem auto;
+  width: 100%;
+  padding: 1.25rem 0;
+}
+
+.container section .work .align_objects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.container section .work .align_objects .text-container {
+  max-width: 100%;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section .work .align_objects .text-container h2 {
+  font-size: clamp(1.5rem, 10vw, 3.3rem);
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+  font-weight: bolder;
+  color: white;
+  line-height: 2;
+}
+
+.container section .work .align_objects .text-container h2 span {
+  color: #908282;
+  border: solid 2px rgba(255, 255, 255, 0.301);
+}
+
+.container section .work .align_objects .card-container {
+  max-width: 100%;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section .work .align_objects .card-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+  background-color: rgba(0, 0, 0, 0.267);
+  border: solid 0.1rem white;
+  margin: 2rem auto;
+}
+
+.container section .work .align_objects .card-container .card .info-container {
+  padding: 1rem;
+  max-width: 50%;
+}
+
+.container section .work .align_objects .card-container .card .info-container h1 {
+  font-size: 2.5rem;
+  color: #eeeeee;
+  line-height: 2;
+}
+
+.container section .work .align_objects .card-container .card .info-container p {
+  font-size: 1.2rem;
+  color: #eeeeee;
+}
+
+.container section .work .align_objects .card-container .card .info-container .flex {
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.container section aside .text .icon-container i {
-  color: #cecece;
-  font-size: 3.5rem;
-  margin: 0 0.4rem;
-}
-
-.container section aside .text .icon-container .fa-html5 {
-  color: #e46329;
-}
-
-.container section aside .text .icon-container .fa-css3-alt {
-  color: #28a7df;
-}
-
-.container section aside .text .icon-container .fa-sass {
-  color: #c76599;
-}
-
-.container section aside .text .icon-container .fa-react {
-  color: #00d9ff;
-}
-
-.container section aside .text .icon-container .fa-node-js {
-  color: #83cd29;
-}
-
-.container section article {
-  display: block;
-  padding: 1rem;
-  margin: 15vw;
-  max-width: 100%;
-}
-
-.container section article .text {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 1rem 0;
-  -webkit-animation: swipeFromRight 1s ease-out;
-          animation: swipeFromRight 1s ease-out;
-}
-
-.container section article .text h2 {
-  font-size: 4rem;
-  -webkit-animation: fadeIn 0.6s ease-in;
-          animation: fadeIn 0.6s ease-in;
-  font-weight: normal;
-  color: #e7e7e7;
-  line-height: 1.1;
-}
-
-.container section article .text span {
-  color: #908282;
-}
-
-.container section article .card {
+.container section .work .align_objects .card-container .card .info-container .flex .technologies-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 1rem;
-  -webkit-animation: swipeFromRight 1s ease-out;
-          animation: swipeFromRight 1s ease-out;
-  background-color: rgba(0, 0, 0, 0.267);
-  border: solid 0.1rem white;
-  margin: 3rem auto;
+  padding: 1.5rem 0;
 }
 
-.container section article .card .info {
-  padding: 1rem;
-  max-width: 50%;
-}
-
-.container section article .card .info h1 {
-  padding: 0.4rem;
-  font-size: 2.5rem;
-  color: #eeeeee !important;
-}
-
-.container section article .card .info p {
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: #cccccc;
-}
-
-.container section article .card .info .technologies-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0.5rem;
-}
-
-.container section article .card .info .technologies-container i {
+.container section .work .align_objects .card-container .card .info-container .flex .technologies-container i {
   color: white;
   font-size: 3rem;
-  margin: 0 0.5rem;
+  margin-right: 0.8rem;
 }
 
-.container section article .card .info .btn-container {
+.container section .work .align_objects .card-container .card .info-container .flex .btn-container {
+  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  padding: 1.5rem 0;
 }
 
-.container section article .card .info .btn-container a {
-  -webkit-animation: swipeFromLeft 0.5s ease-in;
-          animation: swipeFromLeft 0.5s ease-in;
-  color: #cfcfcf;
-  margin: 0 0.5rem;
+.container section .work .align_objects .card-container .card .info-container .flex .btn-container a {
+  color: #fcfcfc;
+  margin-right: 0.5rem;
   border: solid 0.01rem #908282;
-  padding: 0.5rem 1.2rem;
-  font-size: 1vw;
+  padding: 0.3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
 }
 
-.container section article .card .info .btn-container a:hover {
+.container section .work .align_objects .card-container .card .info-container .flex .btn-container a:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: white;
@@ -453,89 +501,109 @@ html {
   transition: opacity 0.2s, border 0.3s;
 }
 
-.container section article .card .img {
+.container section .work .align_objects .card-container .card .img {
   padding: 1rem;
   max-width: 50%;
 }
 
-.container section article .card .img img {
+.container section .work .align_objects .card-container .card .img img {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container section footer {
-  display: block;
-  padding: 1rem;
-  margin: 15vw;
-  max-width: 100%;
+.container section .contact {
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+  margin: 18rem auto;
+  width: 100%;
+  padding: 1.25rem 0;
 }
 
-.container section footer .text {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding: 1rem;
+.container section .contact .align_objects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.container section .contact .align_objects .text-container {
+  max-width: 30rem;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
 }
 
-.container section footer .text h2 {
-  font-size: 2.7vw;
-  -webkit-animation: fadeIn 0.6s ease-in;
-          animation: fadeIn 0.6s ease-in;
-  font-weight: normal;
-  color: #e7e7e7;
-}
-
-.container section footer .text span {
-  color: #908282;
-}
-
-.container section footer form {
-  max-width: 40%;
-  padding: 0 1rem;
-}
-
-.container section footer form .form-container {
-  display: block;
-}
-
-.container section footer form .form-container .field input {
-  margin: 1rem 0;
-  background-color: transparent;
-  padding: 1rem 1rem;
-  border: solid 0.01rem #908282;
+.container section .contact .align_objects .text-container h2 {
+  font-size: clamp(1.5rem, 10vw, 3.3rem);
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+  font-weight: bolder;
   color: white;
-  font-size: 1.2rem;
-  outline: none;
-  width: 30rem;
+  line-height: 2.5;
 }
 
-.container section footer form .form-container .field label {
+.container section .contact .align_objects .text-container h2 span {
+  color: #908282;
+  border: solid 2px rgba(255, 255, 255, 0.301);
+}
+
+.container section .contact .align_objects .form-container {
+  max-width: 30rem;
+  -webkit-animation: swipeFromRight 1s ease-out;
+          animation: swipeFromRight 1s ease-out;
+}
+
+.container section .contact .align_objects .form-container .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container section .contact .align_objects .form-container .field label {
   color: white;
   font-weight: normal;
   font-size: 1.7rem;
 }
 
-.container section footer form .form-container .field textarea {
-  font-family: "Consolas", sans-serif;
+.container section .contact .align_objects .form-container .field input {
+  margin: 1rem 0;
+  background-color: transparent;
+  padding: 1rem .5rem;
+  border: solid 0.01rem #908282;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container section .contact .align_objects .form-container .field textarea {
+  font-family: "Poppins", sans-serif;
   height: 10rem;
   border: solid 0.01rem #908282;
   color: white;
   background-color: transparent;
-  font-size: 1.2rem;
-  width: 30rem;
-  padding: 0.5rem;
+  font-size: 1.2rem .5rem;
+  padding: 1rem .5rem;
 }
 
-.container section footer form .form-container #netlify {
+.container section .contact .align_objects .form-container #netlify {
   margin: 2rem 0;
 }
 
-.container section footer form .form-container input[type="submit"] {
+.container section .contact .align_objects .form-container input[type="submit"] {
   font-family: "Poppins", sans-serif;
-  width: 30rem;
+  width: 100%;
   padding: 0.5rem 1rem;
   border: solid 0.01rem #908282;
   text-transform: uppercase;
@@ -546,14 +614,14 @@ html {
   background-color: white;
 }
 
-.container section footer form .form-container input[type="submit"]:hover {
+.container section .contact .align_objects .form-container input[type="submit"]:hover {
   background-color: #908282;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #ffffff;
 }
 
-.container section footer .links {
+.container section .contact .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +631,7 @@ html {
   padding: 0 1rem;
 }
 
-.container section footer .links i {
+.container section .contact .links i {
   margin: 1rem 0.8rem;
   color: white;
   font-size: 2.5rem;
@@ -576,200 +644,437 @@ button:focus {
   outline: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
+  main .align_objects .text-container h1 {
+    font-size: 3vw !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .align_objects {
+    max-width: 85% !important;
+  }
+  header .navbar {
+    padding: 0rem !important;
+  }
+  header .navbar .align_objects .nav_logo .nav_link h1 {
+    font-size: 1.5rem !important;
+  }
+  header main {
+    padding: 0rem !important;
+    margin: 8.5rem 0 !important;
+  }
+  header main .align_objects .text-container {
+    max-width: 100% !important;
+  }
+  header main .align_objects .text-container h1 {
+    font-weight: bold;
+    font-size: 2.5rem !important;
+  }
+  header main .align_objects .btn-container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    max-width: 100% !important;
+  }
+  header main .align_objects .btn-container a {
+    margin-top: 0.5rem;
+  }
+  section .about {
+    padding: 0 !important;
+    margin: 8.5rem 0 !important;
+  }
+  section .about .align_objects .text-container {
+    max-width: 100% !important;
+  }
+  section .about .align_objects .text-container h2 {
+    font-weight: bold;
+    font-size: 2.5rem !important;
+  }
+  section .work {
+    padding: 0 !important;
+    margin: 8.5rem 0 !important;
+  }
+  section .work .align_objects .text-container {
+    max-width: 100%;
+  }
+  section .work .align_objects .text-container h2 {
+    font-weight: bold;
+    font-size: 2.5rem !important;
+  }
+  section .work .align_objects .card-container .card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin: 2rem auto !important;
+  }
+  section .work .align_objects .card-container .card .info-container {
+    max-width: 100% !important;
+  }
+  section .work .align_objects .card-container .card .info-container h1 {
+    font-size: 2rem !important;
+  }
+  section .work .align_objects .card-container .card .info-container .flex .technologies-container {
+    padding: 1rem 0 !important;
+  }
+  section .work .align_objects .card-container .card .info-container .flex .btn-container {
+    padding: 1rem 0 !important;
+  }
+  section .work .align_objects .card-container .card .info-container .flex .btn-container a {
+    font-size: 1rem !important;
+  }
+  section .work .align_objects .card-container .card .img {
+    max-width: 100% !important;
+  }
+  section .work .align_objects .card-container .card .img img {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .align_objects {
+    max-width: 85% !important;
+  }
+  header .navbar {
+    padding: 0rem !important;
+  }
+  header .navbar .align_objects .nav_logo .nav_link h1 {
+    font-size: 1.5rem !important;
+  }
+  header .navbar .align_objects .nav_links {
+    display: none !important;
+  }
+  header main {
+    padding: 0rem !important;
+    margin: 8.5rem 0 !important;
+  }
+  header main .align_objects .text-container {
+    max-width: 100% !important;
+  }
+  header main .align_objects .text-container h1 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 2rem !important;
+  }
+  header main .align_objects .btn-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    max-width: 100% !important;
+  }
+  header main .align_objects .btn-container a {
+    margin-top: 0.5rem;
+  }
+  section .about {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  section .about .align_objects .text-container {
+    max-width: 100% !important;
+  }
+  section .about .align_objects .text-container h2 {
+    font-weight: bold;
+    font-size: 2rem !important;
+  }
+  section .about .align_objects .text-container p {
+    font-size: 1rem !important;
+  }
+  section .about .align_objects .icon-container {
+    margin: 0.5rem 0 !important;
+  }
+  section .about .align_objects .icon-container i {
+    font-size: 2.1rem !important;
+  }
+  section .work {
+    padding: 0 !important;
+  }
+  section .work .align_objects .text-container {
+    max-width: 100% !important;
+  }
+  section .work .align_objects .text-container h2 {
+    font-size: 2rem !important;
+  }
+  section .work .align_objects .card-container .card {
+    margin: 1rem auto !important;
+  }
+  section .work .align_objects .card-container .card .info-container h1 {
+    font-size: 1.5rem !important;
+  }
+  section .work .align_objects .card-container .card .info-container p {
+    font-size: 1rem !important;
+  }
+  section .work .align_objects .card-container .card .info-container .flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+/* @media screen and (max-width: 1200px) {
   body {
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .container header main .text h1 {
-    font-size: 5.5vw;
-  }
-  .container header main .btn-container a {
-    font-size: 2vw;
-  }
-  .container section aside .text h3 {
-    font-size: 5vw;
-  }
-  .container section aside .text p {
-    font-size: 2.5vw;
-  }
-  .container section article .card {
-    display: block;
-    padding: 0;
-    width: 100%;
-  }
-  .container section article .card .info {
-    max-width: 100%;
-  }
-  .container section article .card .info p {
-    font-size: 1.4rem;
-  }
-  .container section article .card .info .technologies-container {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .container section article .card .info .btn-container {
-    margin: 1rem 0;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .container section article .card .img {
-    max-width: 100%;
-  }
-  .container section footer {
-    display: block;
+
+  .container {
+    header {
+      main {
+        .text {
+          h1 {
+            font-size: 5.5vw;
+          }
+        }
+
+        .btn-container {
+          a {
+            font-size: 2vw;
+          }
+        }
+      }
+    }
+    section {
+      aside {
+        .text {
+          h3 {
+            font-size: 5vw;
+          }
+
+          p {
+            font-size: 2.5vw;
+          }
+        }
+      }
+      article {
+        .text {
+        }
+
+        .card {
+          display: block;
+          padding: 0;
+          width: 100%;
+
+          .info {
+            max-width: 100%;
+
+            p {
+              font-size: 1.4rem;
+            }
+
+            .technologies-container {
+              justify-content: flex-start;
+            }
+
+            .btn-container {
+              margin: 1rem 0;
+              justify-content: flex-start;
+            }
+          }
+
+          .img {
+            max-width: 100%;
+          }
+        }
+      }
+      footer {
+        display: block;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1000px) {
   body {
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+
   .container {
     padding: 0;
     margin: 0;
-  }
-  .container header nav ul {
-    display: none;
-  }
-  .container header nav img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+
+    header {
+      nav {
+        ul {
+          display: none;
+        }
+
+        img {
+          display: flex;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .container header nav {
-    padding: 3.5vw 1vw;
-  }
-  .container header nav a h1 {
-    font-size: 5vw;
-  }
-  .container header main {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem 0;
-    margin: 15vw 1rem;
-  }
-  .container header main .text {
-    padding: 0;
-  }
-  .container header main .text h1 {
-    font-weight: normal;
-    text-align: left;
-    font-size: 8vw;
-  }
-  .container header main .btn-container {
-    margin: 1rem 0;
-    -webkit-box-pack: flexstart;
-        -ms-flex-pack: flexstart;
-            justify-content: flexstart;
-  }
-  .container header main .btn-container a {
-    font-size: 3.5vw;
-    margin: 0 0.3rem;
-    padding: 1.5vw 4vw;
-  }
-  .container section aside {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem 0;
-    max-width: inherit;
-    margin: 15vw 1rem;
-  }
-  .container section aside .text {
-    padding: 0;
-  }
-  .container section aside .text h3 {
-    font-size: 8vw;
-    font-weight: normal;
-    line-height: 1.25;
-  }
-  .container section aside .text p {
-    font-size: 5vw;
-    text-align: left;
-    font-weight: normal;
-  }
-  .container section aside .text p i {
-    font-size: 3rem;
-  }
-  .container section article {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem 0;
-    margin: 15vw 1rem;
-  }
-  .container section article .text {
-    padding: 0;
-  }
-  .container section article .text h2 {
-    font-size: 8vw;
-    font-weight: normal;
-    line-height: 1.25;
-  }
-  .container section article .card {
-    padding: 0;
-  }
-  .container section article .card .info {
-    padding: 1rem;
-  }
-  .container section article .card .info h1 {
-    padding: 0;
-    font-size: 9vw;
-    text-align: left;
-    font-weight: normal;
-  }
-  .container section article .card .info p {
-    font-size: 4vw;
-  }
-  .container section article .card .info .btn-container {
-    margin: 2rem auto;
-  }
-  .container section article .card .info .btn-container a {
-    margin: 0 0.5vw;
-    padding: 2vw 5vw;
-    font-size: 4vw;
-    letter-spacing: 0.3;
-  }
-  .container section article .card img {
-    width: 100%;
-  }
-  .container section footer {
-    padding: 1rem 0;
-    margin: 15vw 1rem;
-  }
-  .container section footer .text {
-    padding: 0;
-  }
-  .container section footer .text h2 {
-    font-size: 8vw;
-  }
-  .container section footer form {
-    max-width: 100%;
-    padding: 0;
-  }
-  .container section footer form .form-container .field label {
-    font-size: 6vw;
-  }
-  .container section footer form .form-container .field input {
-    width: 100%;
-  }
-  .container section footer form .form-container .field textarea {
-    width: 100%;
-  }
-  .container section footer form .form-container input[type="submit"] {
-    width: 100%;
+
+  .container {
+    header {
+      nav {
+        padding: 3.5vw 1vw;
+        a {
+          h1 {
+            font-size: 5vw;
+          }
+        }
+      }
+
+      main {
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 15vw 1rem;
+
+        .text {
+          padding: 0;
+          h1 {
+            font-weight: normal;
+            text-align: left;
+            font-size: 8vw;
+          }
+        }
+
+        .btn-container {
+          margin: 1rem 0;
+          justify-content: flexstart;
+
+          a {
+            font-size: 3.5vw;
+            margin: 0 0.3rem;
+            padding: 1.5vw 4vw;
+          }
+        }
+      }
+    }
+
+    section {
+      aside {
+        justify-content: center;
+        padding: 1rem 0;
+        max-width: inherit;
+        margin: 15vw 1rem;
+
+        .text {
+          padding: 0;
+
+          h3 {
+            font-size: 8vw;
+            font-weight: normal;
+            line-height: 1.25;
+          }
+
+          p {
+            font-size: 5vw;
+            text-align: left;
+            font-weight: normal;
+
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      article {
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 15vw 1rem;
+
+        .text {
+          padding: 0;
+
+          h2 {
+            font-size: 8vw;
+            font-weight: normal;
+            line-height: 1.25;
+          }
+        }
+
+        .card {
+          padding: 0;
+
+          .info {
+            padding: 1rem;
+            h1 {
+              padding: 0;
+              font-size: 9vw;
+              text-align: left;
+              font-weight: normal;
+            }
+
+            p {
+              font-size: 4vw;
+            }
+
+            .btn-container {
+              margin: 2rem auto;
+
+              a {
+                margin: 0 0.5vw;
+                padding: 2vw 5vw;
+                font-size: 4vw;
+                letter-spacing: 0.3;
+              }
+            }
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      footer {
+        padding: 1rem 0;
+        margin: 15vw 1rem;
+
+        .text {
+          padding: 0;
+
+          h2 {
+            font-size: 8vw;
+          }
+        }
+
+        form {
+          max-width: 100%;
+          padding: 0;
+
+          .form-container {
+            .field {
+              label {
+                font-size: 6vw;
+              }
+
+              input {
+                width: 100%;
+              }
+
+              textarea {
+                width: 100%;
+              }
+            }
+
+            input[type="submit"] {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
+ */
 /*# sourceMappingURL=index.css.map */
