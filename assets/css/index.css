@@ -276,7 +276,7 @@ html {
           align-items: flex-start;
   padding: 1rem;
   margin: 15vw;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .container section aside .text {
@@ -288,32 +288,65 @@ html {
           animation: swipeFromRight 1s ease-out;
 }
 
-.container section aside .text h2 {
+.container section aside .text h3 {
   font-size: 3vw;
-  -webkit-animation: fadeIn 0.6s ease-in;
-          animation: fadeIn 0.6s ease-in;
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
   font-weight: normal;
   color: white;
-  line-height: 0.9;
+  line-height: 2;
 }
 
-.container section aside .text h2 span {
+.container section aside .text h3 span {
   color: #908282;
+  border: solid 2px rgba(255, 255, 255, 0.301);
+  padding: 0.2rem 0.4rem;
 }
 
 .container section aside .text p {
-  margin: 1rem 0;
-  color: #f3f3f3;
-  padding: 1rem 0rem;
-  font-size: 1.3vw;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  color: #ffffff;
+  font-size: 1.15vw;
+  line-height: 1.5;
 }
 
-.container section aside .text p i {
-  color: #f3f3f3;
-  font-size: 4rem;
-  margin: 2.4rem 0.3rem;
+.container section aside .text .icon-container {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container section aside .text .icon-container i {
+  color: #cecece;
+  font-size: 3.5rem;
+  margin: 0 0.4rem;
+}
+
+.container section aside .text .icon-container .fa-html5 {
+  color: #e46329;
+}
+
+.container section aside .text .icon-container .fa-css3-alt {
+  color: #28a7df;
+}
+
+.container section aside .text .icon-container .fa-sass {
+  color: #c76599;
+}
+
+.container section aside .text .icon-container .fa-react {
+  color: #00d9ff;
+}
+
+.container section aside .text .icon-container .fa-node-js {
+  color: #83cd29;
 }
 
 .container section article {
@@ -561,7 +594,7 @@ button:focus {
   .container header main .btn-container a {
     font-size: 2vw;
   }
-  .container section aside .text h2 {
+  .container section aside .text h3 {
     font-size: 5vw;
   }
   .container section aside .text p {
@@ -664,7 +697,7 @@ button:focus {
   .container section aside .text {
     padding: 0;
   }
-  .container section aside .text h2 {
+  .container section aside .text h3 {
     font-size: 8vw;
     font-weight: normal;
     line-height: 1.25;

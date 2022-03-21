@@ -191,36 +191,60 @@ html {
 
       padding: 1rem;
       margin: 15vw;
-      max-width: 50%;
+      max-width: 40%;
       .text {
         width: 100%;
         transition: 0.5s;
         padding: 10rem 1rem;
         animation: swipeFromRight 1s ease-out;
 
-        h2 {
+        h3 {
           font-size: 3vw;
-          animation: fadeIn 0.6s ease-in;
+          animation: fadeIn 1s ease-in;
           font-weight: normal;
           color: rgb(255, 255, 255);
-          line-height: 0.9;
+          line-height: 2;
 
           span {
             color: #908282;
+            border: solid 2px rgba(255, 255, 255, 0.301);
+            padding: 0.2rem 0.4rem;
           }
         }
 
         p {
-          margin: 1rem 0;
-          color: rgb(243, 243, 243);
-          padding: 1rem 0rem;
-          font-size: 1.3vw;
-          transition: 0.5s;
+          color: #ffffff;
+          font-size: 1.15vw;
+          line-height: 1.5;
+        }
 
+        .icon-container {
+          margin: 1rem 0;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
           i {
-            color: rgb(243, 243, 243);
-            font-size: 4rem;
-            margin: 2.4rem 0.3rem;
+            color: rgb(206, 206, 206);
+            font-size: 3.5rem;
+            margin: 0 0.4rem;
+          }
+
+          .fa-html5 {
+            color: #e46329;
+          }
+
+          .fa-css3-alt {
+            color: #28a7df;
+          }
+
+          .fa-sass {
+            color: #c76599;
+          }
+          .fa-react {
+            color: #00d9ff;
+          }
+          .fa-node-js {
+            color: #83cd29;
           }
         }
       }
@@ -457,7 +481,7 @@ button:focus {
     section {
       aside {
         .text {
-          h2 {
+          h3 {
             font-size: 5vw;
           }
 
@@ -580,7 +604,7 @@ button:focus {
         .text {
           padding: 0;
 
-          h2 {
+          h3 {
             font-size: 8vw;
             font-weight: normal;
             line-height: 1.25;
