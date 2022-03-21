@@ -142,7 +142,7 @@ html {
       .text-container {
         max-width: 80%;
 
-        h1 {
+        h2 {
           font-size: clamp(1.5rem, 10vw, 4rem);
           animation: fadeIn 0.6s ease-in;
           color: rgb(255, 255, 255);
@@ -304,7 +304,7 @@ html {
               padding: 1rem;
               max-width: 50%;
 
-              h1 {
+              h3 {
                 font-size: 2.5rem;
                 color: rgb(238, 238, 238);
                 line-height: 2;
@@ -485,7 +485,7 @@ button:focus {
   main {
     .align_objects {
       .text-container {
-        h1 {
+        h2 {
           font-size: 3vw !important;
         }
       }
@@ -520,7 +520,7 @@ button:focus {
       .text-container {
         max-width: 100% !important;
 
-        h1 {
+        h2 {
           font-weight: bold;
           font-size: 2.5rem !important;
         }
@@ -578,7 +578,7 @@ button:focus {
             .info-container {
               max-width: 100% !important;
 
-              h1 {
+              h3 {
                 font-size: 2rem !important;
               }
 
@@ -641,7 +641,7 @@ button:focus {
       .text-container {
         max-width: 100% !important;
 
-        h1 {
+        h2 {
           font-weight: bold;
           text-align: left;
           font-size: 2rem !important;
@@ -705,7 +705,7 @@ button:focus {
             margin: 1rem auto !important;
 
             .info-container {
-              h1 {
+              h3 {
                 font-size: 1.5rem !important;
               }
 

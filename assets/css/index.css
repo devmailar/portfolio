@@ -225,7 +225,7 @@ html {
   max-width: 80%;
 }
 
-.container main .align_objects .text-container h1 {
+.container main .align_objects .text-container h2 {
   font-size: clamp(1.5rem, 10vw, 4rem);
   -webkit-animation: fadeIn 0.6s ease-in;
           animation: fadeIn 0.6s ease-in;
@@ -233,7 +233,7 @@ html {
   line-height: 1.4;
 }
 
-.container main .align_objects .text-container h1 span {
+.container main .align_objects .text-container h2 span {
   color: #908282;
 }
 
@@ -433,7 +433,7 @@ html {
   max-width: 50%;
 }
 
-.container section .work .align_objects .card-container .card .info-container h1 {
+.container section .work .align_objects .card-container .card .info-container h3 {
   font-size: 2.5rem;
   color: #eeeeee;
   line-height: 2;
@@ -646,7 +646,7 @@ button:focus {
 }
 
 @media screen and (max-width: 1600px) {
-  main .align_objects .text-container h1 {
+  main .align_objects .text-container h2 {
     font-size: 3vw !important;
   }
 }
@@ -668,7 +668,7 @@ button:focus {
   main .align_objects .text-container {
     max-width: 100% !important;
   }
-  main .align_objects .text-container h1 {
+  main .align_objects .text-container h2 {
     font-weight: bold;
     font-size: 2.5rem !important;
   }
@@ -720,7 +720,7 @@ button:focus {
   section .work .align_objects .card-container .card .info-container {
     max-width: 100% !important;
   }
-  section .work .align_objects .card-container .card .info-container h1 {
+  section .work .align_objects .card-container .card .info-container h3 {
     font-size: 2rem !important;
   }
   section .work .align_objects .card-container .card .info-container .flex .technologies-container {
@@ -760,7 +760,7 @@ button:focus {
   main .align_objects .text-container {
     max-width: 100% !important;
   }
-  main .align_objects .text-container h1 {
+  main .align_objects .text-container h2 {
     font-weight: bold;
     text-align: left;
     font-size: 2rem !important;
@@ -810,7 +810,7 @@ button:focus {
   section .work .align_objects .card-container .card {
     margin: 1rem auto !important;
   }
-  section .work .align_objects .card-container .card .info-container h1 {
+  section .work .align_objects .card-container .card .info-container h3 {
     font-size: 1.5rem !important;
   }
   section .work .align_objects .card-container .card .info-container p {
