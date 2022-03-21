@@ -123,6 +123,10 @@ html {
   width: 100%;
 }
 
+.container header {
+  background-color: rgba(255, 23, 23, 0.774);
+}
+
 .container header nav {
   -webkit-animation: swipeFromLeft 1s ease-out;
           animation: swipeFromLeft 1s ease-out;
@@ -185,22 +189,20 @@ html {
 }
 
 .container header main {
+  background-color: rgba(23, 189, 255, 0.774);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 15vw;
   max-width: 70%;
 }
 
 .container header main .text {
-  width: 100%;
+  max-width: 100%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 1rem;
@@ -268,24 +270,21 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 1rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 15vw;
-  max-width: 40%;
+  max-width: 60%;
 }
 
 .container section aside .text {
-  width: 100%;
+  max-width: 70%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  padding: 10rem 1rem;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
+  padding: 8rem 1.25rem;
 }
 
 .container section aside .text h3 {
@@ -300,7 +299,6 @@ html {
 .container section aside .text h3 span {
   color: #908282;
   border: solid 2px rgba(255, 255, 255, 0.301);
-  padding: 0.2rem 0.4rem;
 }
 
 .container section aside .text p {

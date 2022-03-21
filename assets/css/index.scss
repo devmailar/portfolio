@@ -67,10 +67,9 @@ html {
   margin: 0 auto;
   top: 0;
   width: 100%;
-  // background-image: url("/assets/svg/pattern.svg");
 
   header {
-    // background-color: rgba(255, 23, 23, 0.774);
+    background-color: rgba(255, 23, 23, 0.774);
     nav {
       animation: swipeFromLeft 1s ease-out;
       transition: 2s;
@@ -123,15 +122,13 @@ html {
     }
 
     main {
+      background-color: rgba(23, 189, 255, 0.774);
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      padding: 1rem;
-      margin: 15vw; // make responsive
+      flex-direction: row;
+      margin: 15vw;
       max-width: 70%;
       .text {
-        width: 100%;
+        max-width: 100%;
         transition: 0.5s;
         padding: 1rem;
         animation: swipeFromRight 1s ease-out;
@@ -185,18 +182,17 @@ html {
 
   section {
     aside {
+      // background-color: rgba(23, 189, 255, 0.774);
       display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      padding: 1rem;
+      flex-direction: row;
       margin: 15vw;
-      max-width: 40%;
+      max-width: 60%;
+      
       .text {
-        width: 100%;
+        max-width: 70%;
         transition: 0.5s;
-        padding: 10rem 1rem;
         animation: swipeFromRight 1s ease-out;
+        padding: 8rem 1.25rem;
 
         h3 {
           font-size: 3vw;
@@ -208,7 +204,6 @@ html {
           span {
             color: #908282;
             border: solid 2px rgba(255, 255, 255, 0.301);
-            padding: 0.2rem 0.4rem;
           }
         }
 
