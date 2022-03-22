@@ -8,6 +8,27 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+#resume-container {
+  a {
+    z-index: 2;
+    animation: swipeFromLeft 0.5s ease-in;
+    transition: 0.3s;
+    color: rgb(20, 20, 20);
+    border: solid 0.01rem #ffffff;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 4;
+  }
+
+  display: none;
+  max-width: 70%;
+  margin: 7rem auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
