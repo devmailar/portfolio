@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal Portfolio Website" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/icons/icon-512x512.png" />
     <title>Mailar</title>
     <link rel="stylesheet" href="assets/css/animations/anim.index.css" />
-    <link rel="stylesheet" href="assets/css/fonts/fonts.index.css">
+    <link rel="stylesheet" href="assets/css/fonts/fonts.index.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="shortcut icon" type="image/png" href="assets/img/icons/icon-512x512.png" />
     <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
@@ -30,6 +30,10 @@
             </div>
 
             <div class="nav_links">
+              <div class="burger_menu">
+                <img src="assets/img/align-right.svg" onclick="showBurgermenu()" alt="burgerMenu" />
+              </div>
+
               <ul class="unordered_list">
                 <li class="nav_item">
                   <a href="#" onclick="navigationChanged()" class="link active">Home</a>
@@ -39,6 +43,18 @@
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div class="nav_menu">
+            <ul>
+              <li>
+                <a href="#" class="link">Home</a>
+                <a href="#02" class="link">About</a>
+                <a href="#03" class="link">Work</a>
+                <a href="#04" class="link">Contact</a>
+                <a href="#05" class="hide" onclick="hideBurgermenu()">Close</a>
+              </li>
+            </ul>
           </div>
         </nav>
       </header>
@@ -62,7 +78,7 @@
       <section>
         <aside class="about">
           <div class="align_objects">
-            <div class="text-container" id="01">
+            <div class="text-container" id="02">
               <h2>About <span>Me</span></h2>
               <p>
                 I am a Front-end Developer with a positive attitude, I am studying software development in a vocational school. My passion is to

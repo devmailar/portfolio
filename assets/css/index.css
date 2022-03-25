@@ -100,6 +100,14 @@ html {
           align-items: center;
 }
 
+.container header .navbar .align_objects .nav_links .burger_menu {
+  display: none;
+}
+
+.container header .navbar .align_objects .nav_links .burger_menu img {
+  width: 2.5rem;
+}
+
 .container header .navbar .align_objects .nav_links .unordered_list {
   list-style: none;
 }
@@ -126,6 +134,57 @@ html {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   color: white;
+}
+
+.container header .navbar .nav_menu {
+  -webkit-animation: swipeFromLeft 1s ease-out;
+          animation: swipeFromLeft 1s ease-out;
+  display: none;
+  margin: 2rem 0;
+}
+
+.container header .navbar .nav_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+}
+
+.container header .navbar .nav_menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+}
+
+.container header .navbar .nav_menu ul li a {
+  font-size: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.container header .navbar .nav_menu ul li a:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  color: white;
+}
+
+.container header .navbar .nav_menu ul li .hide {
+  -webkit-animation: swipeFromLeft 1s ease-out;
+          animation: swipeFromLeft 1s ease-out;
+  color: #908282 !important;
 }
 
 .container main {
@@ -686,8 +745,16 @@ button:focus {
   header .navbar .align_objects .nav_logo .nav_link h1 {
     font-size: 1.5rem !important;
   }
-  header .navbar .align_objects .nav_links {
+  header .navbar .align_objects .nav_links .burger_menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  header .navbar .align_objects .nav_links .unordered_list {
     display: none !important;
+  }
+  header .navbar .active-navmenu {
+    display: block !important;
   }
   main {
     padding: 0rem !important;

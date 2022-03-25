@@ -80,6 +80,15 @@ html {
           padding: 0.5rem;
           display: inline-flex;
           align-items: center;
+
+          .burger_menu {
+            display: none;
+
+            img {
+              width: 2.5rem;
+            }
+          }
+
           .unordered_list {
             list-style: none;
             .nav_item {
@@ -99,6 +108,40 @@ html {
                 transition: 0.2s ease-in;
                 color: rgb(255, 255, 255);
               }
+            }
+          }
+        }
+      }
+
+      .nav_menu {
+        animation: swipeFromLeft 1s ease-out;
+        display: none;
+        margin: 2rem 0;
+
+        ul {
+          display: flex;
+          justify-content: flex-start;
+          list-style-type: none;
+          li {
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            a {
+              font-size: 2.5rem;
+              align-items: center;
+              transition: 0.4s ease-out;
+              letter-spacing: 0.2rem;
+              color: rgba(255, 255, 255, 0.76);
+
+              &:hover {
+                transition: 0.2s ease-in;
+                color: rgb(255, 255, 255);
+              }
+            }
+
+            .hide {
+              animation: swipeFromLeft 1s ease-out;
+              color: #908282 !important;
             }
           }
         }
@@ -614,8 +657,18 @@ button:focus {
           }
         }
         .nav_links {
-          display: none !important;
+          .burger_menu {
+            display: flex !important;
+          }
+
+          .unordered_list {
+            display: none !important;
+          }
         }
+      }
+
+      .active-navmenu {
+        display: block !important;
       }
     }
   }

@@ -10,3 +10,17 @@ function navigationChanged() {
     });
   }
 }
+
+
+function showBurgermenu() {
+  let navMenu = document.querySelector(".nav_menu")
+  let bgMenu = document.querySelector(".burger_menu")
+  navMenu.classList.add("active-navmenu");
+  bgMenu.classList.add("hide-bgmenu");
+}
+
+
+function hideBurgermenu() {
+  let navMenu = document.querySelector(".nav_menu")
+  navMenu.classList.remove("active-navmenu");
+}
