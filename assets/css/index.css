@@ -165,7 +165,7 @@ html {
 }
 
 .container header .navbar .nav_menu ul li a {
-  font-size: 2.5rem;
+  font-size: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -753,12 +753,12 @@ button:focus {
   header .navbar .align_objects .nav_links .unordered_list {
     display: none !important;
   }
-  header .navbar .active-navmenu {
-    display: block !important;
+  header .navbar .nav_menu {
+    display: none;
   }
   main {
     padding: 0rem !important;
-    margin: 8.5rem 0 !important;
+    margin: 5.5rem 0 !important;
   }
   main .align_objects .text-container {
     max-width: 100% !important;
