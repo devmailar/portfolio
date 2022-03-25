@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Personal Portfolio Website" />
     <title>Mailar</title>
+    <link rel="stylesheet" href="assets/css/animations/anim.index.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="shortcut icon" type="image/png" href="assets/img/icons/icon-512x512.png" />
@@ -30,10 +31,10 @@
             <div class="nav_links">
               <ul class="unordered_list">
                 <li class="nav_item">
-                  <a href="#" class="link active">Home</a>
-                  <a href="#01" class="link">About</a>
-                  <a href="#03" class="link">Work</a>
-                  <a href="#04" class="link">Contact</a>
+                  <a href="#" onclick="navigationChanged()" class="link active">Home</a>
+                  <a href="#01" onclick="navigationChanged()" class="link">About</a>
+                  <a href="#03" onclick="navigationChanged()" class="link">Work</a>
+                  <a href="#04" onclick="navigationChanged()" class="link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -52,7 +53,7 @@
 
           <div class="btn-container">
             <a href="#03" class="important" rel="noreferrer"> Work </a>
-            <a href="#" id="resume"> Resume </a>
+            <a href="#" onclick="openResume();" id="resume"> Resume </a>
           </div>
         </div>
       </main>
@@ -108,7 +109,7 @@
                   </div>
                 </div>
                 <div class="img">
-                  <img src="assets/img/airbnb-image.webp" alt="project-picture" />
+                  <img src="assets/img/projects/airbnb-image.webp" alt="project-picture" />
                 </div>
               </div>
 
@@ -134,7 +135,7 @@
                   </div>
                 </div>
                 <div class="img">
-                  <img src="assets/img/portfolio-img.webp" alt="project-picture" />
+                  <img src="assets/img/projects/portfolio-img.webp" alt="project-picture" />
                 </div>
               </div>
 
@@ -157,7 +158,7 @@
                   </div>
                 </div>
                 <div class="img">
-                  <img src="assets/img/weather-picture.webp" alt="project-picture" />
+                  <img src="assets/img/projects/weather-picture.webp" alt="project-picture" />
                 </div>
               </div>
 
@@ -181,7 +182,7 @@
                   </div>
                 </div>
                 <div class="img">
-                  <img src="assets/img/todo-img.webp" alt="project-picture" />
+                  <img src="assets/img/projects/todo-img.webp" alt="project-picture" />
                 </div>
               </div>
 
@@ -205,7 +206,7 @@
                   </div>
                 </div>
                 <div class="img">
-                  <img src="assets/img/movie-img.webp" alt="project-picture" />
+                  <img src="assets/img/projects/movie-img.webp" alt="project-picture" />
                 </div>
               </div>
             </div>
@@ -237,6 +238,7 @@
               <div class="field" id="netlify">
                 <div data-netlify-recaptcha="true"></div>
               </div>
+              
               <input type="submit" value="submit" />
 
               <div class="links">
@@ -261,6 +263,7 @@
         </footer>
       </section>
     </div>
-    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/_nav.js"></script>
+    <script defer src="assets/js/_resume.js"></script>
   </body>
 </html>
