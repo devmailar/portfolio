@@ -40,45 +40,6 @@ html {
   text-decoration: none;
 }
 
-@keyframes swipeFromRight {
-  from {
-    transform: translateX(250px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes swipeFromLeft {
-  from {
-    transform: translateX(-300px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    font-size: 7rem;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes introLoad {
-  from {
-    display: none;
-    transform: translateY(100px);
-  }
-  to {
-    transition: 0.5s;
-    transform: translateY(0);
-  }
-}
-
 .active {
   color: white;
 }
