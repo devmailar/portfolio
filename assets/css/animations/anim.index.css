@@ -44,7 +44,7 @@
 
 @-webkit-keyframes fadeIn {
   0% {
-    font-size: 7rem;
+    font-size: 7em;
     opacity: 0;
   }
   100% {
@@ -54,7 +54,7 @@
 
 @keyframes fadeIn {
   0% {
-    font-size: 7rem;
+    font-size: 7em;
     opacity: 0;
   }
   100% {

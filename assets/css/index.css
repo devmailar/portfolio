@@ -1,9 +1,8 @@
 body {
-  background-color: #0e0e0e;
+  background-color: #0b0c0bfa;
   background-image: url("/assets/svg/background.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   font-family: "Poppins", sans-serif;
 }
 
@@ -15,8 +14,8 @@ body {
 
 #resume-container a {
   z-index: 2;
-  -webkit-animation: swipeFromLeft 0.5s ease-in;
-          animation: swipeFromLeft 0.5s ease-in;
+  -webkit-animation: swipeFromLeft 1.5s ease-in;
+          animation: swipeFromLeft 1.5s ease-in;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #141414;
@@ -54,8 +53,6 @@ html {
 }
 
 .container header .navbar {
-  -webkit-animation: swipeFromLeft 1s ease-out;
-          animation: swipeFromLeft 1s ease-out;
   z-index: 999;
   background-color: rgba(12, 12, 12, 0.971);
   top: 0;
@@ -190,7 +187,7 @@ html {
 .container main {
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
-  margin: 18rem auto;
+  margin: 20.5rem auto;
   width: 100%;
   padding: 1.25rem 0;
 }
@@ -211,15 +208,16 @@ html {
 }
 
 .container main .align_objects .text-container {
-  max-width: 80%;
+  width: 80%;
 }
 
 .container main .align_objects .text-container h2 {
   font-size: clamp(1.5rem, 10vw, 4rem);
-  -webkit-animation: fadeIn 0.6s ease-in;
-          animation: fadeIn 0.6s ease-in;
+  -webkit-animation: fadeIn .6s ease-in;
+          animation: fadeIn .6s ease-in;
   color: white;
   line-height: 1.4;
+  font-weight: bold;
 }
 
 .container main .align_objects .text-container h2 span {
@@ -260,8 +258,8 @@ html {
 }
 
 .container main .align_objects .btn-container a:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   color: white;
   background-color: #908282;
   -webkit-transition: opacity 0.2s, border 0.3s;
@@ -287,7 +285,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 10rem auto;
   max-width: 70%;
 }
 
@@ -333,27 +331,27 @@ html {
 .container section .about .align_objects .icon-container i {
   color: #cecece;
   font-size: 3.5rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .container section .about .align_objects .icon-container .fa-html5 {
-  color: #e46329;
+  color: #b8b6b6;
 }
 
 .container section .about .align_objects .icon-container .fa-css3-alt {
-  color: #28a7df;
+  color: #b8b6b6;
 }
 
 .container section .about .align_objects .icon-container .fa-sass {
-  color: #c76599;
+  color: #b8b6b6;
 }
 
 .container section .about .align_objects .icon-container .fa-react {
-  color: #00d9ff;
+  color: #b8b6b6;
 }
 
 .container section .about .align_objects .icon-container .fa-node-js {
-  color: #83cd29;
+  color: #b8b6b6;
 }
 
 .container section .work {
@@ -375,7 +373,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 10rem auto;
   max-width: 70%;
 }
 
@@ -522,7 +520,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 10rem auto;
   max-width: 70%;
 }
 
