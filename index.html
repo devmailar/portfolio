@@ -1,287 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ----------------------------------------------------------------- -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Personal Portfolio Website" />
-    <link rel="shortcut icon" type="image/png" href="assets/img/icons/icon-512x512.png" />
+    <meta
+      name="description"
+      content="Front-end web developer based in Finland."
+    />
     <title>Mailar</title>
-    <link rel="stylesheet" href="assets/css/animations/anim.index.css" />
-    <link rel="stylesheet" href="assets/css/fonts/fonts.index.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="assets/css/scss/app.css" />
+    <link rel="stylesheet" href="assets/css/animations.module.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icons/icon-512x512.png"
+    />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="../animations/anim.index.css" />
+    <link rel="stylesheet" href="../fonts/fonts.index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ----------------------------------------------------------------- -->
   </head>
+
   <body>
     <div id="resume-container">
       <a href="index.html">Close</a>
-      <iframe src="assets/pdf/cv.pdf" width="100%" height="700px"> </iframe>
+      <iframe src="assets/pdf/leo.pdf" width="100%" height="700px"> </iframe>
     </div>
 
-    <div class="container">
-      <header>
-        <nav class="navbar">
-          <div class="align_objects">
-            <div class="nav_logo">
-              <a href="#" class="nav_link">
-                <h1>Mailar.</h1>
-              </a>
-            </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-logo">
+          <a href="">Mailar</a>
+        </div>
 
-            <div class="nav_links">
-              <div class="burger_menu">
-                <img src="assets/img/align-right.svg" onclick="showBurgermenu()" alt="burgerMenu" />
-              </div>
+        <ul class="nav-link">
+          <li class="nav-link-item">
+            <a href="#01" onclick="navigationChanged()" class="active">Home</a>
+            <a href="#02" onclick="navigationChanged()" class="">About</a>
+            <a href="#03" onclick="navigationChanged()" class="">Skills</a>
+            <a href="#04" onclick="navigationChanged()" class="">Work</a>
+            <a href="#05" onclick="navigationChanged()" class="">Contact</a>
+          </li>
+        </ul>
 
-              <ul class="unordered_list">
-                <li class="nav_item">
-                  <a href="#" onclick="navigationChanged()" class="link active">Home</a>
-                  <a href="#02" onclick="navigationChanged()" class="link">About</a>
-                  <a href="#03" onclick="navigationChanged()" class="link">Work</a>
-                  <a href="#04" onclick="navigationChanged()" class="link">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <ul class="nav-mobile-link">
+          <li class="nav-mobile-item">
+            <a href="#01" class="">Home</a>
+            <a href="#02" class="">About</a>
+            <a href="#03" class="">Skills</a>
+            <a href="#04" class="">Work</a>
+            <a href="#05" class="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-          <div class="nav_menu"  id="myLinks">
-            <ul>
-              <li>
-                <a href="#01" class="link">Home</a>
-                <a href="#02" class="link">About</a>
-                <a href="#03" class="link">Work</a>
-                <a href="#04" class="link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-      <main class="home">
-        <div class="align_objects">
-          <div class="text-container" id="01">
+    <section class="home" id="01">
+      <div class="container">
+        <div class="left-col">
+          <div class="text-container">
             <h2>
-              Hey, I <span>build</span> interactive <span>web applications</span> that runs across <br />
-              on different <span>platforms</span> & <span> devices</span>
+              I build & design <br />
+              interactive enterprise <br />
+              web applications with <br />
+              <code>passion</code> & positive mindset <br />
             </h2>
           </div>
 
           <div class="btn-container">
-            <a href="#03" class="important" rel="noreferrer"> Work </a>
-            <a href="#" onclick="openResume();" id="resume"> Resume </a>
+            <a href="#04" rel="noreferrer"> Work </a>
+            <a href="#" rel="noreferrer" id="resume"> Resume </a>
           </div>
         </div>
-      </main>
+      </div>
+    </section>
 
-      <section>
-        <aside class="about" id="02">
-          <div class="align_objects">
-            <div class="text-container" >
-              <h2>About <span>Me</span></h2>
-              <p>
-                Hello, my name is <span>Mailar</span>. 
-                I am a <span>front-end web developer</span> with a <span>passion</span> for <span>creating</span> fast, scalable and responsive business web applications.
+    <section class="about">
+      <div class="container" id="02">
+        <div class="left-col">
+          <div class="text-container">
+            <h3>02. About Me</h3>
+            <p>
+              Hey, I am a front-end developer based in Finland. <br />
+              With a great passion and positive mindset.
+              <br />
+              <br />
+              I am passionate about learning and I like to build <br />
+              enterprise web applications with the best techno <br />
+              logies to provide a great user experience.
+              <br />
+              <br />
+              I have +2 years of experience in web development. <br />
+              Including building enterprise web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="03">
+        <div class="left-col">
+          <div class="text-container">
+            <h3>03. My Skills</h3>
+            <p>Skills I use everyday on daily basis:</p>
+          </div>
 
-                <br>
-                <br>
+          <div class="img-container">
+            <i class="fa-brands fa-js-square"></i>
 
-                I have been working with multiple technologies like <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>React</span>, <span>SCSS</span>, and <span>Node.js</span>.
+            <i class="fa-brands fa-sass"></i>
+
+            <i class="fa-brands fa-react"></i>
+
+            <i class="fa-brands fa-node-js"></i>
+
+            <i class="fa-brands fa-bootstrap"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="04">
+      <div class="container">
+        <div class="left-col">
+          <div class="text-container">
+            <h3>04. My Work</h3>
+          </div>
+
+          <div class="card-grid">
+            <section class="card">
+              <div class="card-img-container">
+                <img src="./assets/images/projects/todo.png" alt="" />
+              </div>
+
+              <div class="card-text-container">
+                <h4>Todo List</h4>
+                <p>
+                  Todo List is a simple list of tasks that you can add to your
+                  project structure. Then you can remove, edit or mark them
+                  completed when you get them done.
+                </p>
+              </div>
+
+              <div class="card-btn-container">
+                <a href="https://github.com/devmailar/todo-app" target="_blank"
+                  >Source <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://todo-app-mailar.netlify.app/" target="_blank"
+                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-img-container">
+                <img src="./assets/images/projects/movie.png" alt="" />
+              </div>
+
+              <div class="card-text-container">
+                <h4>MovieLand</h4>
+                <p>
+                  MovieLand is a bit like a website where you can see
+                  information and ratings for the latest movies. The project
+                  uses the themoviedb.org API. Simple.
+                </p>
+              </div>
+
+              <div class="card-btn-container">
+                <a href="https://github.com/devmailar/MovieLand" target="_blank"
+                  >Source <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://movieapp-project.netlify.app/" target="_blank"
+                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-img-container">
+                <img src="./assets/images/projects/weather.png" alt="" />
+              </div>
+
+              <div class="card-text-container">
+                <h4>Weather Tracker</h4>
+                <p>
+                  Weather tracker is a web application for tracking weather and
+                  events on the web. It includes weather API and functionality
+                  for tracking weather it is fast and reliable.
+                </p>
+              </div>
+
+              <div class="card-btn-container">
+                <a href="https://weather-trackerr.netlify.app/" target="_blank"
+                  >Source <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://weather-trackerr.netlify.app/" target="_blank"
+                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </section>
+
+            <section class="card">
+              <div class="card-img-container">
+                <img src="./assets/images/projects/airbnb.png" alt="" />
+              </div>
+
+              <div class="card-text-container">
+                <h4>Airbnb</h4>
+                <p>
+                  Airbnb is a application & simple project that provides cards
+                  and other components. It is main idea is to tell people about
+                  activies outside and you can buy them.
+                </p>
+              </div>
+
+              <div class="card-btn-container">
+                <a
+                  href="https://github.com/devmailar/AirBnb-react"
+                  target="_blank"
+                  >Source <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://airbnb-reactjs.netlify.app/" target="_blank"
+                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="05">
+      <div class="container">
+        <div class="left-col">
+          <div class="text-container">
+            <h3>05. Contact Me</h3>
+          </div>
+
+          <form class="form-container" action="POST" data-netlify="true">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+
+            <div class="field" id="netlify">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <input type="submit" value="submit" />
+
+            <div class="form-container-links">
+              <a
+                href="https://www.linkedin.com/in/leokoivunen/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i>
                 <br />
-              </p>
+                Linkedin
+              </a>
+              <a href="https://github.com/devmailar" target="_blank">
+                <i class="fab fa-github"></i>
+                <br />
+                Github
+              </a>
             </div>
-
-            <div class="icon-container">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-sass"></i>
-              <i class="fab fa-react"></i>
-              <i class="fab fa-node-js"></i>
-            </div>
-          </div>
-        </aside>
-
-        <article class="work" id="03">
-          <div class="align_objects">
-            <div class="text-container">
-              <h2>My <span>Work</span></h2>
-            </div>
-
-            <div class="card-container">
-              <div class="card">
-                <div class="info-container">
-                  <h3>Airbnb</h3>
-                  <p>Airbnb is a simple project that provides cards and other components. It main idea is to tell people about activies outside.</p>
-
-                  <div class="flex">
-                    <div class="btn-container">
-                      <a href="https://github.com/devmailar/AirBnb-react" target="_blank" rel="noopener noreferrer">Code</a>
-                      <a href="https://airbnb-reactjs.netlify.app/" target="_blank" rel="noopener noreferrer">Preview</a>
-                    </div>
-
-                    <div class="technologies-container">
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-js"></i>
-                      <i class="fab fa-react"></i>
-                      <i class="fab fa-sass"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="img">
-                  <img src="assets/img/projects/airbnb-image.webp" alt="project-picture" />
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="info-container">
-                  <h3>Portfolio</h3>
-                  <p>
-                    Portfolio - this is my current portfolio website for showing my top projects and information about me. It is made using
-                    HTML/SCSS/JS.
-                  </p>
-
-                  <div class="flex">
-                    <div class="btn-container">
-                      <a href="https://github.com/devmailar/portfolio" target="_blank" rel="noopener noreferrer">Code</a>
-                      <a href="https://mailar.ml" target="_blank" rel="noopener noreferrer">Preview</a>
-                    </div>
-
-                    <div class="technologies-container">
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-js"></i>
-                      <i class="fab fa-sass"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="img">
-                  <img src="assets/img/projects/portfolio-img.webp" alt="project-picture" />
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="info-container">
-                  <h3>Weather Tracker</h3>
-                  <p>
-                    Simple weather tracker for tracking weather and events on the web. It includes weather API and functionality for tracking weather.
-                  </p>
-                  <div class="flex">
-                    <div class="btn-container">
-                      <a href="https://github.com/devmailar/weather-tracker" target="_blank" rel="noopener noreferrer">Code</a>
-                      <a href="https://weather-trackerr.netlify.app/" target="_blank" rel="noopener noreferrer">Preview</a>
-                    </div>
-                    <div class="technologies-container">
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-js"></i>
-                      <i class="fab fa-sass"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="img">
-                  <img src="assets/img/projects/weather-picture.webp" alt="project-picture" />
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="info-container">
-                  <h3>Todo List</h3>
-                  <p>
-                    Todo List is a simple list of tasks that you can add to your project structure. Then you can remove, edit or mark them completed
-                    when you get them done.
-                  </p>
-                  <div class="flex">
-                    <div class="btn-container">
-                      <a href="https://github.com/devmailar/todo-app" target="_blank" rel="noopener noreferrer">Code</a>
-                      <a href="https://todo-app-mailar.netlify.app/" target="_blank" rel="noopener noreferrer">Preview</a>
-                    </div>
-                    <div class="technologies-container">
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-js"></i>
-                      <i class="fab fa-sass"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="img">
-                  <img src="assets/img/projects/todo-img.webp" alt="project-picture" />
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="info-container">
-                  <h3>MovieLand</h3>
-                  <p>
-                    MovieLand is a bit like a website where you can see information and ratings for the latest movies. The project uses the
-                    themoviedb.org API.
-                  </p>
-                  <div class="flex">
-                    <div class="btn-container">
-                      <a href="https://github.com/devmailar/MovieLand" target="_blank" rel="noopener noreferrer">Code</a>
-                      <a href="https://movieapp-project.netlify.app/" target="_blank" rel="noopener noreferrer">Preview</a>
-                    </div>
-                    <div class="technologies-container">
-                      <i class="fab fa-html5"></i>
-                      <i class="fab fa-js"></i>
-                      <i class="fab fa-sass"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="img">
-                  <img src="assets/img/projects/movie-img.webp" alt="project-picture" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <footer class="contact">
-          <div class="align_objects">
-            <div class="text-container" id="04">
-              <h2>Contact <span>Me</span></h2>
-            </div>
-
-            <form class="form-container" action="POST" data-netlify="true">
-              <div class="field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required />
-              </div>
-
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required />
-              </div>
-
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
-              </div>
-
-              <div class="field" id="netlify">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-
-              <input type="submit" value="submit" />
-
-              <div class="links">
-                <a href="https://www.linkedin.com/in/leokoivunen/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                  <br />
-                  Linkedin
-                </a>
-                <a href="https://github.com/devmailar" target="_blank">
-                  <i class="fab fa-github"></i>
-                  <br />
-                  Github
-                </a>
-                <a href="https://www.youtube.com/c/MailarYT/videos" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                  <br />
-                  Youtube
-                </a>
-              </div>
-            </form>
-          </div>
-        </footer>
-      </section>
-    </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <script defer src="assets/js/_nav.js"></script>
     <script defer src="assets/js/_resume.js"></script>
   </body>
