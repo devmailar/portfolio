@@ -116,10 +116,6 @@ html {
     display: none;
   }
 
-  .nav-mobile-link {
-    display: block !important;
-  }
-
   .container {
     padding: 0 2rem;
   }
