@@ -1,5 +1,5 @@
 function navigationChanged() {
-  let header = document.querySelector(".nav_item");
+  let header = document.querySelector(".nav-link-item");
   let links = header.getElementsByClassName("link");
 
   for (let i = 0; i < links.length; i++) {

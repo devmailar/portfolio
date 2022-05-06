@@ -5,49 +5,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Front-end web developer based in Finland."
-    />
+    <meta name="description" content="Front-end web developer based in Finland." />
     <title>Mailar</title>
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/scss/app.css" />
     <link rel="stylesheet" href="assets/css/animations.module.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="assets/images/icons/icon-512x512.png"
-    />
+    <link rel="shortcut icon" type="image/png" href="assets/images/icons/icon-512x512.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="../animations/anim.index.css" />
     <link rel="stylesheet" href="../fonts/fonts.index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" referrerpolicy="no-referrer" />
     <!-- ----------------------------------------------------------------- -->
   </head>
 
   <body>
-    <div id="resume-container">
-      <a href="index.html">Close</a>
-      <iframe src="assets/pdf/leo.pdf" width="100%" height="700px"> </iframe>
-    </div>
-
     <nav class="navbar">
       <div class="container">
         <div class="nav-logo">
-          <a href="">Mailar</a>
+          <a href="#01">Mailar</a>
         </div>
 
         <ul class="nav-link">
           <li class="nav-link-item">
-            <a href="#01" onclick="navigationChanged()" class="active">Home</a>
-            <a href="#02" onclick="navigationChanged()" class="">About</a>
-            <a href="#03" onclick="navigationChanged()" class="">Skills</a>
-            <a href="#04" onclick="navigationChanged()" class="">Work</a>
-            <a href="#05" onclick="navigationChanged()" class="">Contact</a>
+            <a href="#01" onclick="navigationChanged()" class="link active">Home</a>
+            <a href="#02" onclick="navigationChanged()" class="link">About</a>
+            <a href="#03" onclick="navigationChanged()" class="link">Work</a>
+            <a href="#04" onclick="navigationChanged()" class="link">Contact</a>
           </li>
         </ul>
 
@@ -55,106 +38,82 @@
           <li class="nav-mobile-item">
             <a href="#01" class="">Home</a>
             <a href="#02" class="">About</a>
-            <a href="#03" class="">Skills</a>
-            <a href="#04" class="">Work</a>
-            <a href="#05" class="">Contact</a>
+            <a href="#03" class="">Work</a>
+            <a href="#04" class="">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <section class="resume" id="resume-container">
+      <a href="index.html">Close</a>
+      <iframe src="assets/pdf/leo_koivunen_cv.pdf" width="100%" height="800px"> </iframe>
+    </section>
+
     <section class="home" id="01">
       <div class="container">
         <div class="left-col">
           <div class="text-container">
-            <h2>
-              I build & design <br />
-              interactive enterprise <br />
-              web applications with <br />
-              <code>passion</code> & positive mindset <br />
-            </h2>
+            <p>I SPECIALIZE IN FRONT-END DEVELOPMENT</p>
+            <h2>Hi, I build interactive enterprise web applications with passion and experience</h2>
           </div>
 
           <div class="btn-container">
-            <a href="#04" rel="noreferrer"> Work </a>
-            <a href="#" rel="noreferrer" id="resume"> Resume </a>
+            <a href="#03" rel="noreferrer"><i class="fa-brands fa-github"></i> WORK</a>
+            <a href="#" id="resume" rel="noreferrer"><i class="fa-solid fa-file-alt"></i> RESUME</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about">
-      <div class="container" id="02">
+    <section class="about" id="02">
+      <div class="container">
         <div class="left-col">
           <div class="text-container">
-            <h3>02. About Me</h3>
+            <h2>02. About Me</h2>
             <p>
-              Hey, I am a front-end developer based in Finland. <br />
-              With a great passion and positive mindset.
+              I am a front-end developer who likes to develop front-end web applications. I have a great passion and a positive mindset for
+              programming.
               <br />
               <br />
-              I am passionate about learning and I like to build <br />
-              enterprise web applications with the best techno <br />
-              logies to provide a great user experience.
+              I like to build enterprise applications with the best and fastest technologies to provide a great user experience.
               <br />
               <br />
-              I have +2 years of experience in web development. <br />
-              Including building enterprise web applications.
+              I can help you build your application and grow your business with the best interfaces and features
+              <i class="fa-solid fa-hand-peace"></i>
             </p>
           </div>
         </div>
       </div>
-      <div class="container" id="03">
-        <div class="left-col">
-          <div class="text-container">
-            <h3>03. My Skills</h3>
-            <p>Skills I use everyday on daily basis:</p>
-          </div>
-
-          <div class="img-container">
-            <i class="fa-brands fa-js-square"></i>
-
-            <i class="fa-brands fa-sass"></i>
-
-            <i class="fa-brands fa-react"></i>
-
-            <i class="fa-brands fa-node-js"></i>
-
-            <i class="fa-brands fa-bootstrap"></i>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="work" id="04">
+    <section class="projects" id="03">
       <div class="container">
         <div class="left-col">
           <div class="text-container">
-            <h3>04. My Work</h3>
+            <h2>
+              03. Featured <br />
+              Projects
+            </h2>
           </div>
 
           <div class="card-grid">
             <section class="card">
               <div class="card-img-container">
-                <img src="./assets/images/projects/todo.png" alt="" />
+                <img src="./assets/images/projects/weather.png" alt="" />
               </div>
 
               <div class="card-text-container">
-                <h4>Todo List</h4>
+                <h4>Weather Tracker</h4>
                 <p>
-                  Todo List is a simple list of tasks that you can add to your
-                  project structure. Then you can remove, edit or mark them
-                  completed when you get them done.
+                  Track your weather everyday and replan your schedule using simple weather tracking on the web. It includes weather API and
+                  functionality for tracking weather.
                 </p>
               </div>
 
               <div class="card-btn-container">
-                <a href="https://github.com/devmailar/todo-app" target="_blank"
-                  >Source <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://todo-app-mailar.netlify.app/" target="_blank"
-                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a href="https://weather-trackerr.netlify.app/" target="_blank">Preview <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/devmailar/weather-tracker" target="_blank">Source <i class="fa-brands fa-github"></i></a>
               </div>
             </section>
 
@@ -166,69 +125,33 @@
               <div class="card-text-container">
                 <h4>MovieLand</h4>
                 <p>
-                  MovieLand is a bit like a website where you can see
-                  information and ratings for the latest movies. The project
-                  uses the themoviedb.org API. Simple.
+                  Check out the top movies at any time includes IMBD ratings. The information is from trusted API so it is reliable and good. It's
+                  using moviedb.org API.
                 </p>
               </div>
 
               <div class="card-btn-container">
-                <a href="https://github.com/devmailar/MovieLand" target="_blank"
-                  >Source <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://movieapp-project.netlify.app/" target="_blank"
-                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a href="https://movieapp-project.netlify.app/" target="_blank">Preview <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/devmailar/MovieLand" target="_blank">Source <i class="fa-brands fa-github"></i></a>
               </div>
             </section>
 
             <section class="card">
               <div class="card-img-container">
-                <img src="./assets/images/projects/weather.png" alt="" />
+                <img src="./assets/images/projects/todo.png" alt="" />
               </div>
 
               <div class="card-text-container">
-                <h4>Weather Tracker</h4>
+                <h4>Todo List</h4>
                 <p>
-                  Weather tracker is a web application for tracking weather and
-                  events on the web. It includes weather API and functionality
-                  for tracking weather it is fast and reliable.
+                  Simple todo app that provides a simple interface for working with multi-tasks. It is free and simple to create a list of tasks and
+                  mark them as completed.
                 </p>
               </div>
 
               <div class="card-btn-container">
-                <a href="https://weather-trackerr.netlify.app/" target="_blank"
-                  >Source <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://weather-trackerr.netlify.app/" target="_blank"
-                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
-              </div>
-            </section>
-
-            <section class="card">
-              <div class="card-img-container">
-                <img src="./assets/images/projects/airbnb.png" alt="" />
-              </div>
-
-              <div class="card-text-container">
-                <h4>Airbnb</h4>
-                <p>
-                  Airbnb is a application & simple project that provides cards
-                  and other components. It is main idea is to tell people about
-                  activies outside and you can buy them.
-                </p>
-              </div>
-
-              <div class="card-btn-container">
-                <a
-                  href="https://github.com/devmailar/AirBnb-react"
-                  target="_blank"
-                  >Source <i class="fa-brands fa-github"></i
-                ></a>
-                <a href="https://airbnb-reactjs.netlify.app/" target="_blank"
-                  >Preview <i class="fa-solid fa-arrow-up-right-from-square"></i
-                ></a>
+                <a href="https://todo-app-mailar.netlify.app/" target="_blank">Preview <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/devmailar/todo-app" target="_blank">Source <i class="fa-brands fa-github"></i></a>
               </div>
             </section>
           </div>
@@ -236,51 +159,43 @@
       </div>
     </section>
 
-    <section class="contact" id="05">
+    <section class="contact" id="04">
       <div class="container">
         <div class="left-col">
           <div class="text-container">
-            <h3>05. Contact Me</h3>
+            <h2>04. Contact Me</h2>
           </div>
-
           <form class="form-container" action="POST" data-netlify="true">
             <div class="field">
               <label for="name">Name</label>
               <input type="text" name="name" id="name" required />
             </div>
-
             <div class="field">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
             </div>
-
             <div class="field">
               <label for="message">Message</label>
               <textarea name="message" id="message" required></textarea>
             </div>
-
             <div class="field" id="netlify">
               <div data-netlify-recaptcha="true"></div>
             </div>
-
             <input type="submit" value="submit" />
-
-            <div class="form-container-links">
-              <a
-                href="https://www.linkedin.com/in/leokoivunen/"
-                target="_blank"
-              >
-                <i class="fab fa-linkedin-in"></i>
-                <br />
-                Linkedin
-              </a>
-              <a href="https://github.com/devmailar" target="_blank">
-                <i class="fab fa-github"></i>
-                <br />
-                Github
-              </a>
-            </div>
           </form>
+        </div>
+
+        <div class="right-col">
+          <div class="text-container">
+            <h3>
+              Let's grow your business together to the next level.
+            </h3>
+          </div>
+
+          <div class="link-container">
+            <a href="https://www.linkedin.com/in/leokoivunen/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/devmailar" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </section>

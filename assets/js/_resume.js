@@ -2,11 +2,8 @@ let openResumeBtn = document.getElementById("resume");
 openResumeBtn.addEventListener("click", openResume);
 
 function openResume() {
+  let navbar = document.querySelector("nav")  // Get the navbar
   let resumeContainer = document.getElementById("resume-container");
-  let main = document.querySelector("main");
-  let about = document.querySelector("section");
-
   resumeContainer.style.display = "block";
-  main.style.display = "none";
-  about.style.display = "none";
+  navbar.style.display = "none";
 }
