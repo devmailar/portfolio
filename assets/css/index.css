@@ -96,107 +96,10 @@ html {
 
   section.contact .container .left-col .form-container .flex .input-container input[type='submit'] {
     padding: 0.4rem 0.6rem !important;
-    
+
   }
 
   nav.navbar .container .nav-link {
     display: none !important;
   }
 }
-
-/* @media screen and (max-width: 950px) {
-  .left-col {
-    margin-top: 8rem !important;
-  }
-
-  nav.navbar .container .nav-logo a {
-    font-size: 1.25rem !important;
-  }
-
-  nav.navbar .container .nav-link {
-    display: none !important;
-  }
-
-  section.home .container .left-col .text-container h2 {
-    font-size: 2rem !important;
-    font-weight: normal !important;
-  }
-
-  section.home .container .left-col .text-container p {
-    font-size: 1rem !important;
-  }
-
-  section.home .container .left-col .btn-container a {
-    padding: 0.7rem !important;
-  }
-
-  section.about .container .left-col .text-container h2 {
-    font-size: 2rem !important;
-    font-weight: normal !important;
-  }
-
-  section.about .container .left-col .text-container p {
-    font-size: 1.2rem !important;
-  }
-
-  section.projects .container .left-col .text-container h2 {
-    font-size: 2rem !important;
-    font-weight: normal !important;
-  }
-
-  section.projects .container .left-col .card-grid {
-    justify-content: center;
-  }
-
-  section.projects .container .left-col .card-grid .card .card-text-container h4 {
-    font-size: 1.5rem !important;
-  }
-
-  section.projects .container .left-col .card-grid .card .card-text-container p {
-    font-size: 1rem !important;
-  }
-
-  section.projects .container .left-col .card-grid .card .card-btn-container a {
-    font-size: 0.8rem !important;
-    padding: 0.4rem !important;
-  }
-
-  section.contact .container .left-col .text-container h2 {
-    font-size: 2rem !important;
-    font-weight: normal !important;
-  }
-
-  section.contact .container .left-col .text-container h3 {
-    font-size: 1rem !important;
-    font-weight: normal !important;
-  }
-
-  section.contact .container .left-col .form-container .flex {
-    gap: 1rem !important;
-  }
-
-  section.contact .container .left-col .form-container .flex .input-container input[type='submit'] {
-    padding: 0.8rem !important;
-    font-size: 0.7rem !important;
-    letter-spacing: 0.1rem !important;
-  }
-
-  section.contact .container .left-col .form-container .flex .link-container a i {
-    font-size: 2rem !important;
-  }
-
-  .container {
-    padding: 0 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  section.projects .container .left-col .card-grid .card {
-    width: 100% !important;
-  }
-
-  section.projects .container .left-col .card-grid .card .card-img-container img {
-    width: 100% !important;
-    height: auto !important;
-  }
-} */
