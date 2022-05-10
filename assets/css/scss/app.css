@@ -1,8 +1,8 @@
 nav.navbar {
-  background: #000000f4;
+  background: #020a12f6;
   position: fixed;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
 }
@@ -12,10 +12,28 @@ nav.navbar .container {
           animation: introLoad 0.7s ease-in;
 }
 
+nav.navbar .container .nav-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav.navbar .container .nav-logo a {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
   font-weight: normal;
   color: #ffffff;
+}
+
+nav.navbar .container .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav.navbar .container .nav-link .nav-link-item {
@@ -24,8 +42,8 @@ nav.navbar .container .nav-link .nav-link-item {
 
 nav.navbar .container .nav-link .nav-link-item a {
   text-transform: uppercase;
-  margin-right: 1.5rem;
-  font-size: 1.3rem;
+  margin-right: 1.2rem;
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
   color: #ffffff;
   opacity: 0.5;
 }
@@ -44,35 +62,26 @@ nav.navbar .container .nav-mobile-link {
 
 section.resume {
   display: none;
-  max-width: 70%;
-  margin: 7rem auto;
+  margin: 1rem auto;
+  max-width: 80rem;
 }
 
 section.resume a {
-  font-family: "Inter", "Poppins", sans-serif;
-  -webkit-animation: swipeFromLeft 1.5s ease-in;
-          animation: swipeFromLeft 1.5s ease-in;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #141414;
-  border: solid 0.01rem #ffffff;
-  padding: 0.5rem 1.2rem;
-  font-size: 1.2rem;
-  background-color: white;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-right: 0.5rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  border-radius: 0.2rem;
+  padding: 0.9rem 1.3rem;
+  color: #000000;
+  border: solid 0.15rem #ffffff;
+  background: #ffffff;
   line-height: 4;
 }
 
 section.home {
   -webkit-animation: fadeIn 0.5s ease-in;
           animation: fadeIn 0.5s ease-in;
-  background: -webkit-gradient(linear, left top, right top, color-stop(30%, rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.1))), url(/assets/images/bg2.jpg);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.1)), url(/assets/images/bg2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 section.home .container {
@@ -83,24 +92,26 @@ section.home .container {
 section.home .container .left-col {
   -webkit-animation: swipeFromLeft 0.7s ease-in;
           animation: swipeFromLeft 0.7s ease-in;
-  width: 50rem;
-  margin: 15vw 0rem;
-}
-
-section.home .container .left-col .text-container p {
-  margin: 1rem auto;
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 1.2rem;
-  color: #cfcfcf;
-  letter-spacing: 0.15rem;
+  width: 56rem;
+  margin-top: 24em;
 }
 
 section.home .container .left-col .text-container h2 {
-  margin: 3rem auto;
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 3.6rem;
-  color: #f0f0f0;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 4rem);
   font-weight: bold;
+  color: #f0f0f0;
+  line-height: 1.4;
+  margin: 1.5rem auto;
+}
+
+section.home .container .left-col .text-container p {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.25rem, 5vw, 1rem);
+  font-weight: normal;
+  color: #c9c9c9;
+  letter-spacing: 0.1rem;
+  margin-left: 0.2rem;
 }
 
 section.home .container .left-col .btn-container {
@@ -111,46 +122,42 @@ section.home .container .left-col .btn-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 section.home .container .left-col .btn-container a {
-  margin-right: 0.5rem;
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  -webkit-transition: all 600ms ease-out;
-  transition: all 600ms ease-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  letter-spacing: 0.15rem;
   border-radius: 0.2rem;
+  padding: 0.9rem 1.3rem;
 }
 
 section.home .container .left-col .btn-container a:hover {
-  -webkit-transition: all 600ms ease-in;
-  transition: all 600ms ease-in;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  border: solid 0.15rem #0e5e94 !important;
 }
 
 section.home .container .left-col .btn-container a:nth-of-type(1) {
-  padding: 1.1rem 1.3rem;
-  color: black;
-  border: solid 0.15rem #f9f9f9;
-  background-color: white;
+  color: #000000;
+  border: solid 0.15rem #ffffff;
+  background: #ffffff;
 }
 
 section.home .container .left-col .btn-container a:nth-of-type(2) {
-  padding: 1rem 1.4rem;
-  color: white;
-  border: solid 0.15rem rgba(107, 107, 107, 0.6);
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: solid 0.15rem #6b6b6b99;
+  background: transparent;
 }
 
 section.about {
   -webkit-animation: fadeIn 0.5s ease-in;
           animation: fadeIn 0.5s ease-in;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0, 0, 0, 0.986)), to(rgba(0, 0, 0, 0.96))), url(/assets/images/bg.jpg);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.986) 20%, rgba(0, 0, 0, 0.96)), url(/assets/images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 section.about .container {
@@ -161,33 +168,29 @@ section.about .container {
 section.about .container .left-col {
   -webkit-animation: swipeFromLeft 0.7s ease-in;
           animation: swipeFromLeft 0.7s ease-in;
-  padding: 5rem 0;
-  width: 50rem;
-  margin: 5rem 0;
+  width: 40rem;
+  margin-top: 23rem;
 }
 
 section.about .container .left-col .text-container h2 {
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 3.6rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: bold;
   color: #f0f0f0;
 }
 
 section.about .container .left-col .text-container p {
-  margin: 2.5rem auto;
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 2rem;
-  color: #dedede;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 1rem);
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-left: 0.1rem;
 }
 
 section.projects {
   -webkit-animation: fadeIn 0.5s ease-in;
           animation: fadeIn 0.5s ease-in;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0, 0, 0, 0.986)), to(rgba(0, 0, 0, 0.954))), url(/assets/images/bg.jpg);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.986) 20%, rgba(0, 0, 0, 0.954)), url(/assets/images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 section.projects .container {
@@ -198,13 +201,12 @@ section.projects .container {
 section.projects .container .left-col {
   -webkit-animation: swipeFromLeft 0.7s ease-in;
           animation: swipeFromLeft 0.7s ease-in;
-  padding: 5rem 0;
-  margin: 5rem 0;
+  margin-top: 23rem;
 }
 
 section.projects .container .left-col .text-container h2 {
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 3.4rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: bold;
   color: #f0f0f0;
 }
@@ -222,38 +224,38 @@ section.projects .container .left-col .card-grid {
 }
 
 section.projects .container .left-col .card-grid .card {
-  background: rgba(22, 23, 25, 0.324);
-  width: 24rem;
-  margin-top: 4rem;
-  margin-right: 4rem;
-  border-radius: 1rem;
+  background: #06111d;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
+  width: 22rem;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-img-container img {
-  height: 14rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 1rem;
+  height: 12rem;
+  border-radius: 0.5rem;
   width: 100%;
 }
 
 section.projects .container .left-col .card-grid .card .card-text-container {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-text-container h4 {
-  font-size: clamp(1.5rem, 10vw, 2rem);
-  color: white;
-  line-height: 1.4;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: bold;
+  color: #f0f0f0;
 }
 
 section.projects .container .left-col .card-grid .card .card-text-container p {
-  margin: 1rem 0;
-  font-size: clamp(1rem, 10vw, 1.2rem);
-  color: white;
-  line-height: 1.4;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.2rem, 5vw, 1rem);
   font-weight: normal;
+  color: #ffffff;
+  margin-top: 1rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-btn-container {
@@ -266,48 +268,45 @@ section.projects .container .left-col .card-grid .card .card-btn-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-btn-container a {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  font-weight: normal;
+  text-transform: uppercase;
   border-radius: 0.2rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: #cfcfcf;
-  border: solid 0.01rem #ffffff;
-  padding: 0.5rem 1.2rem;
-  font-size: 1.15rem;
-  text-transform: capitalize;
-  margin-right: 0.5rem;
-}
-
-section.projects .container .left-col .card-grid .card .card-btn-container a:nth-of-type(1) {
-  background-color: #ffffff;
-  padding: 0.6rem 1.3rem;
-  color: black;
+  padding: 0.7rem 1.1rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-btn-container a:hover {
-  color: white;
-  background: #000000fb;
-  -webkit-transition: opacity 0.2s, border 0.3s;
-  transition: opacity 0.2s, border 0.3s;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  border: solid 0.15rem #0e5e94 !important;
+}
+
+section.projects .container .left-col .card-grid .card .card-btn-container a:nth-of-type(1) {
+  color: #000000;
+  border: solid 0.15rem #ffffff;
+  background: #ffffff;
+}
+
+section.projects .container .left-col .card-grid .card .card-btn-container a:nth-of-type(2) {
+  color: #ffffff;
+  border: solid 0.15rem #6b6b6b99;
+  background: transparent;
 }
 
 section.contact {
   -webkit-animation: fadeIn 0.5s ease-in;
           animation: fadeIn 0.5s ease-in;
-  background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0, 0, 0, 0.986)), to(rgba(0, 0, 0, 0.897))), url(/assets/images/bg.jpg);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.986) 20%, rgba(0, 0, 0, 0.897)), url(/assets/images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 section.contact .container {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-animation: fadeIn 1s ease-in;
           animation: fadeIn 1s ease-in;
 }
@@ -315,108 +314,77 @@ section.contact .container {
 section.contact .container .left-col {
   -webkit-animation: swipeFromLeft 0.7s ease-in;
           animation: swipeFromLeft 0.7s ease-in;
-  padding: 5rem 0;
-  margin: 5rem 0;
+  margin-top: 23rem;
+}
+
+section.contact .container .left-col .text-container {
+  width: 30rem;
 }
 
 section.contact .container .left-col .text-container h2 {
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 3.6rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: bold;
+  color: #f0f0f0;
+}
+
+section.contact .container .left-col .text-container h3 {
+  margin-top: 2rem;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(1rem, 5vw, 0.5rem);
+  font-weight: normal;
   color: #f0f0f0;
 }
 
 section.contact .container .left-col .form-container {
   margin-top: 2rem;
+  margin-bottom: 10rem;
   -webkit-animation: swipeFromRight 1s ease-out;
           animation: swipeFromRight 1s ease-out;
 }
 
-section.contact .container .left-col .form-container .field {
+section.contact .container .left-col .form-container .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
 }
 
-section.contact .container .left-col .form-container .field label {
-  color: white;
-  font-size: 2rem;
+section.contact .container .left-col .form-container .flex .input-container input[type='submit'] {
+  border: none !important;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  letter-spacing: 0.15rem;
+  border-radius: 0.2rem;
+  color: #000000;
+  border: solid 0.15rem #ffffff;
+  background: #ffffff;
+  padding: 1rem 2rem;
 }
 
-section.contact .container .left-col .form-container .field input {
-  border: solid 0.01rem #474747;
-  color: white;
-  background: transparent;
-  padding: 1rem;
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-section.contact .container .left-col .form-container .field textarea {
-  border: solid 0.01rem #474747;
-  color: white;
-  background: transparent;
-  padding: 1rem;
-  font-size: 1.2rem;
-  height: 10rem;
-  margin: 1rem 0;
-}
-
-section.contact .container .left-col .form-container #netlify {
-  margin: 2rem 0;
-}
-
-section.contact .container .left-col .form-container input[type="submit"] {
-  width: 100%;
-  padding: 0.8rem;
-  border: solid 0.01rem #474747;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: black;
-  background: white;
-}
-
-section.contact .container .left-col .form-container input[type="submit"]:hover {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+section.contact .container .left-col .form-container .flex .input-container input[type='submit']:hover {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
   color: #ffffff;
-  background: black;
+  background: #040b13;
+  border: solid 0.15rem #6b6b6b99;
 }
 
-section.contact .container .right-col {
-  width: 20rem;
-  -webkit-animation: swipeFromLeft 0.7s ease-in;
-          animation: swipeFromLeft 0.7s ease-in;
-  padding: 10rem 2rem;
-  margin: 10rem 0;
+section.contact .container .left-col .form-container .flex .link-container {
+  overflow: hidden;
 }
 
-section.contact .container .right-col .text-container h3 {
-  font-family: "Inter", "Poppins", sans-serif;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #f0f0f0;
+section.contact .container .left-col .form-container .flex .link-container a {
+  color: #ffffff;
+  margin-right: 1.2rem;
 }
 
-section.contact .container .right-col .link-container {
-  margin: 1rem 0.5rem;
-}
-
-section.contact .container .right-col .link-container a {
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-  margin-right: 1rem;
-}
-
-section.contact .container .right-col .link-container a i {
-  color: white;
-  font-size: 3rem;
+section.contact .container .left-col .form-container .flex .link-container a i {
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 /*# sourceMappingURL=app.css.map */
