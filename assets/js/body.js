@@ -1,7 +1,6 @@
-function navigationChanged() {
+function Navbar() {
   let header = document.querySelector(".nav-link-item");
   let links = header.getElementsByClassName("link");
-
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function () {
       let current = document.getElementsByClassName("active");
@@ -11,11 +10,9 @@ function navigationChanged() {
   }
 }
 
-function showBurgermenu() {
-  let navMenu = document.getElementById("myLinks");
-  if (navMenu.style.display === "block") {
-    navMenu.style.display = "none";
-  } else {
-    navMenu.style.display = "block";
-  }
+function Resume() {
+  let navbar = document.querySelector("nav")  // Get the navbar
+  let resumeContainer = document.getElementById("resume-container");
+  resumeContainer.style.display = "block";
+  navbar.style.display = "none";
 }

@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ----------------------------------------------------------------- -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Front-end web developer based in Finland." />
+    <meta name="description" content="I develop enterprise web applications with a passion" />
     <title>Mailar</title>
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo/icon-512x512.png" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/scss/app.css" />
-    <link rel="stylesheet" href="assets/css/animations.module.css" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/icons/icon-512x512.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="../animations/anim.index.css" />
-    <link rel="stylesheet" href="../fonts/fonts.index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      referrerpolicy="no-referrer"
-    />
-    <!-- ----------------------------------------------------------------- -->
+    <link rel="stylesheet" href="assets/css/body.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <script defer src="assets/js/body.js"></script>
   </head>
-
   <body>
     <nav class="navbar">
       <div class="container">
@@ -31,10 +22,10 @@
 
         <ul class="nav-link">
           <li class="nav-link-item">
-            <a href="#01" onclick="navigationChanged()" class="link active">Home</a>
-            <a href="#02" onclick="navigationChanged()" class="link">About</a>
-            <a href="#03" onclick="navigationChanged()" class="link">Work</a>
-            <a href="#04" onclick="navigationChanged()" class="link">Contact</a>
+            <a href="#01" onclick="Navbar()" class="link active">Home</a>
+            <a href="#02" onclick="Navbar()" class="link">About</a>
+            <a href="#03" onclick="Navbar()" class="link">Work</a>
+            <a href="#04" onclick="Navbar()" class="link">Contact</a>
           </li>
         </ul>
 
@@ -51,7 +42,7 @@
 
     <section class="resume" id="resume-container">
       <a href="index.html">CLOSE</a>
-      <iframe src="assets/pdf/leo_koivunen_cv.pdf" width="100%" height="850px"> </iframe>
+      <iframe src="assets/pdf/resume.pdf" width="100%" height="850px"> </iframe>
     </section>
 
     <section class="home" id="01">
@@ -64,9 +55,7 @@
 
           <div class="btn-container">
             <a href="#03" rel="noreferrer"><i class="fa-brands fa-github"></i> WORK</a>
-            <a href="#05" id="resume" rel="noreferrer"
-              ><i class="fa-solid fa-file-alt"></i> RESUME</a
-            >
+            <a href="#resume" onclick="Resume()" rel="noreferrer"><i class="fa-solid fa-file-alt"></i> RESUME</a>
           </div>
         </div>
       </div>
@@ -199,7 +188,5 @@
         </div>
       </div>
     </section>
-    <script defer src="assets/js/_nav.js"></script>
-    <script defer src="assets/js/_resume.js"></script>
   </body>
 </html>

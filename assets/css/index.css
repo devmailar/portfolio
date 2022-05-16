@@ -25,8 +25,6 @@ html {
   margin: 0 auto;
   padding: 0 2rem;
   flex-wrap: wrap;
-
-  max-width: 80rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -101,5 +99,69 @@ html {
 
   nav.navbar .container .nav-link {
     display: none !important;
+  }
+}
+
+@keyframes swipeFromTop {
+  from {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swipeFromBottom {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes swipeFromRight {
+  from {
+    transform: translateX(60rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes swipeFromLeft {
+  from {
+    transform: translateX(-60rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

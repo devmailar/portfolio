@@ -3,13 +3,14 @@ nav.navbar {
   position: fixed;
   width: 100%;
   padding: 1.5rem 0;
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  -webkit-animation: fadeIn 2s ease-out;
+          animation: fadeIn 2s ease-out;
 }
 
 nav.navbar .container {
-  -webkit-animation: introLoad 0.7s ease-in;
-          animation: introLoad 0.7s ease-in;
+  max-width: 80rem;
+  -webkit-animation: swipeFromTop 2s ease-out;
+          animation: swipeFromTop 2s ease-out;
 }
 
 nav.navbar .container .nav-logo {
@@ -79,21 +80,18 @@ section.resume a {
   line-height: 4;
 }
 
-section.home {
-  -webkit-animation: fadeIn 0.5s ease-in;
-          animation: fadeIn 0.5s ease-in;
-}
-
 section.home .container {
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  max-width: 80rem;
 }
 
 section.home .container .left-col {
-  -webkit-animation: swipeFromLeft 0.7s ease-in;
-          animation: swipeFromLeft 0.7s ease-in;
   width: 56rem;
   margin-top: 24em;
+}
+
+section.home .container .left-col .text-container {
+  -webkit-animation: swipeFromLeft 1.5s ease-out;
+          animation: swipeFromLeft 1.5s ease-out;
 }
 
 section.home .container .left-col .text-container h2 {
@@ -115,6 +113,8 @@ section.home .container .left-col .text-container p {
 }
 
 section.home .container .left-col .btn-container {
+  -webkit-animation: swipeFromRight 1.5s ease-out;
+          animation: swipeFromRight 1.5s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,8 +128,6 @@ section.home .container .left-col .btn-container {
 }
 
 section.home .container .left-col .btn-container a {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
   font-family: 'Inter', 'Poppins', sans-serif;
   font-size: clamp(0.7rem, 2vw, 1.1rem);
   letter-spacing: 0.15rem;
@@ -155,21 +153,18 @@ section.home .container .left-col .btn-container a:nth-of-type(2) {
   background: transparent;
 }
 
-section.about {
-  -webkit-animation: fadeIn 0.5s ease-in;
-          animation: fadeIn 0.5s ease-in;
-}
-
 section.about .container {
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  max-width: 80rem;
 }
 
 section.about .container .left-col {
-  -webkit-animation: swipeFromLeft 0.7s ease-in;
-          animation: swipeFromLeft 0.7s ease-in;
   width: 40rem;
   margin-top: 23rem;
+}
+
+section.about .container .left-col .text-container {
+  -webkit-animation: swipeFromTop 1.5s ease-out;
+          animation: swipeFromTop 1.5s ease-out;
 }
 
 section.about .container .left-col .text-container h2 {
@@ -181,27 +176,24 @@ section.about .container .left-col .text-container h2 {
 
 section.about .container .left-col .text-container p {
   font-family: 'Inter', 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 5vw, 1rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: normal;
   color: #ffffff;
   margin-top: 2rem;
   margin-left: 0.1rem;
 }
 
-section.projects {
-  -webkit-animation: fadeIn 0.5s ease-in;
-          animation: fadeIn 0.5s ease-in;
-}
-
 section.projects .container {
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  max-width: 80rem;
 }
 
 section.projects .container .left-col {
-  -webkit-animation: swipeFromLeft 0.7s ease-in;
-          animation: swipeFromLeft 0.7s ease-in;
   margin-top: 23rem;
+}
+
+section.projects .container .left-col .text-container {
+  -webkit-animation: swipeFromTop 1.5s ease-out;
+          animation: swipeFromTop 1.5s ease-out;
 }
 
 section.projects .container .left-col .text-container h2 {
@@ -212,6 +204,8 @@ section.projects .container .left-col .text-container h2 {
 }
 
 section.projects .container .left-col .card-grid {
+  -webkit-animation: swipeFromBottom 1.5s ease-out;
+          animation: swipeFromBottom 1.5s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,20 +295,17 @@ section.projects .container .left-col .card-grid .card .card-btn-container a:nth
   background: transparent;
 }
 
-section.contact {
-  -webkit-animation: fadeIn 0.5s ease-in;
-          animation: fadeIn 0.5s ease-in;
-}
-
 section.contact .container {
-  -webkit-animation: fadeIn 1s ease-in;
-          animation: fadeIn 1s ease-in;
+  max-width: 80rem;
 }
 
 section.contact .container .left-col {
-  -webkit-animation: swipeFromLeft 0.7s ease-in;
-          animation: swipeFromLeft 0.7s ease-in;
   margin-top: 23rem;
+}
+
+section.contact .container .left-col .text-container {
+  -webkit-animation: swipeFromTop 1.5s ease-out;
+          animation: swipeFromTop 1.5s ease-out;
 }
 
 section.contact .container .left-col .text-container h2 {
@@ -333,10 +324,10 @@ section.contact .container .left-col .text-container h3 {
 }
 
 section.contact .container .left-col .form-container {
+  -webkit-animation: swipeFromBottom 1.5s ease-out;
+          animation: swipeFromBottom 1.5s ease-out;
   margin-top: 2rem;
   margin-bottom: 10rem;
-  -webkit-animation: swipeFromRight 1s ease-out;
-          animation: swipeFromRight 1s ease-out;
 }
 
 section.contact .container .left-col .form-container .flex {
@@ -384,4 +375,3 @@ section.contact .container .left-col .form-container .flex .link-container a i {
   color: #ffffff;
   font-size: clamp(2rem, 5vw, 4rem);
 }
-/*# sourceMappingURL=app.css.map */

@@ -1,51 +1,51 @@
 {
-  "name": "Mailar's Portfolio",
-  "short_name": "MailarPortfolio",
+  "name": "Portfolio",
+  "short_name": "Portfolio",
   "description": "Portfolio website",
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#0e0e0e",
-  "theme_color": "#908282",
+  "background_color": "#111B29",
+  "theme_color": "#5C4A4A",
   "prefer_related_applications": false,
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/assets/img/icons/icon-72x72.png",
+      "src": "/assets/images/logo/icon-72x72.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "/assets/img/icons/icon-96x96.png",
+      "src": "/assets/images/logo/icon-96x96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/assets/img/icons/icon-128x128.png",
+      "src": "/assets/images/logo/icon-128x128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "/assets/img/icons/icon-144x144.png",
+      "src": "/assets/images/logo/icon-144x144.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/assets/img/icons/icon-152x152.png",
+      "src": "/assets/images/logo/icon-152x152.png",
       "type": "image/png",
       "sizes": "152x152"
     },
     {
-      "src": "/assets/img/icons/icon-192x192.png",
+      "src": "/assets/images/logo/icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/img/icons/icon-384x384.png",
+      "src": "/assets/images/logo/icon-384x384.png",
       "type": "image/png",
       "sizes": "384x384"
     },
     {
-      "src": "/assets/img/icons/icon-512x512.png",
+      "src": "/assets/images/logo/icon-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

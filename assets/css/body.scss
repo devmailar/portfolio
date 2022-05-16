@@ -3,9 +3,11 @@ nav.navbar {
   position: fixed;
   width: 100%;
   padding: 1.5rem 0;
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 2s ease-out;
+
   .container {
-    animation: introLoad 0.7s ease-in;
+    max-width: 80rem;
+    animation: swipeFromTop 2s ease-out;
     .nav-logo {
       display: flex;
       align-items: center;
@@ -60,15 +62,14 @@ section.resume {
 }
 
 section.home {
-  animation: fadeIn 0.5s ease-in;
   .container {
-    animation: fadeIn 1s ease-in;
+    max-width: 80rem;
     .left-col {
-      animation: swipeFromLeft 0.7s ease-in;
       width: 56rem;
       margin-top: 24em;
 
       .text-container {
+        animation: swipeFromLeft 1.5s ease-out;
         h2 {
           font-family: 'Inter', 'Poppins', sans-serif;
           font-size: clamp(1.5rem, 5vw, 4rem);
@@ -87,12 +88,12 @@ section.home {
         }
       }
       .btn-container {
+        animation: swipeFromRight 1.5s ease-out;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0.5rem;
         a {
-          transition: all 1s ease-in-out;
           font-family: 'Inter', 'Poppins', sans-serif;
           font-size: clamp(0.7rem, 2vw, 1.1rem);
           letter-spacing: 0.15rem;
@@ -122,14 +123,13 @@ section.home {
 }
 
 section.about {
-  animation: fadeIn 0.5s ease-in;
   .container {
-    animation: fadeIn 1s ease-in;
+    max-width: 80rem;
     .left-col {
-      animation: swipeFromLeft 0.7s ease-in;
       width: 40rem;
       margin-top: 23rem;
       .text-container {
+        animation: swipeFromTop 1.5s ease-out;
         h2 {
           font-family: 'Inter', 'Poppins', sans-serif;
           font-size: clamp(1.5rem, 5vw, 3rem);
@@ -138,7 +138,7 @@ section.about {
         }
         p {
           font-family: 'Inter', 'Poppins', sans-serif;
-          font-size: clamp(1.5rem, 5vw, 1rem);
+          font-size: clamp(1.5rem, 5vw, 2rem);
           font-weight: normal;
           color: #ffffff;
           margin-top: 2rem;
@@ -150,13 +150,12 @@ section.about {
 }
 
 section.projects {
-  animation: fadeIn 0.5s ease-in;
   .container {
-    animation: fadeIn 1s ease-in;
+    max-width: 80rem;
     .left-col {
-      animation: swipeFromLeft 0.7s ease-in;
       margin-top: 23rem;
       .text-container {
+        animation: swipeFromTop 1.5s ease-out;
         h2 {
           font-family: 'Inter', 'Poppins', sans-serif;
           font-size: clamp(1.5rem, 5vw, 3rem);
@@ -165,6 +164,7 @@ section.projects {
         }
       }
       .card-grid {
+        animation: swipeFromBottom 1.5s ease-out;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -238,13 +238,12 @@ section.projects {
 }
 
 section.contact {
-  animation: fadeIn 0.5s ease-in;
   .container {
-    animation: fadeIn 1s ease-in;
+    max-width: 80rem;
     .left-col {
-      animation: swipeFromLeft 0.7s ease-in;
       margin-top: 23rem;
       .text-container {
+        animation: swipeFromTop 1.5s ease-out;
         h2 {
           font-family: 'Inter', 'Poppins', sans-serif;
           font-size: clamp(1.5rem, 5vw, 3rem);
@@ -260,10 +259,9 @@ section.contact {
         }
       }
       .form-container {
+        animation: swipeFromBottom 1.5s ease-out;
         margin-top: 2rem;
         margin-bottom: 10rem;
-        animation: swipeFromRight 1s ease-out;
-
         .flex {
           display: flex;
           flex-wrap: wrap;
