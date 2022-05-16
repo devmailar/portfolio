@@ -3,8 +3,8 @@ nav.navbar {
   position: fixed;
   width: 100%;
   padding: 1.5rem 0;
-  -webkit-animation: fadeIn 2s ease-out;
-          animation: fadeIn 2s ease-out;
+  -webkit-animation: fadeIn 1s ease-out;
+          animation: fadeIn 1s ease-out;
 }
 
 nav.navbar .container {
