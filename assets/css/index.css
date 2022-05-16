@@ -5,6 +5,7 @@ body {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.1)),
     url(/assets/images/body.jpg);
   background-size: cover;
+  overflow-x: hidden;
 }
 
 html {
