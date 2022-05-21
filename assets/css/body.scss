@@ -1,31 +1,27 @@
 nav.navbar {
-  background: #020a12f6;
   position: fixed;
+  background: #020a12;
   width: 100%;
   padding: 1.5rem 0;
-  animation: fadeIn 2s ease-out;
-
+  z-index: 3;
   .container {
     max-width: 80rem;
-    animation: swipeFromTop 2s ease-out;
+    animation: swipeFromTop 1s ease-out;
+    display: flex;
+    align-items: center;
     .nav-logo {
-      display: flex;
-      align-items: center;
       a {
-        font-size: clamp(1.5rem, 2vw, 1.8rem);
-        font-weight: normal;
+        font-size: clamp(1.8rem, 2vw, 1.8rem);
         color: #ffffff;
       }
     }
     .nav-link {
-      display: flex;
-      align-items: center;
       .nav-link-item {
         list-style-type: none;
         a {
           text-transform: uppercase;
-          margin-right: 1.2rem;
-          font-size: clamp(1.2rem, 2vw, 1.3rem);
+          margin-right: 1rem;
+          font-size: clamp(1.2rem, 2vw, 1.2rem);
           color: #ffffff;
           opacity: 0.5;
           &:hover {
@@ -71,7 +67,7 @@ section.home {
       .text-container {
         animation: swipeFromLeft 1.5s ease-out;
         h2 {
-          font-family: 'Inter', 'Poppins', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(1.5rem, 5vw, 4rem);
           font-weight: bold;
           color: #f0f0f0;
@@ -79,7 +75,7 @@ section.home {
           margin: 1.5rem auto;
         }
         p {
-          font-family: 'Inter', 'Poppins', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(1.25rem, 5vw, 1rem);
           font-weight: normal;
           color: #c9c9c9;
@@ -94,11 +90,12 @@ section.home {
         flex-wrap: wrap;
         gap: 0.5rem;
         a {
-          font-family: 'Inter', 'Poppins', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(0.7rem, 2vw, 1.1rem);
           letter-spacing: 0.15rem;
           border-radius: 0.2rem;
           padding: 0.9rem 1.3rem;
+          font-weight: bold;
 
           &:hover {
             transition: all 0.8s ease-in-out;
@@ -107,13 +104,13 @@ section.home {
 
           &:nth-of-type(1) {
             color: #000000;
-            border: solid 0.15rem #ffffff;
+            border: solid 0.2rem #ffffff;
             background: #ffffff;
           }
 
           &:nth-of-type(2) {
             color: #ffffff;
-            border: solid 0.15rem #6b6b6b99;
+            border: solid 0.2rem #a7a7a799;
             background: transparent;
           }
         }
@@ -126,19 +123,19 @@ section.about {
   .container {
     max-width: 80rem;
     .left-col {
-      width: 48rem;
+      width: 46rem;
       margin-top: 25rem;
       .text-container {
         animation: swipeFromTop 1.5s ease-out;
         h2 {
-          font-family: 'Inter', 'Poppins', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(1.5rem, 5vw, 3.4rem);
           font-weight: bold;
           color: #f0f0f0;
         }
         p {
-          font-family: 'Inter', 'Poppins', sans-serif;
-          font-size: clamp(1.5rem, 5vw, 1.8rem);
+          font-family: 'Inter', sans-serif;
+          font-size: clamp(1.5rem, 5vw, 1.4rem);
           font-weight: normal;
           color: #e9e9e9;
           margin-top: 2.1rem;
@@ -149,16 +146,60 @@ section.about {
   }
 }
 
-section.projects {
+section.skills {
   .container {
     max-width: 80rem;
     .left-col {
       margin-top: 23rem;
       .text-container {
+        animation: swipeFromLeft 1.5s ease-out;
+        h2 {
+          font-family: 'Inter', sans-serif;
+          font-size: clamp(1.5rem, 5vw, 3.4rem);
+          font-weight: bold;
+          color: #f0f0f0;
+        }
+      }
+
+      .stack-container {
+        margin-top: 5rem;
+        animation: swipeFromRight 1.5s ease-out;
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        align-items: center;
+        .stack {
+          .stack-icon {
+            img {
+              width: 5rem;
+            }
+          }
+
+          .stack-text {
+            text-align: center;
+            p {
+              text-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.4);
+              font-size: 1rem;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.projects {
+  .container {
+    max-width: 80rem;
+    .left-col {
+      overflow-y: hidden;
+      margin-top: 23rem;
+      .text-container {
         animation: swipeFromTop 1.5s ease-out;
         h2 {
           font-family: 'Inter', 'Poppins', sans-serif;
-          font-size: clamp(1.5rem, 5vw, 3rem);
+          font-size: clamp(1.5rem, 5vw, 3.4rem);
           font-weight: bold;
           color: #f0f0f0;
         }
@@ -169,29 +210,29 @@ section.projects {
         flex-direction: row;
         flex-wrap: wrap;
         .card {
-          background: rgb(25, 28, 37);
+          background: #020a12;
           box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
           width: 22rem;
-          border-radius: 0.5rem;
+          border-radius: 0.8rem;
           margin-top: 2.5rem;
           margin-right: 2.5rem;
           .card-img-container {
             img {
               height: 12rem;
-              border-radius: 0.5rem;
+              border-radius: 0.8rem;
               width: 100%;
             }
           }
           .card-text-container {
             padding: 1.5rem;
             h4 {
-              font-family: 'Inter', 'Poppins', sans-serif;
+              font-family: 'Inter', sans-serif;
               font-size: clamp(1.5rem, 5vw, 2rem);
               font-weight: bold;
               color: #f0f0f0;
             }
             p {
-              font-family: 'Inter', 'Poppins', sans-serif;
+              font-family: 'Inter', sans-serif;
               font-size: clamp(1.2rem, 5vw, 1rem);
               font-weight: normal;
               color: #ffffff;
@@ -206,9 +247,9 @@ section.projects {
             padding: 1rem 1.5rem;
             a {
               transition: all 1s ease-in-out;
-              font-family: 'Inter', 'Poppins', sans-serif;
+              font-family: 'Inter', sans-serif;
               font-size: clamp(0.7rem, 2vw, 1.1rem);
-              font-weight: normal;
+              font-weight: bold;
               text-transform: uppercase;
               border-radius: 0.2rem;
               padding: 0.7rem 1.1rem;
@@ -245,14 +286,14 @@ section.contact {
       .text-container {
         animation: swipeFromTop 1.5s ease-out;
         h2 {
-          font-family: 'Inter', 'Poppins', sans-serif;
-          font-size: clamp(1.5rem, 5vw, 3rem);
+          font-family: 'Inter', sans-serif;
+          font-size: clamp(1.5rem, 5vw, 3.4rem);
           font-weight: bold;
           color: #f0f0f0;
         }
         h3 {
           margin-top: 2rem;
-          font-family: 'Inter', 'Poppins', sans-serif;
+          font-family: 'Inter', sans-serif;
           font-size: clamp(1.5rem, 5vw, 1rem);
           font-weight: normal;
           color: #f0f0f0;

@@ -1,19 +1,15 @@
 nav.navbar {
-  background: #020a12f6;
   position: fixed;
+  background: #020a12;
   width: 100%;
   padding: 1.5rem 0;
-  -webkit-animation: fadeIn 2s ease-out;
-          animation: fadeIn 2s ease-out;
+  z-index: 3;
 }
 
 nav.navbar .container {
   max-width: 80rem;
-  -webkit-animation: swipeFromTop 2s ease-out;
-          animation: swipeFromTop 2s ease-out;
-}
-
-nav.navbar .container .nav-logo {
+  -webkit-animation: swipeFromTop 1s ease-out;
+          animation: swipeFromTop 1s ease-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,18 +19,8 @@ nav.navbar .container .nav-logo {
 }
 
 nav.navbar .container .nav-logo a {
-  font-size: clamp(1.5rem, 2vw, 1.8rem);
-  font-weight: normal;
+  font-size: clamp(1.8rem, 2vw, 1.8rem);
   color: #ffffff;
-}
-
-nav.navbar .container .nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 nav.navbar .container .nav-link .nav-link-item {
@@ -43,8 +29,8 @@ nav.navbar .container .nav-link .nav-link-item {
 
 nav.navbar .container .nav-link .nav-link-item a {
   text-transform: uppercase;
-  margin-right: 1.2rem;
-  font-size: clamp(1.2rem, 2vw, 1.3rem);
+  margin-right: 1rem;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
   color: #ffffff;
   opacity: 0.5;
 }
@@ -95,7 +81,7 @@ section.home .container .left-col .text-container {
 }
 
 section.home .container .left-col .text-container h2 {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 5vw, 4rem);
   font-weight: bold;
   color: #f0f0f0;
@@ -104,7 +90,7 @@ section.home .container .left-col .text-container h2 {
 }
 
 section.home .container .left-col .text-container p {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.25rem, 5vw, 1rem);
   font-weight: normal;
   color: #c9c9c9;
@@ -128,11 +114,12 @@ section.home .container .left-col .btn-container {
 }
 
 section.home .container .left-col .btn-container a {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(0.7rem, 2vw, 1.1rem);
   letter-spacing: 0.15rem;
   border-radius: 0.2rem;
   padding: 0.9rem 1.3rem;
+  font-weight: bold;
 }
 
 section.home .container .left-col .btn-container a:hover {
@@ -143,13 +130,13 @@ section.home .container .left-col .btn-container a:hover {
 
 section.home .container .left-col .btn-container a:nth-of-type(1) {
   color: #000000;
-  border: solid 0.15rem #ffffff;
+  border: solid 0.2rem #ffffff;
   background: #ffffff;
 }
 
 section.home .container .left-col .btn-container a:nth-of-type(2) {
   color: #ffffff;
-  border: solid 0.15rem #6b6b6b99;
+  border: solid 0.2rem #a7a7a799;
   background: transparent;
 }
 
@@ -158,7 +145,7 @@ section.about .container {
 }
 
 section.about .container .left-col {
-  width: 48rem;
+  width: 46rem;
   margin-top: 25rem;
 }
 
@@ -168,19 +155,68 @@ section.about .container .left-col .text-container {
 }
 
 section.about .container .left-col .text-container h2 {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 5vw, 3.4rem);
   font-weight: bold;
   color: #f0f0f0;
 }
 
 section.about .container .left-col .text-container p {
-  font-family: 'Inter', 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 5vw, 1.8rem);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 1.4rem);
   font-weight: normal;
   color: #e9e9e9;
   margin-top: 2.1rem;
   margin-left: 0.2rem;
+}
+
+section.skills .container {
+  max-width: 80rem;
+}
+
+section.skills .container .left-col {
+  margin-top: 23rem;
+}
+
+section.skills .container .left-col .text-container {
+  -webkit-animation: swipeFromLeft 1.5s ease-out;
+          animation: swipeFromLeft 1.5s ease-out;
+}
+
+section.skills .container .left-col .text-container h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3.4rem);
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+section.skills .container .left-col .stack-container {
+  margin-top: 5rem;
+  -webkit-animation: swipeFromRight 1.5s ease-out;
+          animation: swipeFromRight 1.5s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.skills .container .left-col .stack-container .stack .stack-icon img {
+  width: 5rem;
+}
+
+section.skills .container .left-col .stack-container .stack .stack-text {
+  text-align: center;
+}
+
+section.skills .container .left-col .stack-container .stack .stack-text p {
+  text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+  color: white;
 }
 
 section.projects .container {
@@ -188,6 +224,7 @@ section.projects .container {
 }
 
 section.projects .container .left-col {
+  overflow-y: hidden;
   margin-top: 23rem;
 }
 
@@ -198,7 +235,7 @@ section.projects .container .left-col .text-container {
 
 section.projects .container .left-col .text-container h2 {
   font-family: 'Inter', 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 3.4rem);
   font-weight: bold;
   color: #f0f0f0;
 }
@@ -218,18 +255,18 @@ section.projects .container .left-col .card-grid {
 }
 
 section.projects .container .left-col .card-grid .card {
-  background: rgb(25, 28, 37);
+  background: #020a12;
   -webkit-box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
   width: 22rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   margin-top: 2.5rem;
   margin-right: 2.5rem;
 }
 
 section.projects .container .left-col .card-grid .card .card-img-container img {
   height: 12rem;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   width: 100%;
 }
 
@@ -238,14 +275,14 @@ section.projects .container .left-col .card-grid .card .card-text-container {
 }
 
 section.projects .container .left-col .card-grid .card .card-text-container h4 {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: bold;
   color: #f0f0f0;
 }
 
 section.projects .container .left-col .card-grid .card .card-text-container p {
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.2rem, 5vw, 1rem);
   font-weight: normal;
   color: #ffffff;
@@ -269,9 +306,9 @@ section.projects .container .left-col .card-grid .card .card-btn-container {
 section.projects .container .left-col .card-grid .card .card-btn-container a {
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(0.7rem, 2vw, 1.1rem);
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
   border-radius: 0.2rem;
   padding: 0.7rem 1.1rem;
@@ -309,15 +346,15 @@ section.contact .container .left-col .text-container {
 }
 
 section.contact .container .left-col .text-container h2 {
-  font-family: 'Inter', 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.5rem, 5vw, 3.4rem);
   font-weight: bold;
   color: #f0f0f0;
 }
 
 section.contact .container .left-col .text-container h3 {
   margin-top: 2rem;
-  font-family: 'Inter', 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: clamp(1.5rem, 5vw, 1rem);
   font-weight: normal;
   color: #f0f0f0;
